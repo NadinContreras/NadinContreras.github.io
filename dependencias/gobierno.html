@@ -1,0 +1,3307 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>BDD - Gobierno</title>
+  <link rel="stylesheet" href="../styles.css"> <!-- importante -->
+</head>
+
+<body>
+  <header class="main-header">Dependencia: Gobierno</header>
+
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <a href="../index.html" class="btn">Inicio</a>
+      <a href="#" 
+           class="btn" target="_blank">Mi drive</a>
+      <button class="logout-btn" onclick="window.location.href='../index.html'">Cerrar sesión</button>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+      <h2 class="subtitle">Tabla de contratos de Gobierno</h2>
+
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Buscar contrato...">
+        <select id="yearFilter">
+          <option value="">Todos los años</option>
+          <option value="2025" selected>2025</option> <!-- predeterminado -->
+          <option value="2024">2024</option>
+        </select>
+      </div>
+
+      <div class="table-container">
+        <table id="contractsTable">
+          <thead>
+            <tr>
+              <th>N°</th>
+              <th>Proceso</th>
+              <th>Objeto</th>
+              <th>Contratista</th>
+              <th>Tipo</th>
+              <th>Valor total</th>
+              <th>Valor mensual</th>
+              <th>Fuente</th>
+              <th>Catalogo</th>
+              <th>Dependencia</th>
+              <th>Fecha inicio</th>
+              <th>Fecha fin</th>
+              <th>Ver más</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2</td>
+              <td>23670-CD-PSP-002-2024</td>
+              <td>ASESORÍA JURÍDICA ESPECIALIZADA EN PROCESOS CONTRACTUALES</td>
+              <td>LEYLA JUDITH OROZCO MEDINA</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$37.800.000</td>
+              <td>$6.300.000</td>
+              <td>Sistema General de Participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-01-24</td>
+              <td>2024-07-24</td>
+              <td><a href="https://drive.google.com/drive/folders/1rxN075Aku3AR4aX9MEccPtcPESbxsfTq?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>23670-CD-PSP-003-2024</td>
+              <td>ACOMPAÑAMIENTO EN PROCESOS LABORALES Y CONTENCIOSOS</td>
+              <td>ALBERT ANTONIO BETTIN PERTUZ</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$18.000.000</td>
+              <td>$4.500.000</td>
+              <td>Sistema General de Participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-01-24</td>
+              <td>2024-05-24</td>
+              <td><a href="https://drive.google.com/drive/folders/1x19G8hKh-JJ-h1bkR5FVKEtJIydULXR2?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>23670-CD-PSP-004-2024</td>
+              <td>SERVICIOS INTEGRALES DE BOMBEROS</td>
+              <td>CUERPO DE BOMBEROS VOLUNTARIOS DE CIÉNAGA DE ORO - MARLON ANTONIO DURANGO RODRÍGUEZ</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$100.000.000</td>
+              <td>$10.000.000</td>
+              <td>Sistema General de Participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-02-06</td>
+              <td>2024-12-06</td>
+              <td><a href="https://drive.google.com/drive/folders/1M9-q8cyU-XtyLTV1OL2rctgKGEVgCRuM?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>23670-MINC-CV-008-2024</td>
+              <td>ADQUISICIÓN DE PAPELERÍA Y ELEMENTOS DE OFICINA</td>
+              <td>SERVIDATOS - MIGUEL ÁNGEL PÉREZ</td>
+              <td>MÍNIMA CUANTÍA</td>
+              <td>$37.800.000</td>
+              <td>$7.560.000</td>
+              <td>Sistema General de Participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-02-19</td>
+              <td>2024-02-24</td>
+              <td><a href="https://drive.google.com/drive/folders/1KiFuHrDr6-5ToxTMFDMjaUXZVBXSMmWm?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>23670-MINC-SUM-010-2024</td>
+              <td>SUMINISTRO DE ASEO Y CAFETERÍA PARA LA ALCALDÍA</td>
+              <td>ITIC'S COLOMBIA - ROBERTO VERGARA REYES</td>
+              <td>MÍNIMA CUANTÍA</td>
+              <td>$33.716.000</td>
+              <td>$6.743.200</td>
+              <td>Sistema General de Participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-02-27</td>
+              <td>2024-07-27</td>
+              <td><a href="https://drive.google.com/drive/folders/1yq_zVRsyEUfAGF54Z1Y-wupvh9NnZdJQ?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>23670-MINC-SUM-012-2024</td>
+              <td>SUMINISTRO DE COMBUSTIBLE PARA VEHÍCULOS OFICIALES</td>
+              <td>TRANS AGRO S.A. - JAIME ABELARDO BUSTAMANTE</td>
+              <td>MÍNIMA CUANTÍA</td>
+              <td>$35.985.500</td>
+              <td>$3.598.550</td>
+              <td>Sistema General de Participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-03-04</td>
+              <td>2024-12-04</td>
+              <td><a href="https://drive.google.com/drive/folders/19VIyG9LXwjVqbX72taj3GNFTuagSXzE9?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>17</td>
+              <td>23670-CD-PSP-016-2024</td>
+              <td>ACOMPAÑAMIENTO EN LA GESTION DE TECNOLOGIAS DE INFORMACION Y COMUNICACIONES DEL MUNICIPIO</td>
+              <td>NADIN ALFREDO CONTRERAS PEREZ</td>
+              <td>CONTRATACION DIRECTA</td>
+              <td>$10.600.000</td>
+              <td>$2.650.000</td>
+              <td>SISTEMA GENERAL DE PARTICIPACION SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-03-04</td>
+              <td>2024-07-04</td>
+              <td><a href="https://drive.google.com/drive/folders/1LR3IH-rm3ch2nMGA5q3LKprHssBek8IV?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>20</td>
+              <td>23670-CD-PSP-019-2024</td>
+              <td>ASESORIA JURIDICA EN PROCESOS CONTRACTUALES DEL MUNICIPIO</td>
+              <td>JORGE ALFREDO GARCIA ROJAS</td>
+              <td>CONTRATACION DIRECTA</td>
+              <td>$17.280.000</td>
+              <td>$4.320.000</td>
+              <td>SISTEMA GENERAL DE PARTICIPACION SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-03-15</td>
+              <td>2024-07-15</td>
+              <td><a href="https://drive.google.com/drive/folders/1D9j1DHQL7zoldY9ViOJWoIV1vrpIbuAf?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>23</td>
+              <td>23670-CD-PSP-022-2024</td>
+              <td>ASESOR JURIDICO EN LA SECRETARIA DE GOBIERNO</td>
+              <td>ITALO ANDRES GODIN GAMEZ</td>
+              <td>CONTRATACION DIRECTA</td>
+              <td>$18.000.000</td>
+              <td>$4.500.000</td>
+              <td>RECURSOS PROPIOS - LIBRE DESTINACION</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-03-15</td>
+              <td>2024-07-15</td>
+              <td><a href="https://drive.google.com/drive/folders/1PFnekLTWGgOI-2AuC1ayolv6EoPzPPo3?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>25</td>
+              <td>23670-CD-AG-024-2024</td>
+              <td>APOYO TECNICO A LA OFICINA DE ARCHIVO MUNICIPAL</td>
+              <td>LUZ ELENA NISPERUZA TORIBIO</td>
+              <td>CONTRATACION DIRECTA</td>
+              <td>$6.600.000</td>
+              <td>$1.650.000</td>
+              <td>RECURSOS PROPIOS - LIBRE DESTINACION</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-03-19</td>
+              <td>2024-07-19</td>
+              <td><a href="https://drive.google.com/drive/folders/1EpIb8FEJyHNhEcn0XF9hN3edtC3Hu6TL?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>30</td>
+              <td>23670-CD-PSP-029-2024</td>
+              <td>COORDINACION DE PROGRAMA DE PROTECCION A LA NIÑEZ</td>
+              <td>SANDRA MARGARITA OROZCO SUAREZ</td>
+              <td>CONTRATACION DIRECTA</td>
+              <td>$11.600.000</td>
+              <td>$2.900.000</td>
+              <td>SISTEMA GENERAL DE PARTICIPACIONES SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-04-02</td>
+              <td>2024-08-02</td>
+              <td><a href="https://drive.google.com/drive/folders/16taVEJVTdaQXjo1I4YcaJS689PVlT31w?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>31</td>
+              <td>23670-CD-PSP-030-2024</td>
+              <td>ACOMPAÑAMIENTO A PROGRAMA DE PROTECCION A LA NIÑEZ</td>
+              <td>LINDA GREGORIA COVO JIMENEZ</td>
+              <td>CONTRATACION DIRECTA</td>
+              <td>$10.800.000</td>
+              <td>$2.700.000</td>
+              <td>SISTEMA GENERAL DE PARTICIPACIONES SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-04-02</td>
+              <td>2024-08-02</td>
+              <td><a href="https://drive.google.com/drive/folders/1OWKdTeahXMMcOjLJK6Jx5JE3jW2bK5bW?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>32</td>
+              <td>23670-CD-AG-031-2024</td>
+              <td>APOYO A PROGRAMA DE PROTECCION A LA NIÑEZ</td>
+              <td>IVAN DAVID ROJAS PEREZ</td>
+              <td>CONTRATACION DIRECTA</td>
+              <td>$7.200.000</td>
+              <td>$1.800.000</td>
+              <td>SISTEMA GENERAL DE PARTICIPACIONES SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-04-02</td>
+              <td>2024-08-02</td>
+              <td><a href="https://drive.google.com/drive/folders/1Ruy5G8kJHtAyhsoU6Yt_CrzANNU4nG9p?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>33</td>
+              <td>23670-CD-PSP-032-2024</td>
+              <td>MANEJO DEL SISTEMA SECOP</td>
+              <td>NELCY DEL CARMEN YEPEZ NISPERUZA</td>
+              <td>CONTRATACION DIRECTA</td>
+              <td>$14.600.000</td>
+              <td>$3.650.000</td>
+              <td>SISTEMA GENERAL DE PARTICIPACIONES SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-04-09</td>
+              <td>2024-08-09</td>
+              <td><a href="https://drive.google.com/drive/folders/1oq-O6D_7Zury-sPpTE6fyHahU1R9ud9A?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>36</td>
+              <td>23670-CD-PSP-035-2024</td>
+              <td>APOYO JURIDICO EXTERNO EN CONTRATACION</td>
+              <td>DAVID ENRIQUE VARGAS LOPEZ</td>
+              <td>CONTRATACION DIRECTA</td>
+              <td>$16.800.000</td>
+              <td>$4.200.000</td>
+              <td>SISTEMA GENERAL DE PARTICIPACIONES SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-04-23</td>
+              <td>2024-08-23</td>
+              <td><a href="https://drive.google.com/drive/folders/16zSIs2kRKFB1rVWsyeIDFWr4APAzUKfZ?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>37</td>
+              <td>23670-CD-AG-036-2024</td>
+              <td>APOYO EN GESTION ADMINISTRATIVA AL DESPACHO DEL ALCALDE</td>
+              <td>SUHEY MILENA COVO GOMEZ</td>
+              <td>CONTRATACION DIRECTA</td>
+              <td>$8.600.000</td>
+              <td>$2.150.000</td>
+              <td>SISTEMA GENERAL DE PARTICIPACIONES SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-04-23</td>
+              <td>2024-08-23</td>
+              <td><a href="https://drive.google.com/drive/folders/1_BaOb3AfWIXuP2lfeznGg1199JWzxA-c?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>38</td>
+              <td>23670-CD-AG-037-2024</td>
+              <td>LIDER DEL PROGRAMA COLOMBIA MAYOR</td>
+              <td>SARAY ROMERO CASTRO</td>
+              <td>CONTRATACION DIRECTA</td>
+              <td>$9.200.000</td>
+              <td>$2.300.000</td>
+              <td>SISTEMA GENERAL DE PARTICIPACIONES SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-04-23</td>
+              <td>2024-08-23</td>
+              <td><a href="https://drive.google.com/drive/folders/1OILkfBxyRiIDXu5Gf99gwlUccVnJ9Gmf?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>39</td>
+              <td>23670-CD-PSP-038-2024</td>
+              <td>COORDINADOR DE PROGRAMAS DE TRANSFERENCIAS MONETARIAS</td>
+              <td>JESUS ALFREDO SOTO MERCADO</td>
+              <td>CONTRATACION DIRECTA</td>
+              <td>$18.000.000</td>
+              <td>$4.500.000</td>
+              <td>SISTEMA GENERAL DE PARTICIPACIONES SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-04-23</td>
+              <td>2024-08-23</td>
+              <td><a href="https://drive.google.com/drive/folders/1i5yKwll0kF8qr6tt8wYHdL_GmaLYGjDc?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>40</td>
+              <td>23670-CD-PSP-039-2024</td>
+              <td>GESTOR OPERATIVO DE TRANSFERENCIAS MONETARIAS</td>
+              <td>ROBERTO CARLOS BERROCAL</td>
+              <td>CONTRATACION DIRECTA</td>
+              <td>$8.800.000</td>
+              <td>$2.200.000</td>
+              <td>SISTEMA GENERAL DE PARTICIPACIONES SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-04-23</td>
+              <td>2024-08-23</td>
+              <td><a href="https://drive.google.com/drive/folders/1VMnKXVDRKZzE0SPwbqFxD75XNqA00WHg?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>41</td>
+              <td>23670-CD-PSP-040-2024</td>
+              <td>GESTOR OPERATIVO DE TRANSFERENCIAS MONETARIAS</td>
+              <td>LYS LEIDY RAMOS MORENO</td>
+              <td>CONTRATACION DIRECTA</td>
+              <td>$8.800.000</td>
+              <td>$2.200.000</td>
+              <td>SISTEMA GENERAL DE PARTICIPACIONES SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-04-23</td>
+              <td>2024-08-23</td>
+              <td><a href="https://drive.google.com/drive/folders/1zPseBpGWyEH2VVM8sp_CSud_TEzmDyux?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>42</td>
+              <td>23670-CD-PSP-041-2024</td>
+              <td>ASESOR JURIDICO DE PROGRAMAS SOCIALES</td>
+              <td>DIANA MARCELA PADILLA MUSLACO</td>
+              <td>CONTRATACION DIRECTA</td>
+              <td>$9.200.000</td>
+              <td>$2.300.000</td>
+              <td>SISTEMA GENERAL DE PARTICIPACIONES SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-04-23</td>
+              <td>2024-08-23</td>
+              <td><a href="https://drive.google.com/drive/folders/1NfIV3fOi_NdyYx58b5ZSX_xNd4aP9nmV?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>43</td>
+              <td>23670-CD-PSP-042-2024</td>
+              <td>COORDINADOR MUNICIPAL DEL PROGRAMA VICTIMAS</td>
+              <td>WILMER JOSE ROMERO LOPEZ</td>
+              <td>CONTRATACION DIRECTA</td>
+              <td>$12.000.000</td>
+              <td>$3.000.000</td>
+              <td>SISTEMA GENERAL DE PARTICIPACIONES SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-04-24</td>
+              <td>2024-08-24</td>
+              <td><a href="https://drive.google.com/drive/folders/1rHe6qibg9H5lkXQbioOqqC9gPqFHl1DQ?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>45</td>
+              <td>23670-CD-PSP-044-2024</td>
+              <td>ABOGADO PARA APOYO AL PUNTO DE ATENCIÓN PAF</td>
+              <td>LINA MARCELA ROQUEME ESQUIVEL</td>
+              <td>CONTRATACION DIRECTA</td>
+              <td>$8.800.000</td>
+              <td>$2.200.000</td>
+              <td>SISTEMA GENERAL DE PARTICIPACIONES SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-04-24</td>
+              <td>2024-08-24</td>
+              <td><a href="https://drive.google.com/drive/folders/1F-FyvuuEqnd2bVZBnSfgERyaON2UVD4h?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>46</td>
+              <td>23670-CD-AG-045-2024</td>
+              <td>GESTOR DEL PROGRAMA RENTA CIUDADANA INDÍGENA</td>
+              <td>ANA CLAUDIA TORIBIO MARTINEZ</td>
+              <td>CONTRATACION DIRECTA</td>
+              <td>$9.200.000</td>
+              <td>$2.300.000</td>
+              <td>SISTEMA GENERAL DE PARTICIPACIONES SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-04-24</td>
+              <td>2024-08-24</td>
+              <td><a href="https://drive.google.com/drive/folders/1UfbYvyYOzR3piKvFKjsnb_ORjqVCF2VW?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>51</td>
+              <td>23670-CD-PAP-051-2024</td>
+              <td>PROMOTOR SOCIAL Y COMUNITARIO</td>
+              <td>DAYANA DEL CARMEN MORENO CORREA</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$9.200.000</td>
+              <td>$2.300.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td>GOBIERNO</td>
+              <td>GOBIERNO</td>
+              <td>2024-04-24</td>
+              <td>2024-08-24</td>
+              <td><a href="https://drive.google.com/drive/folders/10kmt4ObfHVnK9ddmmtvw5MUcI_6Hzg7O?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>52</td>
+              <td>23670-CD-PSP-052-2024</td>
+              <td>GESTOR OPERATIVO - TRANSFERENCIAS MONETARIAS</td>
+              <td>MELVA ROSA SUAREZ ROJAS</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$7.120.000</td>
+              <td>$1.780.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td>GOBIERNO</td>
+              <td>GOBIERNO</td>
+              <td>2024-04-24</td>
+              <td>2024-08-24</td>
+              <td><a href="https://drive.google.com/drive/folders/1Xy1JTtcpSUvE13VEQhZA1Ya5ZM5WNbET?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>53</td>
+              <td>23670-CD-PSP-053-2024</td>
+              <td>GESTOR OPERATIVO - TRANSFERENCIAS MONETARIAS</td>
+              <td>MONICA DEL CARMEN ROMERO ESTRADA</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$7.120.000</td>
+              <td>$1.780.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td>GOBIERNO</td>
+              <td>GOBIERNO</td>
+              <td>2024-04-24</td>
+              <td>2024-08-24</td>
+              <td><a href="https://drive.google.com/drive/folders/19h3T8LPIhsjxLI0kvMg36mO2F9nbc5fJ?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>59</td>
+              <td>23670-CD-PSP-059-2024</td>
+              <td>COORDINADORA PROGRAMA MUJER Y GÉNERO</td>
+              <td>ERIKA PAOLA JURIS NEGRETE</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$11.380.000</td>
+              <td>$2.845.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-04-25</td>
+              <td>2024-08-25</td>
+              <td><a href="https://drive.google.com/drive/folders/1vzI85CFbJ7EK9jxi6tlRWzdklh1Y5ib0?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>61</td>
+              <td>23670-CD-PSP-061-2024</td>
+              <td>GESTOR OPERATIVO - TRANSFERENCIA MONETARIA</td>
+              <td>YEIDI LUZ ROYETH RIZO</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$8.800.000</td>
+              <td>$2.200.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-04-25</td>
+              <td>2024-08-25</td>
+              <td><a href="https://drive.google.com/drive/folders/1Grc6-CVyU6JhtiOV6pdyshvrOhX2qqqS?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>62</td>
+              <td>23670-CD-PSP-062-2024</td>
+              <td>GESTOR OPERATIVO - TRANSFERENCIA MONETARIA</td>
+              <td>JOHANNA PAOLA RIVERO OSORIO</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$11.380.000</td>
+              <td>$2.845.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-04-29</td>
+              <td>2024-08-29</td>
+              <td><a href="https://drive.google.com/drive/folders/1dA0n__hxb2m943MzfbifQkKz4wkAHXeY?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>66</td>
+              <td>23670-CD-AG-066-2024</td>
+              <td>GESTOR OPERATIVO - TRANSFERENCIAS MONETARIAS</td>
+              <td>LILIBETH URANGO LOPEZ</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$8.000.000</td>
+              <td>$2.000.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-04-30</td>
+              <td>2024-08-30</td>
+              <td><a href="https://drive.google.com/drive/folders/1SOlrJH6-PTVswBceZNTf_q_fFA_Smqa8?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>68</td>
+              <td>23670-CD-PSP-068-2024</td>
+              <td>ABOGADO PARA ATENCIÓN A VÍCTIMAS</td>
+              <td>RODRIGO RAFAEL RODRIGUEZ MORELO</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$9.200.000</td>
+              <td>$2.300.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-05-02</td>
+              <td>2024-09-02</td>
+              <td><a href="https://drive.google.com/drive/folders/1cx3L31EodaD2GaVZH8xJ9ei84OcaEyrF?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>69</td>
+              <td>23670-CD-PSP-069-2024</td>
+              <td>COORDINADOR DE JUVENTUD</td>
+              <td>LUIS FERNANDO ALEAN VILLALOBOS</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$8.000.000</td>
+              <td>$2.000.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-05-02</td>
+              <td>2024-09-02</td>
+              <td><a href="https://drive.google.com/drive/folders/1jKpSaEFgWbeYWa89mfHJCke67qvwlkKG?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>70</td>
+              <td>23670-CD-AG-071-2024</td>
+              <td>GESTOR OPERATIVO - TRANSFERENCIAS MONETARIAS</td>
+              <td>OSCAR EDUARDO CASTILLO ESTRADA</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$7.120.000</td>
+              <td>$1.780.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-05-08</td>
+              <td>2024-09-08</td>
+              <td><a href="https://drive.google.com/drive/folders/1xapH94U6si475xrYeDW3e22cc_ZDiF_W?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>71</td>
+              <td>23670-CD-AG-072-2024</td>
+              <td>APOYO EN ACTIVIDADES DE JUVENTUD</td>
+              <td>JOSE FERNANDO MORALES POLO</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$7.520.000</td>
+              <td>$1.880.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-05-14</td>
+              <td>2024-09-14</td>
+              <td><a href="https://drive.google.com/drive/folders/1bwETtcJ2KlwPWj4wGP5LnCZKnh6ey93C?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>75</td>
+              <td>23670-MINC-PS-076-2024</td>
+              <td>MANTENIMIENTO PARQUE AUTOMOTOR DE LA POLICÍA</td>
+              <td>ANIBAL JOSE AVILES AYALA</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$26.998.200</td>
+              <td>$26.998.200</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-05-17</td>
+              <td>2024-06-17</td>
+              <td><a href="https://drive.google.com/drive/folders/1culGAgLHXjkri-BvyRsmouyubitt6m6L?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>76</td>
+              <td>23670-CD-AG-077-2024</td>
+              <td>APOYO A PROGRAMA DE PROSPERIDAD SOCIAL</td>
+              <td>AMPARO DE JESUS CARMONA ALEAN</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$5.200.000</td>
+              <td>$1.300.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-05-16</td>
+              <td>2024-09-16</td>
+              <td><a href="https://drive.google.com/drive/folders/1W_zTxoUSemFfDpM3H6QBnJCtDhJCxBqh?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>77</td>
+              <td>23670-CD-PSP-078-2024</td>
+              <td>ELABORACIÓN DEL PLAN DE SEGURIDAD Y CONVIVENCIA PISCC</td>
+              <td>ULICES PESTANA DIAZ</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$35.000.000</td>
+              <td>$23.333.333</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-05-17</td>
+              <td>2024-07-01</td>
+              <td><a href="https://drive.google.com/drive/folders/1G_BYy6jFwJr7lulIiuXE4ZfOeV8MsjDd?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>79</td>
+              <td>23670-CD-PSP-081-2024</td>
+              <td>ABOGADA COMISARÍA DE FAMILIA</td>
+              <td>MARIA EUGENIA MORENO PATERNINA</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$12.800.000</td>
+              <td>$3.200.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-05-21</td>
+              <td>2024-09-21</td>
+              <td><a href="https://drive.google.com/drive/folders/1x061_bYt3B2Ru3HfO1r-4u9MQBbbGhEE?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>82</td>
+              <td>23670-CD-PSP-084-2024</td>
+              <td>FORTALECIMIENTO PRODUCTIVO PARA MUJERES FERIA EMPRENDIMIENTO</td>
+              <td>CORPORACION JUVENIL SAN JUAN DE BETULIA "CORJUSAB"</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$30.000.000</td>
+              <td>$30.000.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-06-12</td>
+              <td>2024-07-12</td>
+              <td><a href="https://drive.google.com/drive/folders/1HfZXfuJYzxPmGTJa_XTwdeZH5VdOiVVm?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>86</td>
+              <td>23670-CD-AG-088-2024</td>
+              <td>GESTOR OPERATIVO DE TRANSFERENCIAS MONETARIAS</td>
+              <td>MARCO ANTONIO MEJIA CELESTINO</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$</td>
+              <td>$</td>
+              <td>Recursos propios</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-06-20</td>
+              <td>2024-10-20</td>
+              <td><a href="https://drive.google.com/drive/folders/1ImUmb7XJl3msOZhJI-zGMx1cliL7BHxx?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>89</td>
+              <td>23670-CD-PSP-089-2024</td>
+              <td>TRABAJADORA SOCIAL PARA LA COMISARÍA</td>
+              <td>MARIA DE LOS ANGELES MEZA VERGARA</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$7.500.000</td>
+              <td>$2.500.000</td>
+              <td>Recursos propios</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-06-21</td>
+              <td>2024-09-21</td>
+              <td><a href="https://drive.google.com/drive/folders/1ny-qnixBJHAq0MtvUwyGoZrnb0wZXCoA?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>91</td>
+              <td>23670-MINC-SUM-091-2024</td>
+              <td>SUMINISTRO DE MATERIALES PARA EMERGENCIAS</td>
+              <td>HUGO CESAR SALGADO CASILLA - SUPERMATERIALES HSC SAS</td>
+              <td>MÍNIMA CUANTÍA</td>
+              <td>$30.000.000</td>
+              <td>$5.000.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-06-25</td>
+              <td>2024-12-25</td>
+              <td><a href="https://drive.google.com/drive/folders/169PvYnswdaLyd86uVMe3vNFVunU6s6wb?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>94</td>
+              <td>23670-MINC-SUM-094-2024</td>
+              <td>SUMINISTRO DE COFRES FÚNEBRES</td>
+              <td>GISEL PAOLA NISPERUZA SOLANO - FUNERARIA EL TATAN</td>
+              <td>MÍNIMA CUANTÍA</td>
+              <td>$36.000.000</td>
+              <td>$6.000.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-06-26</td>
+              <td>2024-12-26</td>
+              <td><a href="https://drive.google.com/drive/folders/1QAEAceWaEeFAtlf74gjGSbM3EV4UBlDW?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>96</td>
+              <td>23670-CD-PSP-096-2024</td>
+              <td>REPRESENTACIÓN EN PROCESOS JUDICIALES</td>
+              <td>ALBERT ANTONIO BETTIN PERTUZ</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$18.000.000</td>
+              <td>$4.500.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-06-26</td>
+              <td>2024-10-26</td>
+              <td><a href="https://drive.google.com/drive/folders/1XkuTcKYtjFyfoAif3_Nxf8JY1ow2z1RZ?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>97</td>
+              <td>23670-CD-PSP-097-2024</td>
+              <td>ACOMPAÑAMIENTO A POBLACIÓN VÍCTIMA</td>
+              <td>SANDY PAOLA URANGO DE HOYOS</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$9.200.000</td>
+              <td>$2.300.000</td>
+              <td>Recursos propios</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-06-28</td>
+              <td>2024-10-28</td>
+              <td><a href="https://drive.google.com/drive/folders/1RSj0Bh9Hyosyp3rL_P122jY_naV8K2uC?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>100</td>
+              <td>23670-CD-PSP-100-2024</td>
+              <td>GESTOR OPERATIVO DE TRANSFERENCIAS MONETARIAS</td>
+              <td>KARINA MARIA ORTEGA ALEAN</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$8.800.000</td>
+              <td>$2.200.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-07-04</td>
+              <td>2024-11-04</td>
+              <td><a href="https://drive.google.com/drive/folders/1m3Rsf2Eueragda1VygHOlu0HR2cdAnai?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>102</td>
+              <td>23670-MINC-SUM-102-2024</td>
+              <td>SUMINISTRO DE ALIMENTACIÓN A POLICÍA NACIONAL</td>
+              <td>DORA LUCIA PINTO CORDERO - ESTABLECIMIENTO LOS RANCHOS ESTADERO- PISCINA</td>
+              <td>MÍNIMA CUANTÍA</td>
+              <td>$36.000.000</td>
+              <td>$12.000.000</td>
+              <td>Recursos propios</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-07-16</td>
+              <td>2024-10-16</td>
+              <td><a href="https://drive.google.com/drive/folders/1AbeH8HCbs6Fm90HshsakTaY55dcOzhRx?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>106</td>
+              <td>23670--MINC-CV-106-2024</td>
+              <td>ADQUISICIÓN DE EQUIPOS TECNOLÓGICOS Y CONECTIVIDAD</td>
+              <td>ROBERTO VERGARA REYES - ITIC´S COLOMBIA REP. LEGAL</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$35.000.000</td>
+              <td>$7.000.000</td>
+              <td>Funcionamiento</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-07-16</td>
+              <td>2024-07-21</td>
+              <td><a href="https://drive.google.com/drive/folders/1WZrT_1pcy6SigruAP1N8GqE5om52fBmA?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>108</td>
+              <td>23670-CD-PSP-108-2024</td>
+              <td>FORMULACIÓN DEL PAT PARA ATENCIÓN A VÍCTIMAS</td>
+              <td>LICETH PIEDAD ROMÁN BERRÍO</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$15.000.000</td>
+              <td>$3.750.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-07-18</td>
+              <td>2024-11-18</td>
+              <td><a href="https://drive.google.com/drive/folders/1gWm6bqmxP9YkkB8Id8qWKR64NQ6SM5a-?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>109</td>
+              <td>23670-CD-AG-109-2024</td>
+              <td>APOYO A POLÍTICA DE DISCAPACIDAD</td>
+              <td>RAFAEL ENRIQUE ESCOBAR BRAVO</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$6.000.000</td>
+              <td>$1.500.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-07-18</td>
+              <td>2024-11-18</td>
+              <td><a href="https://drive.google.com/drive/folders/1u8GbHv15d1uhTNB61RdfrX9b-gpKR8U7?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>110</td>
+              <td>23670-CD-PSP-110-2024</td>
+              <td>COORDINACIÓN PROGRAMA BIENESTAR ANIMAL</td>
+              <td>LUIS MIGUEL VERGARA ESQUIVEL</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$12.000.000</td>
+              <td>$3.000.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-07-25</td>
+              <td>2024-11-25</td>
+              <td><a href="https://drive.google.com/drive/folders/1h6DHt8nSQdOzb4jaEwwwm9Y6hftcpyWU?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>111</td>
+              <td>23670-SAMC–ABM-111-2024</td>
+              <td>ALQUILER VEHÍCULO TIPO CAMPERO PARA FUNCIONES MUNICIPALES</td>
+              <td>WAYNE COLOMBIA S.A.S. - AGUSTÍN NEREO BARBOZA VILLAREAL</td>
+              <td>MÍNIMA CUANTÍA</td>
+              <td>$49.500.000</td>
+              <td>$9.900.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-07-26</td>
+              <td>2024-12-26</td>
+              <td><a href="https://drive.google.com/drive/folders/1aK4tTOBb0globY_Sx5giFXvCm2wWTLnG?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>112</td>
+              <td>23670-MINC-CV-112-2024</td>
+              <td>HOSPEDAJE PARA MIEMBROS DE LA POLICÍA</td>
+              <td>PIERINA PAOLA PALLARES PORTILLO - HOSPEDAJE Y TIENDA LA TORRE</td>
+              <td>MÍNIMA CUANTÍA</td>
+              <td>$35.700.000</td>
+              <td></td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-07-26</td>
+              <td></td>
+              <td><a href="#" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>115</td>
+              <td>23670-MINC-CV-215</td>
+              <td>ADQUISICIÓN POLIZA PARA CONCEJALES</td>
+              <td>LA PREVISORA S.A. COMPAÑÍA DE SEGUROS</td>
+              <td>MÍNIMA CUANTÍA</td>
+              <td>$11.500.000</td>
+              <td>$2.300.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-07-30</td>
+              <td>2024-08-04</td>
+              <td><a href="https://drive.google.com/drive/folders/12L3WF5cK7KZIP5y0SXKoPaHVBFN72e1f?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>117</td>
+              <td>23670-CD-PSP-117-2024</td>
+              <td>APOYO EN PRENSA Y PROTOCOLO</td>
+              <td>OLGA YULIANA OSORIO VERGARA</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$8.000.000</td>
+              <td>$2.666.667</td>
+              <td>Recursos propios</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-08-01</td>
+              <td>2024-11-01</td>
+              <td><a href="https://drive.google.com/drive/folders/1bckfy5dn2FudBzuuaYHhHoOJXpbeu70L?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>120</td>
+              <td>23670-CD-PSP-120-2024</td>
+              <td>ACOMPAÑAMIENTO EN GESTIÓN TIC</td>
+              <td>NADIN ALFREDO CONTRERAS PÉREZ</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$10.600.000</td>
+              <td>$2.650.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-08-08</td>
+              <td>2024-12-08</td>
+              <td><a href="https://drive.google.com/drive/folders/1SOf1V1u3EmH6ITHk1lp4vDWOjkvH5E9V?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>124</td>
+              <td>23670-CD-PSP-124-2024</td>
+              <td>ATENCIÓN A VÍCTIMAS DE VIOLENCIA INTRAFAMILIAR</td>
+              <td>ELIZABETH MARTÍNEZ FERIA</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$10.000.000</td>
+              <td>$2.500.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-08-16</td>
+              <td>2024-12-16</td>
+              <td><a href="https://drive.google.com/drive/folders/1xkeF7pQPb5Ja9Pcfb6TjSN94kjrqZoXz?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>127</td>
+              <td>23670-CD-AG-127-2024</td>
+              <td>ACTIVIDADES LÚDICAS Y DEPORTIVAS ADULTO MAYOR</td>
+              <td>CORJUSAB</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$31.866.000</td>
+              <td>$31.866.000</td>
+              <td>Recursos propios</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-08-21</td>
+              <td>2024-09-21</td>
+              <td><a href="https://drive.google.com/drive/folders/1dyacuY_nY2SNUY7_2gMEypA5-z_LJuOB?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>128</td>
+              <td>23670-CD-PSP-128-2024</td>
+              <td>ASESORÍA JURÍDICA EN PROCESOS CONTRACTUALES</td>
+              <td>JORGE ALFREDO GARCÍA ROJAS</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$17.280.000</td>
+              <td>$4.320.000</td>
+              <td>Recursos propios</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-08-20</td>
+              <td>2024-12-20</td>
+              <td><a href="https://drive.google.com/drive/folders/1wB8M_SvFmiRHYX0RPOq4d7UdcRkm3RHr?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>130</td>
+              <td>23670-CD-PSP-130-2024</td>
+              <td>APOYO JURÍDICO EXTERNO EN CONTRATACIÓN</td>
+              <td>DAVID ENRIQUE VARGAS LÓPEZ</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$16.800.000</td>
+              <td>$4.200.000</td>
+              <td>Recursos propios</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-08-22</td>
+              <td>2024-12-22</td>
+              <td><a href="https://drive.google.com/drive/folders/1HEUy9L6Z10Q9z62yh8nVFgTNzL8S97Om?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>132</td>
+              <td>23670-CD-PSP-032-2024</td>
+              <td>MANEJO DE SECOP EN CONTRATACIÓN PÚBLICA</td>
+              <td>LUIS PINEDA</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$14.600.000</td>
+              <td>$3.650.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-08-23</td>
+              <td>2024-12-23</td>
+              <td><a href="https://drive.google.com/drive/folders/1WvffxX7ay7udx9kJYubhpBtwJphFpjLN?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>133</td>
+              <td>23670-CD-AG-133-2024</td>
+              <td>APOYO A OFICINA DE ARCHIVO MUNICIPAL</td>
+              <td>LUZ ELENA NISPERUZA TORIBIO</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$6.600.000</td>
+              <td>$1.650.000</td>
+              <td>Recursos propios</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-08-23</td>
+              <td>2024-12-23</td>
+              <td><a href="https://drive.google.com/drive/folders/1ENpPIdeAsqbNix6E28ifPWGUkbMd2I4O?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>139</td>
+              <td>23670-CD-PSP-139-2024</td>
+              <td>ASESORÍA JURÍDICA EN CONTRATACIÓN</td>
+              <td>LEYLA JUDITH OROZCO MEDINA</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$25.200.000</td>
+              <td>$6.300.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-08-28</td>
+              <td>2024-12-28</td>
+              <td><a href="https://drive.google.com/drive/folders/103TDyHBIlZ6MLSuNgp2hweiuE072EuFr?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>140</td>
+              <td>23670-CD-PSP-140-2024</td>
+              <td>APOYO TÉCNICO EN COMISARÍA DE FAMILIA</td>
+              <td>YARLEDIS PATRICIA DÍAZ NEGRETE</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$7.200.000</td>
+              <td>$1.800.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-08-29</td>
+              <td>2024-12-29</td>
+              <td><a href="https://drive.google.com/drive/folders/13NApRry5dy2ZGk-JBzZ9qIcrHs5L6t7i?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>144</td>
+              <td>23670-LP-SP-144-2024</td>
+              <td>ATENCIÓN INTEGRAL AL ADULTO MAYOR</td>
+              <td>FUNDACIÓN NUEVA ILUSIÓN</td>
+              <td>LICITACIÓN PÚBLICA</td>
+              <td>$850.000.000</td>
+              <td>$212.500.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-09-02</td>
+              <td>2025-01-02</td>
+              <td><a href="https://drive.google.com/drive/folders/1JyGNkMji0PMYvvit3dqSofNJ8WoYRpHk?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>149</td>
+              <td>23670-CD-PSP-149-2024</td>
+              <td>APOYO EN IMPLEMENTACIÓN DEL SG-SST</td>
+              <td>WILL SEGUNDO OSPINO NARVÁEZ</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$12.800.000</td>
+              <td>$3.200.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-08-30</td>
+              <td>2024-12-30</td>
+              <td><a href="https://drive.google.com/drive/folders/10pJVyMw85lIhlojQunxih1yUN7iZ47dr?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>150</td>
+              <td>23670-CD-PSP-150-2024</td>
+              <td>COORDINADORA PROGRAMA MUJER Y GÉNERO</td>
+              <td>ERIKA PAOLA JURIS NEGRETE</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$11.380.000</td>
+              <td>$2.845.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-08-30</td>
+              <td>2024-12-30</td>
+              <td><a href="https://drive.google.com/drive/folders/1ETK003PwqVMb_XO96u1OI4SPRfGpO3b3?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>151</td>
+              <td>23670-CD-AG-151-2024</td>
+              <td>GESTOR PROGRAMA RENTA CIUDADANA POBLACIÓN INDÍGENA</td>
+              <td>ANA CLAUDIA TORIBIO MARTÍNEZ</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$9.200.000</td>
+              <td>$2.300.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-08-30</td>
+              <td>2024-12-30</td>
+              <td><a href="https://drive.google.com/drive/folders/1kuTuU1rI5kMltOkXDDGwhWRXIudhxFsC?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>152</td>
+              <td>23670-CD-PSP-152-2024</td>
+              <td>COORDINADORA PROGRAMA DE DISCAPACIDAD</td>
+              <td>JOHANNA PAOLA RIVERO OSORIO</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$11.380.000</td>
+              <td>$2.845.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-08-30</td>
+              <td>2024-12-30</td>
+              <td><a href="https://drive.google.com/drive/folders/15sJszBH8yqeDHNMXPub0Vlpmr1n4E9Dz?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>155</td>
+              <td>23670-CD-PSP-155-2024</td>
+              <td>GESTOR OPERATIVO DE TRANSFERENCIAS MONETARIAS</td>
+              <td>ROBERTO CARLOS BERROCAL</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$8.800.000</td>
+              <td>$2.200.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-08-30</td>
+              <td>2024-12-30</td>
+              <td><a href="https://drive.google.com/drive/folders/1fCDK8NzCJ2ER8VF0Giu4D3bymkvGv8ix?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>157</td>
+              <td>23670-CD-AG-157-2024</td>
+              <td>GESTOR OPERATIVO PROGRAMA TRANSFERENCIAS</td>
+              <td>MÓNICA DEL CARMEN ROMERO ESTRADA</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$7.120.000</td>
+              <td>$1.780.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-08-30</td>
+              <td>2024-12-30</td>
+              <td><a href="https://drive.google.com/drive/folders/16gZkgMZsU8BHH1RRLgszBqaDkLcGxqHU?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>158</td>
+              <td>23670-CD-AG-158-2024</td>
+              <td>GESTOR OPERATIVO PROGRAMA TRANSFERENCIAS</td>
+              <td>MELVA ROSA SUÁREZ ROJAS</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$7.120.000</td>
+              <td>$1.780.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-08-30</td>
+              <td>2024-12-30</td>
+              <td><a href="https://drive.google.com/drive/folders/1Ho1q-9Len32R8xm94gLZrEQ2SgTgtdyd?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>161</td>
+              <td>23670-CD-PSP-161-2024</td>
+              <td>GESTOR OPERATIVO PROGRAMA TRANSFERENCIAS</td>
+              <td>LYS LEIDY RAMOS MORENO</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$8.800.000</td>
+              <td>$2.200.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-08-30</td>
+              <td>2024-12-30</td>
+              <td><a href="https://drive.google.com/drive/folders/1L1xbcKZiLe3RD-HD5zCCfEVtKu1ttDVY?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>163</td>
+              <td>23670-CD-PSP-163-2024</td>
+              <td>COORDINADOR MUNICIPAL DE TRANSFERENCIAS</td>
+              <td>JESÚS ALFREDO SOTO MERCADO</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$18.000.000</td>
+              <td>$4.500.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-08-30</td>
+              <td>2024-12-30</td>
+              <td><a href="https://drive.google.com/drive/folders/1XhG9WTU1fAHlSftGHtl71MWy-ivQvcTR?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>164</td>
+              <td>23670-CD-PSP-164-2024</td>
+              <td>LÍDER DEL PROGRAMA COLOMBIA MAYOR</td>
+              <td>SARAY ROMERO CASTRO</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$9.200.000</td>
+              <td>$2.300.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-08-30</td>
+              <td>2024-12-30</td>
+              <td><a href="https://drive.google.com/drive/folders/1KGKUexAZct_LT10tF9hW8NHiCZlG413P?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>166</td>
+              <td>23670-CD-PSP-166-2024</td>
+              <td>COORDINADORA PROGRAMA NIÑEZ Y ADOLESCENCIA</td>
+              <td>SANDRA MARGARITA OROZCO SUÁREZ</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$11.406.666</td>
+              <td>$2.851.667</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-09-02</td>
+              <td>2024-12-28</td>
+              <td><a href="#" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>167</td>
+              <td>23670-CD-PSP-167-2024</td>
+              <td>COORDINADOR DE JUVENTUD</td>
+              <td>LUIS FERNANDO ALEAN VILLALOBOS</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$7.806.451</td>
+              <td>$1.951.613</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-09-02</td>
+              <td>2024-12-30</td>
+              <td><a href="https://drive.google.com/drive/folders/1tBD0XA1DtjzPxGzYj0Ahb55vcYnCO7Pr?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>168</td>
+              <td>23670-CD-AG-168-2024</td>
+              <td>GESTOR PROGRAMA TRANSFERENCIA MONETARIA</td>
+              <td>LILIBETH URANGO LÓPEZ</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$7.866.667</td>
+              <td>$2.000.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-09-02</td>
+              <td>2024-12-28</td>
+              <td><a href="https://drive.google.com/drive/folders/1niJYgPe2C6tvI8byz7A8J06SvsTPTeAc?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>169</td>
+              <td>23670-CD-PSP-169-2024</td>
+              <td>ABOGADO PARA VÍCTIMAS</td>
+              <td>RODRIGO RAFAEL RODRÍGUEZ MORELO</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$9.046.667</td>
+              <td>$2.287.500</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-09-02</td>
+              <td>2024-12-28</td>
+              <td><a href="https://drive.google.com/drive/folders/1hwl1h-YLYw2tEtckE8Qisi_pxuyi4DU3?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>172</td>
+              <td>23670-CD-PSP-172-2024</td>
+              <td>APOYO EN GESTIÓN ADMINISTRATIVA DEL DESPACHO</td>
+              <td>SUHEY MILENA COVO GÓMEZ</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$8.600.000</td>
+              <td>$2.180.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-09-02</td>
+              <td>2024-12-28</td>
+              <td><a href="https://drive.google.com/drive/folders/1IjqVoLYlTJdqzxzhoej0kjcIHmI5a2Pg?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>173</td>
+              <td>23670-CD-PSP-173-2024</td>
+              <td>COORDINADOR MUNICIPAL PROGRAMA VÍCTIMAS</td>
+              <td>WILMER JOSÉ ROMERO LÓPEZ</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$11.800.000</td>
+              <td>$2.950.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-09-02</td>
+              <td>2024-12-28</td>
+              <td><a href="https://drive.google.com/drive/folders/1S8QAFtNVmhYdx4B4cQMaYgFke-xmA_y7?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>175</td>
+              <td>23670-CD-AG-175-2024</td>
+              <td>GESTIÓN APOYO PROGRAMA DISCAPACIDAD</td>
+              <td>LINDA DAYANA CHIMA MARTÍNEZ</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$6.300.000</td>
+              <td>$1.800.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-10-12</td>
+              <td>2025-01-25</td>
+              <td><a href="https://drive.google.com/drive/folders/1kdoZaKAwaCLq84Ec_uSZdcCk8uOVddmV?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>178</td>
+              <td>23670-CD-AG-178-2024</td>
+              <td>PROMOTORA SOCIAL Y COMUNITARIA</td>
+              <td>GABRIELA ISABEL PÉREZ URANGO</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$7.309.677</td>
+              <td>$2.192.903</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-09-16</td>
+              <td>2024-12-25</td>
+              <td><a href="https://drive.google.com/drive/folders/119HxhLIVGP-tEAyxE4tntg7ByRzWsgZL?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>179</td>
+              <td>23670-CD-PSP-179-2024</td>
+              <td>ABOGADA APOYO PUNTO DE ATENCIÓN PAF</td>
+              <td>LINA MARCELA ROQUEME ESQUIVEL</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$7.700.000</td>
+              <td>$2.200.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-09-16</td>
+              <td>2024-12-30</td>
+              <td><a href="https://drive.google.com/drive/folders/1nCxwJDLhdZP4OUjYvCFsSDlzTnMQo_Xf?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>180</td>
+              <td>23670-CD-PSP-180-2024</td>
+              <td>APOYO PROGRAMA PROTECCIÓN INTEGRAL NIÑEZ</td>
+              <td>BERNARDA DEL SOCORRO GUERRA ÁLVAREZ</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$9.785.000</td>
+              <td>$2.900.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-09-17</td>
+              <td>2024-12-29</td>
+              <td><a href="https://drive.google.com/drive/folders/10jvfS93dkqVgpQJoJ-GWjAExo-ss3gj6?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>181</td>
+              <td>23670-CD-AG-181-2024</td>
+              <td>APOYO A LA REGISTRADURÍA</td>
+              <td>DEIMER DARÍO QUINTANA CARRIAZO</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$6.666.667</td>
+              <td>$2.000.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-09-19</td>
+              <td>2024-12-28</td>
+              <td><a href="https://drive.google.com/drive/folders/1I8C5FLstSHkybiAmGNUlvIoE1pGAYYG0?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>184</td>
+              <td>23670-CD-PSP-184-2024</td>
+              <td>ASESOR JURÍDICO SECRETARÍA DE GOBIERNO</td>
+              <td>ITALO ANDRÉS GODÍN GAMEZ</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$13.500.000</td>
+              <td>$4.500.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-09-27</td>
+              <td>2024-12-27</td>
+              <td><a href="https://drive.google.com/drive/folders/12q19joTTL73HQZuskXZ-N9kWaazBZ7bd?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>185</td>
+              <td>23670-CD-AG-185-2024</td>
+              <td>APOYO PROGRAMA MUJER Y GÉNERO</td>
+              <td>JOHANA PAOLA SIERRA RODRÍGUEZ</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$5.400.000</td>
+              <td>$1.800.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-09-27</td>
+              <td>2024-12-27</td>
+              <td><a href="https://drive.google.com/drive/folders/1mJ5oOCjwSY-XMFd1rzbf4r_px6e9tJOu?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>186</td>
+              <td>23670-CD-PSP-186-2024</td>
+              <td>PROMOTORA SOCIAL Y COMUNITARIA</td>
+              <td>DAYANA DEL CARMEN MORENO CORREA</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$7.206.667</td>
+              <td>$2.300.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-09-27</td>
+              <td>2024-12-30</td>
+              <td><a href="https://drive.google.com/drive/folders/1W157mG1k2YQUKqm3tgxFO56Ww_RPBo55?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>187</td>
+              <td>23670-CD-PSP-187-2024</td>
+              <td>GESTOR PROGRAMA TRANSFERENCIA MONETARIAS</td>
+              <td>YEIDI LUZ ROYETH RIZO</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$6.600.000</td>
+              <td>$2.200.000</td>
+              <td>Recursos propios</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-09-27</td>
+              <td>2024-12-27</td>
+              <td><a href="https://drive.google.com/drive/folders/18cZuRuStFwHgeRE9kBMAdAzka7M16un9?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>193</td>
+              <td>23670-CD-AG-193-2024</td>
+              <td>APOYO PROGRAMA DE JUVENTUD</td>
+              <td>JOSE FERNANDO MORALES POLO</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$5.514.666</td>
+              <td>$1.654.400</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-10-01</td>
+              <td>2024-12-20</td>
+              <td><a href="https://drive.google.com/drive/folders/1yRAZOpyFSNTKKh1IGYtyTBF_Qby-LfEk?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>194</td>
+              <td>23670-CD-PSP-194-2024</td>
+              <td>TRABAJADORA SOCIAL COMISARÍA DE FAMILIA</td>
+              <td>MARÍA DE LOS ÁNGELES MEZA VERGARA</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$5.000.000</td>
+              <td>$2.500.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-10-01</td>
+              <td>2024-12-01</td>
+              <td><a href="https://drive.google.com/drive/folders/1j6CIxBtW0xpmkmp1Ly8jG-Cmlw2K5WCZ?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>196</td>
+              <td>23670-CD-AG-196-2024</td>
+              <td>GESTOR PROGRAMA TRANSFERENCIA MONETARIAS</td>
+              <td>ÓSCAR EDUARDO CASTILLO ESTRADA</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$4.865.334</td>
+              <td>$1.730.000</td>
+              <td>Recursos propios</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-10-07</td>
+              <td>2024-12-28</td>
+              <td><a href="https://drive.google.com/drive/folders/1wqo2b9iGyhJ9f3gkmjOmHuNVLXceD1uY?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>200</td>
+              <td>23670-CD-AG-200-2024</td>
+              <td>APOYO PROTECCIÓN INTEGRAL NIÑEZ</td>
+              <td>LILY MARLEN MESA</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$5.700.000</td>
+              <td>$2.000.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-10-09</td>
+              <td>2024-12-30</td>
+              <td><a href="https://drive.google.com/drive/folders/1wIr7Bw8f0PCvb-6b1l82kSb_lXI_h_Zj?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>203</td>
+              <td>23670-CD-AG-203-2024</td>
+              <td>GESTOR PROGRAMA TRANSFERENCIAS MONETARIAS</td>
+              <td>AMPARO DE JESÚS CARMONA ALEAN</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$3.553.333</td>
+              <td>$1.300.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-10-09</td>
+              <td>2024-12-30</td>
+              <td><a href="https://drive.google.com/drive/folders/1f7jWBgPJfVm9aiYXkMBMobVx0NJV_-G6?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>204</td>
+              <td>23670-CD-AG-204-2024</td>
+              <td>APOYO LOGÍSTICO SEMANA DE LA JUVENTUD</td>
+              <td>CORPORACIÓN JUVENIL SAN JUAN DE BETULIA (CORJUSAB)</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$43.986.380</td>
+              <td>$43.986.380</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-10-16</td>
+              <td>2024-11-16</td>
+              <td><a href="https://drive.google.com/drive/folders/1B9yTMJNUPvuLsPDYqvlp4QqDuGAQ9FWJ?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>206</td>
+              <td>23670-CD-PSP-206-2024</td>
+              <td>ASESORÍA JURÍDICA PROCESOS CONTRACTUALES</td>
+              <td>SHIRLEY VERÓNICA ARROYO RAMOS</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$7.000.000</td>
+              <td>$3.500.000</td>
+              <td>Recursos propios</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-10-30</td>
+              <td>2024-12-30</td>
+              <td><a href="https://drive.google.com/drive/folders/1PjYdEJReDW_ARTmJHo4-7GLoW8ByYcx-?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>207</td>
+              <td>23670-CD-PSP-207-2024</td>
+              <td>APOYO PROGRAMA MUJER Y GÉNERO</td>
+              <td>SARAMI DEL CARMEN SIERRA PERTUZ</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$5.000.000</td>
+              <td>$2.500.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-10-30</td>
+              <td>2024-12-30</td>
+              <td><a href="https://drive.google.com/drive/folders/1wGS86TG87NHyF0dVz2N3kHGZ8QRKEypZ?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>209</td>
+              <td>23670-MINC-CV-209-2024</td>
+              <td>DOTACIÓN EVENTOS Y MESA DE VÍCTIMAS</td>
+              <td>MIGUEL ÁNGEL PÉREZ PÉREZ</td>
+              <td>MÍNIMA CUANTÍA</td>
+              <td>$35.000.000</td>
+              <td>$7.000.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-10-31</td>
+              <td>2024-11-05</td>
+              <td><a href="#" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>213</td>
+              <td>23670-CD-PSP-213-2024</td>
+              <td>ASESOR JURÍDICO PROGRAMAS SOCIALES</td>
+              <td>JOSÉ RAÚL CABRALES ROMERO</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$4.250.000</td>
+              <td>$2.500.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-11-06</td>
+              <td>2024-12-27</td>
+              <td><a href="https://drive.google.com/drive/folders/1f0xVh8T09ic1mvUdMowTy412YA34r0Io?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>223</td>
+              <td>23670-CD-PSP-223-2024</td>
+              <td>CAMPAÑA CONTRA LA VIOLENCIA DE GÉNERO</td>
+              <td>FUNDACIÓN PROGRESO GESTIÓN Y VIDA (PROGESVIDA)</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$76.000.000</td>
+              <td>$76.000.000</td>
+              <td>Recursos propios</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-11-19</td>
+              <td>2024-12-19</td>
+              <td><a href="https://drive.google.com/drive/folders/1gWsl_cjzk5voinSWe7qImKUoGejmbwri?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>225</td>
+              <td>23670-CD-PSP-225-2024</td>
+              <td>CAMPAÑA PREVENCIÓN USO DE PÓLVORA</td>
+              <td>ASOCIACIÓN DE PROFESIONALES CON GESTIÓN DE CALIDAD</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$80.000.000</td>
+              <td>$80.000.000</td>
+              <td>Recursos propios</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-11-19</td>
+              <td>2024-12-19</td>
+              <td><a href="https://drive.google.com/drive/folders/1898IhArVG6qUa9bBU3to7sEnr8fy4CwB?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>226</td>
+              <td>23670-CD-AG-226-2024</td>
+              <td>LOGÍSTICA ANIVERSARIO 424 Y FERIA ARTESANAL</td>
+              <td>FUNDACIÓN FUNACCODES</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$199.500.000</td>
+              <td>$199.500.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-11-19</td>
+              <td>2024-12-19</td>
+              <td><a href="https://drive.google.com/drive/folders/1I0OSR9U77Avmibh_IxNlzUjU7Kpt9yhZ?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>227</td>
+              <td>23670-MINC-PS-227-2024</td>
+              <td>MANTENIMIENTO PARQUE AUTOMOTOR DE LA POLICÍA</td>
+              <td>ANÍBAL JOSÉ AVILÉS AYALA</td>
+              <td>MÍNIMA CUANTÍA</td>
+              <td>$14.094.300</td>
+              <td>$14.094.300</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-11-22</td>
+              <td>2024-12-22</td>
+              <td><a href="https://drive.google.com/drive/folders/17gbX31oqmvQTwh55pBn0g2MoF7dS0yoJ?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>228</td>
+              <td>23670-CD-PSP-228-2024</td>
+              <td>CAMPAÑA EDUCACIÓN Y SEGURIDAD VIAL</td>
+              <td>FUNDACIÓN PROGRESO GESTIÓN Y VIDA (PROGESVIDA)</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$60.000.000</td>
+              <td>$60.000.000</td>
+              <td>Recursos propios</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-11-19</td>
+              <td>2024-12-19</td>
+              <td><a href="https://drive.google.com/drive/folders/1FqlsQXNIvToLgDDtgB9oj7u0vQLhuITP?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>232</td>
+              <td>23670-CD-PSP-332-2024</td>
+              <td>PREVENCIÓN DEL RECLUTAMIENTO FORZADO</td>
+              <td>FUNDACIÓN UNA ESPERANZA PARA EL MAÑANA (FUNESMA)</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$46.000.000</td>
+              <td>$46.000.000</td>
+              <td>Recursos propios</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-12-02</td>
+              <td>2024-12-27</td>
+              <td><a href="#" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>233</td>
+              <td>3670-CD-PSP-233-2024</td>
+              <td>SENSIBILIZACIÓN EN PROTECCIÓN Y SEGURIDAD</td>
+              <td>FUNDACIÓN UNA ESPERANZA PARA EL MAÑANA (FUNESMA)</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$50.000.000</td>
+              <td>$50.000.000</td>
+              <td>Recursos propios</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-12-02</td>
+              <td>2024-12-27</td>
+              <td><a href="#" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>235</td>
+              <td>23670-CD-PSP-235-2024</td>
+              <td>LOGÍSTICA FIESTAS DE SAN SIMÓN DE AYUDA</td>
+              <td>FUNDACIÓN SAN SIMÓN DE AYUDA (FUNSSIMA)</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$94.507.578</td>
+              <td>$94.507.578</td>
+              <td>Sistema General de participaciones SGP Y Recursos propios</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-12-06</td>
+              <td>2024-12-31</td>
+              <td><a href="https://drive.google.com/drive/folders/1nRqsuhPhxwswmgfKYtAy-okUNLTF0Fx-?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>236</td>
+              <td>23670-MINC-CV-236-2024</td>
+              <td>ADQUISICIÓN DE PÓLIZA DE MANEJO GLOBAL</td>
+              <td>LA PREVISORA S.A. COMPAÑÍA DE SEGUROS</td>
+              <td>MÍNIMA CUANTÍA</td>
+              <td>$8.000.000</td>
+              <td>$8.000.000</td>
+              <td>Recursos propios</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-12-06</td>
+              <td>2024-12-11</td>
+              <td><a href="#" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>248</td>
+              <td>23670-MINC-CV-248-2024</td>
+              <td>ADQUISICIÓN DE MERCADOS PARA POBLACIÓN AFRODESCENDIENTE</td>
+              <td>ROSA ANGELINA PÉREZ GODÍN</td>
+              <td>MÍNIMA CUANTÍA</td>
+              <td>$35.000.000</td>
+              <td>$35.000.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-12-24</td>
+              <td>2024-12-27</td>
+              <td><a href="#" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>250</td>
+              <td>23670-CD-CV-250-2024</td>
+              <td>ADQUISICIÓN DE PAPELERÍA Y ELEMENTOS DE OFICINA</td>
+              <td>SERVIDATOS SM - MIGUEL ÁNGEL PÉREZ PÉREZ</td>
+              <td>MÍNIMA CUANTÍA</td>
+              <td>$15.000.000</td>
+              <td>$15.000.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-12-24</td>
+              <td>2024-12-29</td>
+              <td><a href="https://drive.google.com/drive/folders/16lhJcPbqF08BMmeyM94RpZcrsI389quk?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>252</td>
+              <td>23670-MINC-SUM-252-2024</td>
+              <td>SUMINISTRO DE ALIMENTACIÓN A LA POLICÍA TEMPORADA DECEMBRINA</td>
+              <td>LOS RANCHOS ESTADERO - DORA LUCÍA PINTO CORDERO</td>
+              <td>MÍNIMA CUANTÍA</td>
+              <td>$15.000.000</td>
+              <td>$15.000.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2024-12-27</td>
+              <td>2025-01-01</td>
+              <td><a href="https://drive.google.com/drive/folders/1QcagYmDOQHyBQdsh0_0_JdnG8wamSz8N?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <!-- ----------------------------------------------------------------2025--------------------------------------------------- -->
+            <tr>
+              <td>1</td>
+              <td>23670-CD-PSP-001-2025</td>
+              <td>ASESORÍA JURÍDICA EN PROCESOS CONTRACTUALES OPS</td>
+              <td>LEYLA JUDITH OROZCO MEDINA</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $25.200.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de tres (3) meses por $18.900.000, adicionado un (1) mes por $6.300.000 con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$6.300.000</td>
+              <td>1201-SGP Propósito General - Libre destinación</td>
+              <td>A2-02-02-005 - Honorarios</td>
+              <td>GOBIERNO</td>
+              <td>2025-01-08</td>
+              <td>2025-05-08</td>
+              <td><a href="https://drive.google.com/drive/folders/19b4q_hNetnsOTWqmwg3wP1e1WIoqY08m?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>23670-CD-PSP-002-2025</td>
+              <td>REPRESENTACIÓN JURÍDICA EN PROCESOS JUDICIALES Y ADMINISTRATIVOS OPS</td>
+              <td>ALBERT ANTONIO BETTIN PERTUZ</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $18.000.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de tres (3) meses por $13.500.000, adicionado un (1) mes por $4.500.000 con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$4.500.000</td>
+              <td>1201-SGP Propósito General - Libre destinación</td>
+              <td>A2-02-02-005 - Honorarios</td>
+              <td>GOBIERNO</td>
+              <td>2025-01-09</td>
+              <td>2025-05-09</td>
+              <td><a href="https://drive.google.com/drive/folders/1LzeBaSykySj2TF_VPc_Cu2vCitL86ix1?usp=sharing"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>23670-CD-PSP-004-2025</td>
+              <td>APOYO ADMINISTRATIVO AL DESPACHO DEL ALCALDE OPS</td>
+              <td>SUHEY MILENA COVO GOMEZ</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $8.600.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de tres (3) meses por $6.450.000, adicionado un (1) mes por $2.150.000 con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$2.150.000</td>
+              <td>1201-SGP Propósito General - Libre destinación</td>
+              <td>A2-02-02-006 - Servicios técnicos personal indirecto</td>
+              <td>GOBIERNO</td>
+              <td>2025-01-10</td>
+              <td>2025-05-10</td>
+              <td><a href="https://drive.google.com/drive/folders/1H64jyn8XY4RSxSWAcJblx3CmYysVmZs-?usp=sharing"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>23670-CD-PSP-005-2025</td>
+              <td>MANEJO DEL SISTEMA SECOP OPS</td>
+              <td>LUIS ANTONIO PINEDA</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $14.600.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de tres (3) meses por $10.950.000, adicionado un (1) mes por $3.650.000 con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$3.650.000</td>
+              <td>1201-SGP Propósito General - Libre destinación</td>
+              <td>C4599-1000-023-003 - Fortalecimiento institucional</td>
+              <td>GOBIERNO</td>
+              <td>2025-01-21</td>
+              <td>2025-05-21</td>
+              <td><a href="https://drive.google.com/drive/folders/1Vj1qWf8m35QIrWLQjCrqYoMiTJgO5eEi?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>23670-CD-PSP-006-2025</td>
+              <td>GESTION DE TECNOLOGIAS DE LA INFORMACION Y COMUNICACIÓNES OPS</td>
+              <td>NADIN CONTRERAS</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $10.600.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de tres (3) meses por $7.950.000, adicionado un (1) mes por $2.650.000 con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$2.650.000</td>
+              <td>1201-SGP Propósito General - Libre destinación</td>
+              <td>C4599-1000-023-003 - Fortalecimiento institucional</td>
+              <td>GOBIERNO</td>
+              <td>2025-01-21</td>
+              <td>2025-05-21</td>
+              <td><a href="https://drive.google.com/drive/folders/1wb9xZhti3i3qsiCGaz2FfR5fbc6yeW2S?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>23670-CD-PSP-007-2025</td>
+              <td>ASESORÍA JURÍDICA EN PROCESOS CONTRACTUALES OPS</td>
+              <td>JORGE ALFREDO GARCÍA</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $17.280.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de tres (3) meses por $12.960.000, adicionado un (1) mes por $4.320.000 con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$4.320.000</td>
+              <td>1201-SGP Propósito General - Libre destinación</td>
+              <td>C4599-1000-023-003 - Fortalecimiento institucional</td>
+              <td>GOBIERNO</td>
+              <td>2025-01-21</td>
+              <td>2025-05-21</td>
+              <td><a href="https://drive.google.com/drive/folders/13NgM8g2n4hFFbgjm6mUsJwVWZHWZrvJi?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>17</td>
+              <td>23670-CD-AG-017-2025</td>
+              <td>SERVICIOS INTEGRALES DE BOMBEROS</td>
+              <td>BOMBEROS VOLUNTARIOS DE CIÉNAGA DE ORO</td>
+              <td>DIRECTA</td>
+              <td>$130.000.000</td>
+              <td></td>
+              <td>3605 - Otros Sectores</td>
+              <td>C4503-1000-004-054 - Servicios cuerpo de bomberos</td>
+              <td>GOBIERNO</td>
+              <td>2025-02-05</td>
+              <td>2025-11-05</td>
+              <td><a href="https://drive.google.com/drive/folders/13Z2nFhcQvHW3rDHfEr1qZFDlkT_-hDy3?usp=sharing"
+                  class="btn btn-primary btn-sm" target="_blank">Ver</a></td>
+            </tr>
+            <tr>
+              <td>20</td>
+              <td>23670-MINC-SUM-015-2025</td>
+              <td>SUMINISTRO DE COFRES FÚNEBRES</td>
+              <td>ROBERTO VERGARA / ITIS DE COLOMBIA</td>
+              <td>MINIMA</td>
+              <td>$35.500.000</td>
+              <td></td>
+              <td>1201-SGP Propósito general - Libre destinación</td>
+              <td>A2-02-01-002 - Materiales y suministro - ataúdes</td>
+              <td>GOBIERNO</td>
+              <td>2025-02-20</td>
+              <td>2025-12-24</td>
+              <td><a href="https://drive.google.com/drive/folders/1zkdArkOumS9SiH-xGsx5GNIHZLmL5OW-?usp=drive_link"
+                  class="btn btn-primary btn-sm" target="_blank">Ver</a></td>
+            </tr>
+            <tr>
+              <td>21</td>
+              <td>23670-CD-PSP-021-2025</td>
+              <td>COORDINADOR MUNICIPAL PROGRAMAS DE TRANSFERENCIA OPS</td>
+              <td>JESUS ALBERTO SOTO</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $27.000.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de tres (4) meses por $18.000.000, adicionado un (2) mes por $4.500.000 c/u con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$4.500.000</td>
+              <td>3605 - Otros Sectores</td>
+              <td>C4503-1500-050-050 - Programas Red Unidos - Más Familias en Acción</td>
+              <td>GOBIERNO</td>
+              <td>2025-02-27</td>
+              <td>2025-08-27</td>
+              <td><a href="https://drive.google.com/drive/folders/1YuvIqfccizCuMv2A2B3cm1fjcaBmK99y?usp=drive_link"
+                  class="btn btn-primary btn-sm" target="_blank">Ver</a></td>
+            </tr>
+            <tr>
+              <td>22</td>
+              <td>23670-CD-PSP-0022-2025</td>
+              <td>COORDINADOR DE JUVENTUD OPS</td>
+              <td>LUIS FERNANDO ALEAN</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $15.000.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de tres (4) meses por $10.000.000, adicionado un (2) mes por $2.500.000 c/u con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$2.500.000</td>
+              <td>3605 - Otros Sectores</td>
+              <td>C4102-1500-046-045 - Protección integral a la juventud</td>
+              <td>GOBIERNO</td>
+              <td>2025-02-27</td>
+              <td>2025-08-27</td>
+              <td><a href="https://drive.google.com/drive/folders/1lSjRByfnxmYt-MM8wl2WX6vgKEeJgtbn?usp=drive_link"
+                  class="btn btn-primary btn-sm" target="_blank">Ver</a></td>
+            </tr>
+            <tr>
+              <td>24</td>
+              <td>23670-CD-PSP-024-2025</td>
+              <td>ASESORÍA JURÍDICA EN PROCESOS CONTRACTUALES OPS</td>
+              <td>DAVID ENRIQUE VARGAS</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $25.200.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de cuatro (4) meses por $16.800.000, adicionado un (2) mes por $4.200.000 c/u con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$4.200.000</td>
+              <td>1201 - SGP Propósito General - Libre destinación</td>
+              <td>A2-02-02-005 - Honorarios</td>
+              <td>GOBIERNO</td>
+              <td>2025-02-28</td>
+              <td>2025-08-28</td>
+              <td><a href="https://drive.google.com/drive/folders/15bOD5FogMV2vyFNrc7pgnoVclkNvbG7R?usp=drive_link"
+                  class="btn btn-primary btn-sm" target="_blank">Ver</a></td>
+            </tr>
+            <tr>
+              <td>30</td>
+              <td>23670-CD-PSP-030-2025</td>
+              <td>LÍDER PROGRAMA COLOMBIA MAYOR OPS</td>
+              <td>SARAY ROMERO</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $13.800.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de cuatro (4) meses por $9.200.000, adicionado un (2) meses c/u por $2.300.000 con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$2.300.000</td>
+              <td>4116 - Estampilla Adulto Mayor</td>
+              <td>C4104-1500-008-026 - Prestación de servicio integral adulto mayor</td>
+              <td>GOBIERNO</td>
+              <td>2025-03-03</td>
+              <td>2025-08-03</td>
+              <td><a href="https://drive.google.com/drive/folders/1BLjntK70S_nSGRR8i9s_AJwKZmwYEKeT?usp=drive_link"
+                  class="btn btn-primary btn-sm" target="_blank">Ver</a></td>
+            </tr>
+            <tr>
+              <td>31</td>
+              <td>23670-CD-AG-031-2025</td>
+              <td>GESTOR RENTA CIUDADANA POBLACIÓN INDÍGENA OPS</td>
+              <td>ANA CLAUDIA TORIBIO</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $15.000.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de cuatro (4) meses por $10.000.000, adicionado (2) meses por $2.500.000 c/u con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$2.500.000</td>
+              <td>3605 - SGP Otros Sectores</td>
+              <td>C4103-1500-050-050 - Programas diseñados para la superación de la pobreza extrema</td>
+              <td>GOBIERNO</td>
+              <td>2025-03-04</td>
+              <td>2025-09-04</td>
+              <td><a href="https://drive.google.com/drive/folders/1boZ1v9q0wtxesPtCj811NJx8biYqQkGG?usp=drive_link"
+                  class="btn btn-primary btn-sm" target="_blank">Ver</a></td>
+            </tr>
+            <tr>
+              <td>32</td>
+              <td>23670-CD-PSP-032-2025</td>
+              <td>COORDINADOR PROTECCIÓN INTEGRAL NIÑEZ OPS</td>
+              <td>SANDRA OROZCO</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $17.400.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de cuatro (4) meses por $11.600.000, adicionado un (2) meses por $2.900.000 C/u con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$2.900.000</td>
+              <td>3605 - SGP Otros Sectores</td>
+              <td>C4102-1500-046-044 - Contratación del servicio para protección integral a la niñez</td>
+              <td>GOBIERNO</td>
+              <td>2025-03-04</td>
+              <td>2025-09-04</td>
+              <td><a href="https://drive.google.com/drive/folders/11c1TEd90RVXOXEnrsmfSAj1RLPq9X7uu?usp=drive_link"
+                  class="btn btn-primary btn-sm" target="_blank">Ver</a></td>
+            </tr>
+            <tr>
+              <td>34</td>
+              <td>23670-CD-PSP-034-2025</td>
+              <td>ASESORÍA EN FORTALECIMIENTO INSTITUCIONAL Y APOYO AL PAF DE LA FISCALÍA OPS</td>
+              <td>LINA MARCELA ROQUEME</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $11.500.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de cuatro (4) meses por $9.200.000, adicionado un (1) mes por $2.300.000 con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$2.300.000</td>
+              <td>4103-Fondo de Seguridad Ciudadana</td>
+              <td> C4501-1000-004-024 - fondo de seguridad de las entidades territoriales</td>
+              <td>GOBIERNO</td>
+              <td>2025-03-04</td>
+              <td>2025-08-04</td>
+              <td><a href="https://drive.google.com/drive/folders/1O9X2iAwAxsyhaJXm9X68o2q880Q38IEd?usp=drive_link"
+                  class="btn btn-primary btn-sm" target="_blank">Ver</a></td>
+            </tr>
+            <tr>
+              <td>40</td>
+              <td>23670-CD-PSP-040-2025</td>
+              <td>ASESOR JURÍDICO EN LA SECRETARÍA DE GOBIERNO OPS</td>
+              <td>ITALO ANDRES GODIN GÁMEZ</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $22.500.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de cuatro (4) meses por $18.00.000, adicionado un (1) mes por $4.500.000 con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$4.500.000</td>
+              <td>3605 - SGP Otros Sectores</td>
+              <td>C4599-1000-019-005 - Fortalecimiento institucional procesos integrales</td>
+              <td>GOBIERNO</td>
+              <td>2025-03-05</td>
+              <td>2025-08-05</td>
+              <td><a href="https://drive.google.com/drive/folders/1rXd-SfLVqrTOr68e1YQJhrsPGsRPD9OZ?usp=drive_link"
+                  class="btn btn-primary btn-sm" target="_blank">Ver</a></td>
+            </tr>
+            <tr>
+              <td>42</td>
+              <td>23670-CD-AG-042-2025</td>
+              <td>APOYO A ARCHIVO MUNICIPAL OPS</td>
+              <td>LUZ NISPERUZA</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $10.500.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de cuatro (4) meses por $7.00.000, adicionado un (2) mes por $1.750.000 C/u con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$1.750.000</td>
+              <td>1101 - Recursos Propios</td>
+              <td>A2-02-02-004 - Servicios técnicos, personal indirectos</td>
+              <td>GOBIERNO</td>
+              <td>2025-03-07</td>
+              <td>2025-09-07</td>
+              <td><a href="https://drive.google.com/drive/folders/1H2XcMhjo5NTgtCSAjd3Vx0lWde8meorn?usp=drive_link"
+                  class="btn btn-primary btn-sm" target="_blank">Ver</a></td>
+            </tr>
+            <tr>
+              <td>43</td>
+              <td>23670-CD-PSP-043-2025</td>
+              <td>COORDINADOR ENLACE VICTIMAS OPS</td>
+              <td>WILMER ROMERO</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $18.000.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de cuatro (4) meses por $12.000.000, adicionado un (2) meses por $3.000.000 C/u con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$3.000.000</td>
+              <td>3605 - SGP Otros Sectores</td>
+              <td>C4101-1500-038-041 - Atención y apoyo a las víctimas</td>
+              <td>GOBIERNO</td>
+              <td>2025-03-07</td>
+              <td>2025-09-07</td>
+              <td><a href="https://drive.google.com/drive/folders/1n2JBGPUX4_IvSu6SD46I3fXoZUgyJuIx?usp=drive_link"
+                  class="btn btn-primary btn-sm" target="_blank">Ver</a></td>
+            </tr>
+            <tr>
+              <td>46</td>
+              <td>23670-CD-PSP-046-2025</td>
+              <td>COORDINADOR PROGRAMA DISCAPACIDAD OPS</td>
+              <td>JOHANA RIVERO</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $17.100.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de cuatro (4) meses por $11.380.000, adicionado un (2) mes por $2.845.000 C/u con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$2.845.000</td>
+              <td>3605 - SGP Otros Sectores</td>
+              <td>C4104-1500-020-056 - Programas de discapacidad</td>
+              <td>GOBIERNO</td>
+              <td>2025-03-07</td>
+              <td>2025-09-07</td>
+              <td><a href="https://drive.google.com/drive/folders/1IM79cqnZ13w032bcuEJCxJZ-tV65MhuQ?usp=drive_link"
+                  class="btn btn-primary btn-sm" target="_blank">Ver</a></td>
+            </tr>
+            <tr>
+              <td>50</td>
+              <td>23670-CD-PSP-050-2025</td>
+              <td>ABOGADO PARA ACOMPAÑAR VICTIMAS DE VIOLENCIA EN SAN ANDRÉS DE SOTAVENTO OPS</td>
+              <td>RODRIGO RODRIGUEZ MORELO</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $12.500.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de cuatro (4) meses por $10.000.000, adicionado un (1) mes por $2.500.000 con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$2.500.000</td>
+              <td>3605-SGP Otros Sectores vigencia actual</td>
+              <td>C4101-1500-038-038 - atención y apoyo a las víctimas-reparación integral</td>
+              <td>GOBIERNO</td>
+              <td>2025-03-13</td>
+              <td>2025-08-13</td>
+              <td><a href="https://drive.google.com/drive/folders/1Pc1rD3XXtq1Bo8TsGeMuw3WCw9PVosL9?usp=drive_link"
+                  class="btn btn-primary btn-sm" target="_blank">Ver</a></td>
+            </tr>
+            <tr>
+              <td>51</td>
+              <td>23670-MINC-CV-051-2025</td>
+              <td>ADQUISICIÓN DE ELEMENTOS DE ASEO Y CAFETERÍA PARA DEPENDENCIAS DE LA ALCALDÍA</td>
+              <td>ROBERTO VERGARA/ITIS DE COLOMBIA</td>
+              <td>MINIMA</td>
+              <td>$37.990.500</td>
+              <td></td>
+              <td>1101-Recursos Propios - Libre destinación</td>
+              <td>A2-02-01-003 - materiales y suministros</td>
+              <td>GOBIERNO</td>
+              <td>2025-03-14</td>
+              <td>2025-07-14</td>
+              <td><a href="https://drive.google.com/drive/folders/1M2pCyJM2eluWy5FRDqUdeo6Gmpfbfi-N?usp=drive_link"
+                  class="btn btn-primary btn-sm" target="_blank">Ver</a></td>
+            </tr>
+            <tr>
+              <td>52</td>
+              <td>23670-CD-PSP-052-2025</td>
+              <td>PRESTACIÓN DE SERVICIOS COMO COORDINADOR PARA ACOMPAÑAMIENTO A LA POBLACIÓN AFRODESCENDIENTE OPS</td>
+              <td>SANDY PAOLA URANGO</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $15.000.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de cuatro (4) meses por $10.000.000, adicionado (2) meses por $2.500.000 C/U con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$2.500.000</td>
+              <td>3605-SGP Otros Sectores vigencia actual</td>
+              <td>C4103-1500-004-049 - atención y apoyo a los grupos afrocolombianos</td>
+              <td>GOBIERNO</td>
+              <td>2025-03-18</td>
+              <td>2025-09-18</td>
+              <td><a href="https://drive.google.com/drive/folders/1SpMveVu79VxDp9kCvMWTS5Eh6MS57FfP?usp=drive_link"
+                  class="btn btn-primary btn-sm" target="_blank">Ver</a></td>
+            </tr>
+            <tr>
+              <td>53</td>
+              <td>23670-CD-AG-053-2025</td>
+              <td>PRESTACIÓN DE SERVICIOS EN EL PROGRAMA DE FORTALECIMIENTO DE LA PROTECCIÓN INTEGRAL DE LA NIÑEZ Y
+                ADOLESCENCIA OPS
+              </td>
+              <td>YARLEDIS DIAZ</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $9.500.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de cuatro (4) meses por $7.600.000, adicionado (2) meses por $1.900.000 C/U con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$1.900.000</td>
+              <td>3605-SGP Otros Sectores vigencia actual</td>
+              <td>C4102-1500-046-044 - contratación del servicio para una adecuada protección integral a la niñez</td>
+              <td>GOBIERNO</td>
+              <td>2025-03-18</td>
+              <td>2025-09-18</td>
+              <td><a href="https://drive.google.com/drive/folders/1F124juezGq3RRgsvbFYtpSsZNqCYD38_?usp=drive_link"
+                  class="btn btn-primary btn-sm" target="_blank">Ver</a></td>
+            </tr>
+            <tr>
+              <td>57</td>
+              <td>23670-CD-PSP-057-2025</td>
+              <td>PRESTACIÓN DE SERVICIOS COMO GESTOR OPERATIVO PROGRAMA TRANSFERENCIAS MONETARIAS OPS</td>
+              <td>ROBERTO CARLOS BERROCAL</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $14.400.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de cuatro (4) meses por $9.600.000, adicionado (2) mes por $2.400.000 C/U con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$2.400.000</td>
+              <td>4116-Estampilla Adulto Mayor</td>
+              <td>C4104-1500-008-026 - servicio integral adulto mayor</td>
+              <td>GOBIERNO</td>
+              <td>2025-03-26</td>
+              <td>2025-09-26</td>
+              <td><a href="https://drive.google.com/drive/folders/1JOpDklQ2MLx1CXqiwAHbFxVp-tJ5cumz?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>59</td>
+              <td>23670-CD-PSP-059-2025</td>
+              <td>PRESTACIÓN DE SERVICIOS COMO COORDINADORA PROGRAMA MUJER Y EQUIDAD DE GÉNERO OPS</td>
+              <td>ERIKA PAOLA JURIS NEGRETE</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $15.000.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de tres (4) meses por $12.000.000, adicionado un (1) mes por $3.000.000 con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$3.000.000</td>
+              <td>3605-SGP Otros Sectores</td>
+              <td>C4599-1000-019-005 - fortalecimiento institucional</td>
+              <td>GOBIERNO</td>
+              <td>2025-03-31</td>
+              <td>2025-08-31</td>
+              <td><a href="https://drive.google.com/drive/folders/1nyXiptG4IYOH2WU8yQ0B1e4W2qhKA5YQ?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>61</td>
+              <td>23670-CD-PSP-061-2025</td>
+              <td>PRESTACIÓN DE SERVICIOS COMO GESTOR OPERATIVO PROGRAMA TRANSFERENCIAS MONETARIAS OPS</td>
+              <td>LYS LEIDY RAMOS MORENO</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $14.400.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de cuatro (4) meses por $9.600.000, adicionado (2) meses por $2.400.000 C/U con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$2.400.000</td>
+              <td>4116-Estampilla Adulto Mayor</td>
+              <td>C4104-1500-008-026 - servicio integral adulto mayor</td>
+              <td>GOBIERNO</td>
+              <td>2025-03-31</td>
+              <td>2025-09-31</td>
+              <td><a href="https://drive.google.com/drive/folders/1t53tVFX89dW-xDIj1SlUo7799heEIqN2?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>62</td>
+              <td>23670-CD-PSP-062-2025</td>
+              <td>ACTIVIDADES LÚDICO-RECREATIVAS RUTA 25 CARNAVALES DEL JUEGO POR LA NIÑEZ – BRUJULA 2025</td>
+              <td>ASOPROFESIONALES - R/L INGRIS NARVÁEZ</td>
+              <td>DIRECTA</td>
+              <td>$100.118.000</td>
+              <td></td>
+              <td>3605-SGP Otros Sectores</td>
+              <td>C4102-1500-001-043 - protección integral a la primera infancia</td>
+              <td>GOBIERNO</td>
+              <td>2025-03-31</td>
+              <td>2025-04-31</td>
+              <td><a href="https://drive.google.com/drive/folders/1V8ch0VbiW7SQZlw7zxG0e0udrMplsoXj?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>63</td>
+              <td>23670-CD-AG-063-2025</td>
+              <td>APOYO EN EL PROGRAMA DE FORTALECIMIENTO DE LA PROTECCIÓN INTEGRAL DE LA NIÑEZ Y ADOLESCENCIA OPS</td>
+              <td>ANGUELINA PERDOMO ESTRADA</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $10.800.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de cuatro (4) meses por $7.200.000, adicionado (2) mesese por $1.800.000 C/U con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$1.800.000</td>
+              <td>3605-SGP Otros Sectores</td>
+              <td>C4102-1500-001-043 - protección integral a la primera infancia</td>
+              <td>GOBIERNO</td>
+              <td>2025-03-31</td>
+              <td>2025-09-31</td>
+              <td><a href="https://drive.google.com/drive/folders/1o_coWJC0Dz6i3DYuw5hxwUYoX_Fo2eO8?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>65</td>
+              <td>23670-MINC-SUM-065-2025</td>
+              <td>SUMINISTRO DE COMBUSTIBLE PARA VEHÍCULOS DE LA POLICÍA Y APOYO MUNICIPAL</td>
+              <td>TRANS AGRO S.A R/L JAIME ALBERTO BUSTAMANTE HERNÁNDEZ</td>
+              <td>MINIMA</td>
+              <td>$30.000.000</td>
+              <td></td>
+              <td>4103-Fondo de Seguridad Ciudadana</td>
+              <td>C4501-1000-004-024 - fondo de seguridad de las entidades territoriales</td>
+              <td>GOBIERNO</td>
+              <td>2025-04-01</td>
+              <td>2025-08-01</td>
+              <td><a href="https://drive.google.com/drive/folders/1_nOQ5RU3PYPWO1muRe3MZooPoohuyplp?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>67</td>
+              <td>23670-CD-AG-067-2025</td>
+              <td>APOYO A LA SECRETARÍA DE GOBIERNO EN EL PROGRAMA DE MUJER Y GÉNERO OPS</td>
+              <td>JOHANA PAOLA SIERRA RODRÍGUEZ</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $9.250.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de cuatro (4) meses por $7.400.000, adicionado un (1) mes por $1.850.000 con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$1.850.000</td>
+              <td>3605-SGP Otros Sectores vigencia actual</td>
+              <td>C4103-1600-050-051 - atención a madres/padres cabeza de hogar</td>
+              <td>GOBIERNO</td>
+              <td>2025-04-01</td>
+              <td>2025-09-01</td>
+              <td><a href="https://drive.google.com/drive/folders/1ShRV1rUlSYjVVOg9FHNJwQ-QaA1gGVUY?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>68</td>
+              <td>23670-CD-PSP-068-2025</td>
+              <td>ACOMPAÑAMIENTO JURÍDICO A LA SECRETARÍA DE GOBIERNO PARA APOYO AL PAF OPS</td>
+              <td>ELDA DE JESÚS SANTODOMINGO AVILEZ</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $12.500.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de cuatro (4) meses por $10.000.000, adicionado un (1) mes por $2.500.000 con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$2.500.000</td>
+              <td>1101-Recursos Propios - Libre destinación</td>
+              <td>A2-02-02-002 - honorarios</td>
+              <td>GOBIERNO</td>
+              <td>2025-04-01</td>
+              <td>2025-10-01</td>
+              <td><a href="https://drive.google.com/drive/folders/1a2R1vyAwwEoIIR22TZo0zxmPvwcxBo1o?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>71</td>
+              <td>23670-CD-AG-071-2025</td>
+              <td>GESTOR OPERATIVO DEL PROGRAMA DE TRANSFERENCIAS MONETARIAS OPS</td>
+              <td>LILIBETH URANGO LÓPEZ</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $11.000.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de cuatro (4) meses por $8.800.000, adicionado un (1) mes por $2.200.000 con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$2.200.000</td>
+              <td>4116-Estampilla Aduito Mayor</td>
+              <td> C4104-1500-008-026 - prestacion de servicio integral adulto mayor</td>
+              <td>GOBIERNO</td>
+              <td>2025-04-02</td>
+              <td>2025-10-02</td>
+              <td><a href="https://drive.google.com/drive/folders/108yZuHT3j5o2ufz73IR5r_il5OBybZfL?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>73</td>
+              <td>23670-CD-AG-073-2025</td>
+              <td>GESTOR OPERATIVO DEL PROGRAMA DE TRANSFERENCIAS MONETARIAS OPS</td>
+              <td>MARCO ANTONIO MEJÍA</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $11.500.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de cuatro (4) meses por $9.200.000, adicionado un (1) mes por $2.300.000 con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$2.300.000</td>
+              <td>4116-Estampilla Adulto Mayor</td>
+              <td>C4104-1500-008-026 - prestación de servicio integral adulto mayor</td>
+              <td>GOBIERNO</td>
+              <td>2025-04-02</td>
+              <td>2025-09-02</td>
+              <td><a href="https://drive.google.com/drive/folders/1fqVkMfA2oauDbIjmHyBWDX4fcu2KCRYj?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>74</td>
+              <td>23670-CD-AG-074-2025</td>
+              <td>APOYO EN ACTIVIDADES DE JUVENTUD OPS</td>
+              <td>JOSE FERNANDO MORALES</td>
+              <td>DIRECTA</td>
+              <td>$8.800.000</td>
+              <td>$2.200.000</td>
+              <td>3605-SGP Otros Sectores vigencia actual</td>
+              <td>C4102-1500-046-045 - programas de proteccion integrai a la juventud</td>
+              <td>GOBIERNO</td>
+              <td>2025-04-02</td>
+              <td>2025-08-02</td>
+              <td><a href="https://drive.google.com/drive/folders/1JgPGuo4gnK5k2pce8teVOYwnxQwRySRV?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>75</td>
+              <td>23670-CD-AG-075-2025</td>
+              <td>APOYO A LA REGISTRADURÍA DEL MUNICIPIO OPS</td>
+              <td>DEIMER DARÍO QUINTANA CARRIAZO</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $11.000.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de cuatro (4) meses por $8.800.000, adicionado un (1) mes por $2.200.000 con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$2.200.000</td>
+              <td>1201-SGP Proposito general - Libre destinación vigencia actual</td>
+              <td>A2-02-02-006 - servicios técnicos personal indirectos</td>
+              <td>GOBIERNO</td>
+              <td>2025-04-02</td>
+              <td>2025-09-02</td>
+              <td><a href="https://drive.google.com/drive/folders/1lQa9WCV57fOmqX5EdxeFkyP1W_Ws1GHO?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>79</td>
+              <td>23670-CD-PSP-079-2025</td>
+              <td>PROMOTOR SOCIAL Y COMUNITARIO OPS</td>
+              <td>GABRIELA ISABEL PÉREZ URANGO</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $12.000.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial por $9.400.000, se adicionó un (1) mes por $2.400.000, El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$2.400.000</td>
+              <td>4116-Estampilla Aduito Mayor</td>
+              <td>C4104-1500-4104008-026 - prestacion de servicio integral adulto mayor</td>
+              <td>GOBIERNO</td>
+              <td>2025-04-03</td>
+              <td>2025-09-03</td>
+              <td><a href="https://drive.google.com/drive/folders/17itMRxUKtfZRYj-QMf9jz6xJzzRc8xcG?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>81</td>
+              <td>23670-CD-AG-081-2025</td>
+              <td>GESTOR OPERATIVO DE TRANSFERENCIAS MONETARIAS OPS</td>
+              <td>AMPARO DE JESÚS CARMONA</td>
+              <td>DIRECTA</td>
+              <td>$6.000.000</td>
+              <td>$1.500.000</td>
+              <td>4116-Estampilla Adulto Mayor</td>
+              <td>C4104-1500-008-026 - prestacion de servicio integral adulto mayor</td>
+              <td>GOBIERNO</td>
+              <td>2025-04-03</td>
+              <td>2025-08-03</td>
+              <td><a href="https://drive.google.com/drive/folders/1eahZUm0wqo5fTS_FV4RZgXrf4oiapGc1?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>84</td>
+              <td>23670-CD-AG-084-2025</td>
+              <td>APOYO EN EL PROGRAMA DE DISCAPACIDAD EN GOBIERNO OPS</td>
+              <td>RAFAEL ESCOBAR BRAVO</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $9.900.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de tres (4) meses por $6.600.000, adicionado DOS (2) meses por $1.650.000 con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$1.650.000</td>
+              <td>3605-SGP Otros Sectores vigencia actual</td>
+              <td>C4104-1500-020-056 - programas de discapacidad</td>
+              <td>GOBIERNO</td>
+              <td>2025-04-03</td>
+              <td>2025-10-03</td>
+              <td><a href="https://drive.google.com/drive/folders/1rHTRxQZhTX7o8TB9fg1Z6alixwwBLhf_?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>86</td>
+              <td>23670-CD-AG-086-2025</td>
+              <td>APOYO A LA GESTIÓN DEL PROGRAMA TRANSFERENCIAS MONETARIAS EN GOBIERNO OPS</td>
+              <td>MONICA DEL CARMEN ROMERO ESTRADA</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $9.500.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de cuatro (4) meses por $7.600.000, adicionado un (1) mes por $1.900.000 con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$1.900.000</td>
+              <td>4116-Estampilla Adulto Mayor</td>
+              <td>C4104-1500-008-026 - prestacion de servicio întegral adulto mayor</td>
+              <td>GOBIERNO</td>
+              <td>2025-04-08</td>
+              <td>2025-09-08</td>
+              <td><a href="https://drive.google.com/drive/folders/1thQjeQ_Q5wdnoJsBM2LVZNKJm5yKjbi3?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>87</td>
+              <td>23670-CD-PSP-087-2025</td>
+              <td>GESTOR OPERATIVO DEL PROGRAMA DE TRANSFERENCIAS MONETARIAS EN GOBIERNO OPS</td>
+              <td>OSCAR EDUARDO CASTILLO ESTRADA</td>
+              <td>DIRECTA</td>
+              <td>$9.200.000</td>
+              <td>$2.300.000</td>
+              <td>4116-Estampilla Adulto Mayor</td>
+              <td>C4104-1500-008-026 - prestacion de servicio integral adulto mayor</td>
+              <td>GOBIERNO</td>
+              <td>2025-03-31</td>
+              <td>2025-07-31</td>
+              <td><a href="https://drive.google.com/drive/folders/14LTKabajVqFccDh-Ucsqx1osh5yxHVwy?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>91</td>
+              <td>23670-CD-AG-091-2025</td>
+              <td>GESTOR OPERATIVO DEL PROGRAMA TRANSFERENCIAS MONETARIAS OPS</td>
+              <td>CLARA YEPEZ AYALA</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $9.500.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de cuatro (4) meses por $7.600.000, adicionado un (1) mes por $1.900.000 con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$1.900.000</td>
+              <td>4116-Estampilla Adulto Mayor</td>
+              <td>C4104-1500-008-026 - prestacion de servicio integral adulto mayor</td>
+              <td>GOBIERNO</td>
+              <td>2025-04-09</td>
+              <td>2025-09-09</td>
+              <td><a href="https://drive.google.com/drive/folders/1YrXvIL_RGcmm0QiZOB9GKJ-0bsvXeZW4?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>93</td>
+              <td>23670-CD-PSP-093-2025</td>
+              <td>ASESOR JURÍDICO DE PROGRAMAS SOCIALES ABOGADO OPS</td>
+              <td>MARIA EUGENIA MORENO</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $15.000.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de cuatro (4) meses por $12.000.000, adicionado un (1) mes por $3.000.000 con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$3.000.000</td>
+              <td>4116-Estampilla Adulto Mayor</td>
+              <td>C4104-1500-008-026 - prestacion de servicio integral adulto mayor</td>
+              <td>GOBIERNO</td>
+              <td>2025-04-09</td>
+              <td>2025-09-09</td>
+              <td><a href="https://drive.google.com/drive/folders/1ul7OQr-BwJawX-pzw3ljep_o4V7ucBv5?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>94</td>
+              <td>23670-CD-PSP-094-2025</td>
+              <td>GESTOR OPERATIVO DEL PROGRAMA TRANSFERENCIAS MONETARIAS OPS</td>
+              <td>YEIDI ROYETH</td>
+              <td>DIRECTA</td>
+              <td>$9.200.000</td>
+              <td>$2.300.000</td>
+              <td>4116-Estampilla Adulto Mayor</td>
+              <td>C4104-1500-008-026 - prestacion de servicio integral adulto mayor</td>
+              <td>GOBIERNO</td>
+              <td>2025-04-11</td>
+              <td>2025-08-11</td>
+              <td><a href="https://drive.google.com/drive/folders/1tD7QTuiKyQ2zGHALR5jwtH2GqvUxDcw_?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>95</td>
+              <td>23670-CD-AG-095-2025</td>
+              <td>APOYO PARA ACOMPAÑAMIENTO ATENCION INTEGRAL A LA POBLACION VICTIMA OPS</td>
+              <td>YARLEY CAROLINA MENDEZ FLOREZ</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $11.400.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de cuatro (4) meses por $7.600.000.000, adicionado (2) meses por $3.800.000 con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$1.900.000</td>
+              <td>3605-SGP Otros sectores vigencia actual</td>
+              <td>C4101-1500-038-038 - atención y apoyo a las victimas-reparación integral</td>
+              <td>GOBIERNO</td>
+              <td>2025-04-14</td>
+              <td>2025-10-13</td>
+              <td><a href="https://drive.google.com/drive/folders/1I645krZvpRcgPAYuup3BeLJG9lRL9J-f?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>96</td>
+              <td>23670-CD-PSP-096-2025</td>
+              <td>PROFESIONAL PARA ACOMPAÑAR A LA SECRETARIA DE GOBIERNO EN EL PROGRAMA DE MUJER Y GENERO OPS</td>
+              <td>BERNARDA DEL SOCORRO GUERRA</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $13.250.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de (3 meses y 19 días) por $10.400.000, adicionado un (1) mes por $2.850.000 con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$2.850.000</td>
+              <td>3605-SGP Otros Sectores vigencia actual</td>
+              <td>C4103-1500-050-051 - atención y apoyo a madres/padres cabeza de hogar</td>
+              <td>GOBIERNO</td>
+              <td>2025-04-22</td>
+              <td>2025-09-09</td>
+              <td><a href="https://drive.google.com/drive/folders/15rYlDHN1Vt4F3tHRYVct8WdaowBmXpzM?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>97</td>
+              <td>23670-CD-PSP-097-2025</td>
+              <td>LIQUIDACIONES DE PRESTACIONES ECONOMICAS, LABORALES, PENSIONALES Y DE SERGURIDAD SOCIAL OPS</td>
+              <td>MILENA HERNANDEZ CARE</td>
+              <td>DIRECTA</td>
+              <td>$20.000.000</td>
+              <td>$4.000.000</td>
+              <td>1201-SGP Proposito general - Libre destinación vigencia actual</td>
+              <td>A2-02-02-005 - honorarios</td>
+              <td>GOBIERNO</td>
+              <td>2025-04-22</td>
+              <td>2025-09-21</td>
+              <td><a href="https://drive.google.com/drive/folders/1s4NTJlr31pc7_TxDD_szlexWhEoaz3K6?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>99</td>
+              <td>23670-LP-PS-099-2025</td>
+              <td>ASISTENCIA Y ATENCIÓN DEL ADULTO MAYOR</td>
+              <td>FUNDACIÓN NUEVA ILUSIÓN R/L MAXIMA EMILIA TALAIGUA</td>
+              <td>LICITACIÓN</td>
+              <td>$1.000.000.000</td>
+              <td>$125.000.000</td>
+              <td>4116-Estampilla Adulto Mayor</td>
+              <td>C4104-1500-008-059 - prestacion de servicio integral adulto mayor</td>
+              <td>GOBIERNO</td>
+              <td>2025-04-24</td>
+              <td>2025-12-20</td>
+              <td><a href="https://drive.google.com/drive/folders/1ADAd9Ul0d45NUnGKHjW2lxJKmT4mwjzO?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>100</td>
+              <td>23670-CD-PSP-100-2025</td>
+              <td>GESTION DE SALUD Y SEGURIDAD EN EL TRABAJO OPS</td>
+              <td>WILL SEGUNDO OSPINO</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $16.750.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de cuatro (4) meses por $13.400.000, adicionado un (1) mes por $3.350.000 con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$3.350.000</td>
+              <td>1101-Recursos Propios - Libre Destinación</td>
+              <td>C4599-1000-023-004 - fortalecimiento institucional</td>
+              <td>GOBIERNO</td>
+              <td>2025-04-28</td>
+              <td>2025-09-27</td>
+              <td><a href="https://drive.google.com/drive/folders/1MYROzCSY2LDA70jIG0PXJ6VrWv6bvy1e?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>103</td>
+              <td>23670-CD-AG-103-2025</td>
+              <td>APOYO A LA GESTION PARA EL ACOMPAÑAMIENTO COMUNITARIO DE LA POBLACIÓN AFRODESCENDIENTE OPS</td>
+              <td>ALEXANDER CARABALLO DUMET</td>
+              <td>DIRECTA</td>
+              <td>$8.740.000</td>
+              <td>$1.900.000</td>
+              <td>3605-SGP Otros Sectores vigencia actual</td>
+              <td>C4103-1500-004-049 - atención y apoyo a los grupos afrocolombianos</td>
+              <td>GOBIERNO</td>
+              <td>2025-04-29</td>
+              <td>2025-08-28</td>
+              <td><a href="https://drive.google.com/drive/folders/1UaIA5Nkun9b6vkOy8umBvLw_2v41L8Wg?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>106</td>
+              <td>23670-CD-AG-106-2025</td>
+              <td>APOYO AL SISTEMA DE GESTION DE LA SEGURIDAD Y LA SALUD EN EL TRABAJO OPS</td>
+              <td>ALVARO SIMON PERTUZ</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $9.000.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de cuatro (4) meses por $7.200.000, adicionado un (1) mes por $1.800.000 con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$1.800.000</td>
+              <td>1101-Recursos Propios - Libre destinación</td>
+              <td>C4599-1000-023-004 - fortalecimiento institucional</td>
+              <td>GOBIERNO</td>
+              <td>2025-04-30</td>
+              <td>2025-09-29</td>
+              <td><a href="https://drive.google.com/drive/folders/1c2ta016CPMt62Tutq6wRmWIJxFioM2Ot?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>112</td>
+              <td>23670-CD-PSP-112-2025</td>
+              <td>REPRESENTACIÓN JURÍDICA EN PROCESOS JUDICIALES Y ADMINISTRATIVOS OPS</td>
+              <td>ALBERT ANTONIO BETTIN PERTUZ</td>
+              <td>DIRECTA</td>
+              <td>$18.000.000</td>
+              <td>$4.500.000</td>
+              <td>1201-SGP Propósito General - Libre destinación vigencia actual</td>
+              <td>C4599-1000-023-003 - Fortalecimiento</td>
+              <td>GOBIERNO</td>
+              <td>2025-05-09</td>
+              <td>2025-09-09</td>
+              <td><a href="https://drive.google.com/drive/folders/1attNI1Q7SQEGsI-pcRBTQodyVCOAH96n?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>113</td>
+              <td>23670-CD-AG-113-2025</td>
+              <td>APOYO ADMINISTRATIVO AL DESPACHO DEL ALCALDE OPS</td>
+              <td>SUHEY MILENA COVO GOMEZ</td>
+              <td>DIRECTA</td>
+              <td>$8.600.000</td>
+              <td>$2.150.000</td>
+              <td>1201-SGP Propósito General - Libre destinación</td>
+              <td>A2-02-02-006 - Servicios técnicos personal indirecto</td>
+              <td>GOBIERNO</td>
+              <td>2025-05-12</td>
+              <td>2025-09-12</td>
+              <td><a href="https://drive.google.com/drive/folders/1PD8AFp2GdNelCaUrbqqsCfd0nASFQFyK?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>114</td>
+              <td>23670-MINC-CV-114-2025</td>
+              <td>ADQUISICION DE PAPELERIA Y ELEMENTOS DE OFICINA</td>
+              <td>SERVIDATOS SM/ MIGUEL ANGEL PEREZ</td>
+              <td>MINIMA</td>
+              <td>$39.857.000</td>
+              <td>$2.150.000</td>
+              <td>1201-SGP Propósito General - Libre destinación</td>
+              <td>A2-02-01-001 - Servicios técnicos personal indirecto</td>
+              <td>GOBIERNO</td>
+              <td>2025-05-13</td>
+              <td>2025-05-18</td>
+              <td><a href="https://drive.google.com/drive/folders/1PS2UF_qO_mVKn4BiNq_AYqyfdycVcgAf?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>115</td>
+              <td>23670-CD-PSP-115-2025</td>
+              <td>ASESORIA JURÍDICA ESPECIALIZADA EN LOS PROCESOS CONTRACTUALES OPS</td>
+              <td>LEYLA OROZCO MEDINA</td>
+              <td>DIRECTA</td>
+              <td>$25.200.000</td>
+              <td>$6.300.000</td>
+              <td>1201-SGP Propósito General - Libre destinación</td>
+              <td>C4599-1000-023-003 - fortalecimiento institucional</td>
+              <td>GOBIERNO</td>
+              <td>2025-05-14</td>
+              <td>2025-09-14</td>
+              <td><a href="https://drive.google.com/drive/folders/1BEhsYNXKkk8_pgjzkZRA8GxuHRWVwtI_?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>116</td>
+              <td>23670-CD-PSP-116-2025</td>
+              <td>MANEJO DEL BANCO DE PROYECTOS OPS</td>
+              <td>JUAN MANUEL URANGO</td>
+              <td>DIRECTA</td>
+              <td>$14.600.000</td>
+              <td>$3.650.000</td>
+              <td>1201-SGP Propósito General - Libre destinación</td>
+              <td>A2-02-01-001 - Servicios técnicos personal indirecto</td>
+              <td>GOBIERNO</td>
+              <td>2025-05-13</td>
+              <td>2025-09-13</td>
+              <td><a href="https://drive.google.com/drive/folders/1TBKTcEV9-PsDGiAYOUUc2kKbz65IXb14?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>118</td>
+              <td>23670-CD-AG-118-2025</td>
+              <td>APOYO DEL PROGRAMA DE JUVENTUD OPS</td>
+              <td>LINDA DAYANA CHIMA</td>
+              <td>DIRECTA</td>
+              <td>$7.200.000</td>
+              <td>$1.800.000</td>
+              <td>3605-SGP Otros Sectores vigencia actual</td>
+              <td>C4102-1500-046-045 - programas de proteccion integral a la juventud</td>
+              <td>GOBIERNO</td>
+              <td>2025-05-23</td>
+              <td>2025-09-23</td>
+              <td><a href="https://drive.google.com/drive/folders/1ESZd4fzyl6O-kk4iQwmehg5Z04MR4XGd?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>121</td>
+              <td>23670-CD-PSP-121-2025</td>
+              <td>GESTION DE TECNOLOGIAS DE LA INFORMACION Y COMUNICACIÓNES OPS</td>
+              <td>NADIN CONTRERAS</td>
+              <td>DIRECTA</td>
+              <td>$10.600.000</td>
+              <td>$2.650.000</td>
+              <td>1201-SGP Propósito General - Libre destinación</td>
+              <td>C4599-1000-023-003 - fortalecimiento institucional</td>
+              <td>GOBIERNO</td>
+              <td>2025-05-28</td>
+              <td>2025-09-28</td>
+              <td><a href="https://drive.google.com/drive/folders/130kuKJMyFoigzjUgUmv8LKypXGshhfSK?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>122</td>
+              <td>23670-CD-PSP-122-2025</td>
+              <td>ACOMPAÑAMIENTO Y APOYO A LOS PROCESOS DE FERIA EMPRENDIMIENTO DE LA POBLACION MUJER</td>
+              <td>FUNDACION PROGRESO GESTION Y VIDA (PROGESVIDA) R/L SAMUEL ESTEBAN RAMOS PADILLA </td>
+              <td>DIRECTA</td>
+              <td>$50.000.000</td>
+              <td>$</td>
+              <td>3605-SGP Otros Sectores vigencia actual</td>
+              <td>C4102-1500-046-047 - proyectos de inversión destinados a la atención y apoyo a la mujer</td>
+              <td>GOBIERNO</td>
+              <td>2025-05-29</td>
+              <td>2025-06-29</td>
+              <td><a href="https://drive.google.com/drive/folders/1Nurw7YjnnaIgAmHBNJK2VT2dvI42hDfQ?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>123</td>
+              <td>23670-SASI-CV-123-2025</td>
+              <td>COMPONENTE LOGISTICO PARA EL BIENESTAR Y CONDICIONES LABORALES DIGNAS DE LOS FUNCIONARIOS DE LA
+                POLICIA </td>
+              <td>YOHANA ALMANZA BRUN identificado con cédula de ciudadanía Nº 30.574.895 propietaria del
+                establecimiento de comercio: COMERCIALIZADORA LD</td>
+              <td>SASI</td>
+              <td>$50.000.000</td>
+              <td>$12.500.000</td>
+              <td>9103-Superavit Fiscal - Fondo Seguridad Ciudadana</td>
+              <td>C4501-1000-004-058 - fondo de seguridad de las entidades territoriales</td>
+              <td>GOBIERNO</td>
+              <td>2025-05-29</td>
+              <td>2025-06-13</td>
+              <td><a href="https://drive.google.com/drive/folders/1PTM-B_O3_aeYohjwdURevoTXzmYWvP26?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>124</td>
+              <td>23670-MINC-PS-124-2025</td>
+              <td>MANTENIMIENTO DEL PARQUE AUTOMOTOR DE LA POLICIA NACIONAL</td>
+              <td>ANIBAL AVILES / TALLER AANES</td>
+              <td>MINIMA</td>
+              <td>$38.992.050</td>
+              <td>$9.748.013</td>
+              <td>4103-Fondo de Seguridad Ciudadana</td>
+              <td>C4501-1000-004-024 - fondo de seguridad de las entidades territoriales</td>
+              <td>GOBIERNO</td>
+              <td>2025-MES-DIA</td>
+              <td>2025-MES-DIA</td>
+              <td><a href="https://drive.google.com/drive/folders/1-nrk3z6QJB_pFA5daibXfQGdNC21LMJS?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>128</td>
+              <td>23670-CD-PSP-128-2025</td>
+              <td>ASESORIA JURIDICA EN LOS PROCESOS CONTRACTUALES OPS</td>
+              <td>JORGE ALFREDO GARCIA</td>
+              <td>DIRECTA</td>
+              <td>$17.280.000</td>
+              <td>$4.320.000</td>
+              <td>1201-SGP Propósito General - Libre destinación</td>
+              <td>C4599-1000-023-003 - Fortalecimiento institucional</td>
+              <td>GOBIERNO</td>
+              <td>2025-06-04</td>
+              <td>2025-10-04</td>
+              <td><a href="https://drive.google.com/drive/folders/19kQ7O4VFE_5GRQTZ2xrT0_ZAHE8eKc4P?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>129</td>
+              <td>23670-CD-PSP-129-2025</td>
+              <td>MANEJO DEL SISTEMA SECOP OPS</td>
+              <td>LUIS ANTONIO PINEDA </td>
+              <td>DIRECTA</td>
+              <td>$14.600.000</td>
+              <td>$$3.650.000</td>
+              <td>1101-Recursos Propios - Libre destinación </td>
+              <td>C4599-1000-023-004 - Fortalecimiento institucional </td>
+              <td>GOBIERNO</td>
+              <td>2025-06-04</td>
+              <td>2025-10-04</td>
+              <td><a href="https://drive.google.com/drive/folders/1Fj9J0tCN18-N4z6yVbUMIHJbsZxJ-RrC?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>134</td>
+              <td>23670-CD-PSP-134-2025</td>
+              <td>GESTOR OPERATIVO DEL PROGRAMA TRANSFERENCIAS MONETARIAS DEL MUNICIPIO</td>
+              <td>LUNA FLOR MORENO MERCADO</td>
+              <td>DIRECTA</td>
+              <td>$11.200.000</td>
+              <td>$2.800.000</td>
+              <td>4116-Estampilla Adulto Mayor</td>
+              <td>A3-05-04-16-003 - participación en estampillas - adulto mayor</td>
+              <td>GOBIERNO</td>
+              <td>2025-06-12</td>
+              <td>2025-10-12</td>
+              <td><a href="https://drive.google.com/drive/folders/1_ArOG6IyuqlxNiEr3LqT9RacT8mDTBzn?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>139</td>
+              <td>23670-CD-AG-139-2025</td>
+              <td>APOYO A LA GESTION PARA ACOMPAÑAR A LA SECRETARIA DE GOBIERNO EN EL PROGRAMA DE DISCAPACIDAD OPS</td>
+              <td>GILMA LORENA ATEHORTUA VALENCIA</td>
+              <td>DIRECTA</td>
+              <td>$9.200.000</td>
+              <td>$2.300.000</td>
+              <td>3605-SGP Otros Sectores vigencia actual</td>
+              <td>C4104-1500-020-056 - programas de discapacidad</td>
+              <td>GOBIERNO</td>
+              <td>2025-06-12</td>
+              <td>2025-10-12</td>
+              <td><a href="https://drive.google.com/drive/folders/1_ArOG6IyuqlxNiEr3LqT9RacT8mDTBzn?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>144</td>
+              <td>23670-CD-PSP-144-2025</td>
+              <td>CAMPAÑA DE EDUCACIÓN Y SEGURIDAD VIAL "SAN ANDRÉS SE MUEVE SEGURO"</td>
+              <td>FUNDACION PROGRESO GESTION Y VIDA (PROGESVIDA)</td>
+              <td>DIRECTA</td>
+              <td>$60.000.000</td>
+              <td>$</td>
+              <td>4103-Fondo de Seguridad Ciudadana</td>
+              <td>C4501-1000-004-024 - fondo de seguridad de las entidades territoriales</td>
+              <td>GOBIERNO</td>
+              <td>2025-06-26</td>
+              <td>2025-08-10</td>
+              <td><a href="https://drive.google.com/drive/folders/1lOCgx7Lk906QjX1dCTq8rBSffZsThmyd?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>146</td>
+              <td>23670-MINC-CV-146-2025</td>
+              <td>ADQUISICIÓN DE MATERIALES DE CONSTRUCCION Y OTROS ELEMENTOS</td>
+              <td>Will Segundo Ospina Narváez / Ferretería San Andrés</td>
+              <td>MINIMA</td>
+              <td>$39.600.000</td>
+              <td>$39.600.000</td>
+              <td>3605-SGP Otros Sectores vigencia actual</td>
+              <td>C4503-1000-028-055 - atención y recuperación antes situaciones de desastre</td>
+              <td>GOBIERNO</td>
+              <td>2025-07-07</td>
+              <td>2025-07-12</td>
+              <td><a href="https://drive.google.com/drive/folders/18D02gMApZBkar4BG5n04EQJfqSxlL5Ku?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>147</td>
+              <td>23670-MINC-PS-147-2025</td>
+              <td>HOSPEDAJE A LOS MIEMBROS DE LA POLICIA NACIONAL</td>
+              <td>LA TORRE RL:Pierina Pallares Portillo</td>
+              <td>MINIMA</td>
+              <td>$30.000.000</td>
+              <td>$15.000.000</td>
+              <td>4103-Fondo de Seguridad Ciudadana</td>
+              <td>C4501-1000-004-024 - fondo de seguridad de las entidades territoriales</td>
+              <td>GOBIERNO</td>
+              <td>2025-07-08</td>
+              <td>2025-10-30</td>
+              <td><a href="https://drive.google.com/drive/folders/1kGr8Z74FkYkNpek1TFpixZiXCOA28fYn?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>148</td>
+              <td>23670-MINC-SUM-148-2025</td>
+              <td>SUMINISTRO DE ALIMENTOS A LOS MIEMBROS DE LA POLICIA NACIONAL</td>
+              <td>Luis Acuña / Los Ranchos</td>
+              <td>MINIMA</td>
+              <td>$38.965.000</td>
+              <td>$15.000.000</td>
+              <td>4103-Fondo de Seguridad Ciudadana</td>
+              <td>C4501-1000-004-024 - fondo de seguridad de las entidades territoriales</td>
+              <td>GOBIERNO</td>
+              <td>2025-07-09</td>
+              <td>2025-10-30</td>
+              <td><a href="https://drive.google.com/drive/folders/1i87RbPlZbkY9D3VUUEFY0HChXmO9rB8K?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>153</td>
+              <td>23670-SAMC-ABM-153-2025</td>
+              <td>ALQUILER VEHICULOS COMISARIA Y ALCALDIA</td>
+              <td>(SOTRANSMAR S.A.S) SERGIO LUIS JIMENEZ ARTEAGA</td>
+              <td>ALQUILER</td>
+              <td>$120.000.000</td>
+              <td>$24.000.000</td>
+              <td>1201-SGP Proposito general-4123-Justicia Familiar</td>
+              <td>A2-02-02-005 - arrendamiento de vehiculo - C1203-0800-012-057 - justicia y seguridad</td>
+              <td>GOBIERNO</td>
+              <td>2025-08-05</td>
+              <td>2025-12-31</td>
+              <td><a href="https://drive.google.com/drive/folders/1VwtI4GBiueb1tS36TD1VRdJkNiqM_NCj?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>154</td>
+              <td>23670-SASI-CV-154-2025</td>
+              <td>ADQUISICION DE MOTOCICLETAS CON DESTINO A LA POLICIA NACIONAL</td>
+              <td>COMERCIALIZADORA Y DISTRIBUIDORA LD (YOJANA ALMANZA)</td>
+              <td>SASI</td>
+              <td>$130.000.000</td>
+              <td>$130.000.000</td>
+              <td>9103-Superávit Fiscal - Fondo Seguridad Ciudadana</td>
+              <td>C4501-1000-004-058 - fondo de seguridad de las entidades territoriales</td>
+              <td>GOBIERNO</td>
+              <td>2025-08-12</td>
+              <td>2025-10-12</td>
+              <td><a href="https://drive.google.com/drive/folders/1w9hCjdgXMxTVMiIiTEednpyQxznwEttV?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>182</td>
+              <td>23670-CD-PSP-182-2025</td>
+              <td>COORDINADOR DE JUVENTUD OPS</td>
+              <td>LUIS FERNANDO ALEAN</td>
+              <td>DIRECTA</td>
+              <td>$7.500.000</td>
+              <td>$2.500.000</td>
+              <td>3605-SGP Otros Sectores vigencia actual</td>
+              <td>C4102-1500-046-045 - programas de proteccion integral a la juventud</td>
+              <td>GOBIERNO</td>
+              <td>2025-09-22</td>
+              <td>2025-12-22</td>
+              <td><a href="https://drive.google.com/drive/folders/1c_rB8JMXg50lN2PyLSJbNdMSFDU0guk9?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>183</td>
+              <td>23670-CD-PSP-183-2025</td>
+              <td>ASESORÍA EN FORTALECIMIENTO INSTITUCIONAL Y APOYO AL PAF DE LA FISCALÍA OPS</td>
+              <td>LINA MARCELA ROQUEME</td>
+              <td>DIRECTA</td>
+              <td>$6.900.000</td>
+              <td>$2.300.000</td>
+              <td>9103-Superávit Fiscal - Fondo Seguridad Ciudadana</td>
+              <td>C4501-1000-004-058 - fondo de seguridad</td>
+              <td>GOBIERNO</td>
+              <td>2025-09-22</td>
+              <td>2025-12-22</td>
+              <td><a href="https://drive.google.com/drive/folders/1nXig-rX59rG4J8xtaKnZ4aO6ba2vLYek?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>184</td>
+              <td>23670-CD-PSP-184-2025</td>
+              <td>GESTOR RENTA CIUDADANA POBLACIÓN INDÍGENA OPS</td>
+              <td>ANA CLAUDIA TORIBIO</td>
+              <td>DIRECTA</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>GOBIERNO</td>
+              <td>2025-09-22</td>
+              <td>2025-12-22</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>185</td>
+              <td>23670-CD-PSP-185-2025</td>
+              <td>COORDINADOR MUNICIPAL PROGRAMAS DE TRANSFERENCIA OPS</td>
+              <td>JESUS ALBERTO SOTO</td>
+              <td>DIRECTA</td>
+              <td>$15.000.000</td>
+              <td>$4.500.000</td>
+              <td>3605-SGP Otros Sectores vigencia actual</td>
+              <td>C4503-1500-050-050 - Programas Red Unidos - Más Familias en Acción</td>
+              <td>GOBIERNO</td>
+              <td>2025-09-23</td>
+              <td>2025-12-31</td>
+              <td><a href="https://drive.google.com/drive/folders/1UXAMeKuVI6DOL8J_bCdSYsKNlP3_feGN?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>186</td>
+              <td>23670-CD-PSP-186-2025</td>
+              <td>ABOGADO PARA ACOMPAÑAR VICTIMAS DE VIOLENCIA EN SAN ANDRÉS DE SOTAVENTO OPS</td>
+              <td>RODRIGO RODRIGUEZ MORELO</td>
+              <td>DIRECTA</td>
+              <td>$7.500.000</td>
+              <td>$2.500.000</td>
+              <td>3605-SGP Otros Sectores vigencia actual</td>
+              <td>C4101-1500-038-041 - atención y apoyo a las victimas</td>
+              <td>GOBIERNO</td>
+              <td>2025-09-23</td>
+              <td>2025-12-23</td>
+              <td><a href="https://drive.google.com/drive/folders/1anGB1ucJ7UwcmeWs-7JuBIHrfSGwuNt5?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+
+        </table>
+      </div>
+    </main>
+  </div>
+
+  <!-- Modal de Observaciones -->
+  <div id="modal-observacion" class="modal" style="display:none;">
+    <div class="modal-box">
+      <h2>Observaciones</h2>
+      <p id="texto-observacion"></p>
+      <button class="btn-cerrar" onclick="cerrarObservacion()">Cerrar</button>
+    </div>
+  </div>
+
+  <!-- Script de filtrado y modal -->
+  <script>
+    // Filtrado
+    document.addEventListener("DOMContentLoaded", () => {
+      const searchInput = document.getElementById("searchInput");
+      const yearFilter = document.getElementById("yearFilter");
+      const rows = document.querySelectorAll("#contractsTable tbody tr");
+
+      function filterTable() {
+        const searchTerm = searchInput.value.toLowerCase();
+        const selectedYear = yearFilter.value;
+
+        rows.forEach(row => {
+          const rowText = row.textContent.toLowerCase();
+          const codigo = row.cells[1].textContent.trim();
+          const rowYear = codigo.slice(-4); // últimos 4 caracteres = año
+
+          const matchesSearch = rowText.includes(searchTerm);
+          const matchesYear = !selectedYear || rowYear === selectedYear;
+
+          row.style.display = (matchesSearch && matchesYear) ? "" : "none";
+        });
+      }
+
+      searchInput.addEventListener("input", filterTable);
+      yearFilter.addEventListener("change", filterTable);
+
+      filterTable();
+    });
+
+    // Modal funciones
+    function abrirObservacion(texto) {
+      document.getElementById("texto-observacion").textContent = texto;
+      document.getElementById("modal-observacion").style.display = "block";
+    }
+
+    function cerrarObservacion() {
+      document.getElementById("modal-observacion").style.display = "none";
+    }
+  </script>
+</body>
+
+</html>

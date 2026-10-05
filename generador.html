@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Generador de &lt;tr&gt; - Contratos</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;margin:18px;background:#f7fafc;color:#0f172a}
+    .container{max-width:980px;margin:0 auto;background:#fff;padding:18px;border-radius:8px;box-shadow:0 6px 20px rgba(2,6,23,0.06)}
+    label{display:block;margin-top:12px;font-weight:600}
+    input[type=text], input[type=date], textarea, select{width:100%;padding:8px;border:1px solid #cbd5e1;border-radius:6px}
+    .row{display:flex;gap:12px}
+    .col{flex:1}
+    button{margin-top:12px;padding:10px 14px;border-radius:8px;border:0;background:#0ea5a4;color:white;cursor:pointer}
+    pre{background:#0f172a;color:#e6eef6;padding:12px;border-radius:6px;overflow:auto}
+    table{width:100%;border-collapse:collapse;margin-top:14px}
+    table td, table th{border:1px solid #e6edf3;padding:8px}
+    .btn{display:inline-block;padding:6px 10px;background:#2563eb;color:#fff;border-radius:6px;text-decoration:none}
+    .muted{color:#475569;font-size:0.9rem}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Generador de &lt;tr&gt; para tabla de contratos</h2>
+    <p class="muted">Rellena los campos y presiona <strong>Generar fila</strong>. El resultado aparecerá en la caja de salida y como vista previa.</p>
+
+    <div>
+      <label>N°</label>
+      <input id="numero" type="text" placeholder="123" />
+
+      <label>Código del contrato</label>
+      <input id="codigo" type="text" placeholder="23670-CD-PSP-123-2025" />
+
+      <label>Objeto</label>
+      <textarea id="objeto" rows="3" placeholder="REALIZACION DE LAS ACTIVIDADES..."></textarea>
+
+      <div class="row">
+        <div class="col">
+          <label>Contratista</label>
+          <input id="contratista" type="text" placeholder="NOMBRES" />
+        </div>
+        <div class="col">
+          <label>Tipo Contrato</label>
+          <select id="tipo">
+            <option value="DIRECTA">DIRECTA</option>
+            <option value="LICITACION">LICITACIÓN</option>
+            <option value="MINIMA">MINIMA</option>
+            <option value="CONVENIO">CONVENIO</option>
+            <option value="SASI">SASI</option>
+            <option value="SAMC">SAMC</option>
+            <option value="INTERV">INTERV</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <label>Valor Total (número o con separadores)</label>
+          <input id="valorTotal" type="text" placeholder="12512568" />
+        </div>
+        <div class="col">
+          <label>Valor Mensual</label>
+          <input id="valorMensual" type="text" placeholder="3128142" />
+        </div>
+      </div>
+
+      <label>Fuente de Financiación / Rubro</label>
+      <input id="fuente" type="text" placeholder="Ingresar fuente" />
+
+      <label>Catálogo de Gastos</label>
+      <input id="catalogo" type="text" placeholder="Ingresar catalogo" />
+
+      <label>Dependencia</label>
+        <select id="dependencia">
+          <option value="GOBIERNO">GOBIERNO</option>
+          <option value="EDUCACIÓN">EDUCACIÓN</option>
+          <option value="SALUD">SALUD</option>
+          <option value="OBRAS">OBRAS</option>
+          <option value="PLANEACIÓN">PLANEACIÓN</option>
+          <option value="UMATA">UMATA</option>
+          <option value="R. HUMANOS">R. HUMANOS</option>
+          <option value="HACIENDA">HACIENDA</option>
+        </select>
+
+      <div class="row">
+        <div class="col">
+          <label>Fecha Inicio (YYYY-MM-DD)</label>
+          <input id="fechaInicio" type="date" />
+        </div>
+        <div class="col">
+          <label>Fecha Final (YYYY-MM-DD)</label>
+          <input id="fechaFinal" type="date" />
+        </div>
+      </div>
+
+      <label>Link a Carpeta (URL)</label>
+      <input id="link" type="text" placeholder="https://drive.google.com/drive/folders/......" />
+
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <button id="generar">Generar fila</button>
+        <button id="copiar">Copiar al portapapeles</button>
+        <button id="limpiar">Limpiar</button>
+      </div>
+
+      <label>Salida (HTML):</label>
+      <pre id="salida" contenteditable="true" aria-label="Salida HTML"></pre>
+
+      <label>Vista previa de la fila:</label>
+      <table aria-label="Vista previa">
+        <thead><tr><th>N°</th><th>Código</th><th>Objeto</th><th>Contratista</th><th>Tipo</th><th>Valor Total</th><th>Valor Mensual</th><th>Fuente</th><th>Catálogo</th><th>Dependencia</th><th>Inicio</th><th>Fin</th><th>Ver</th></tr></thead>
+        <tbody id="preview">
+        </tbody>
+      </table>
+
+    </div>
+
+    <script>
+      // form helpers
+      function onlyDigits(str){ return (str||'').toString().replace(/[^0-9]/g,''); }
+      // format number to Colombian style: 12.512.568 (no decimals)
+      function formatCOP(n){
+        if(n===undefined || n==='') return '';
+        let s = onlyDigits(n);
+        if(s==='') return '';
+        // remove leading zeros
+        s = s.replace(/^0+(?=\d)/, '');
+        let parts = [];
+        while(s.length>3){ parts.unshift(s.slice(-3)); s = s.slice(0,-3); }
+        if(s) parts.unshift(s);
+        return '$' + parts.join('.') ;
+      }
+
+      function escHtml(s){ if(!s) return ''; return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+      document.getElementById('generar').addEventListener('click', ()=>{
+        const numero = escHtml(document.getElementById('numero').value.trim());
+        const codigo = escHtml(document.getElementById('codigo').value.trim());
+        const objetoRaw = document.getElementById('objeto').value.trim();
+        const objeto = escHtml(objetoRaw.toUpperCase());
+        const contratista = escHtml(document.getElementById('contratista').value.trim().toUpperCase());
+        const tipo = escHtml(document.getElementById('tipo').value.trim().toUpperCase());
+        const valorTotal = formatCOP(document.getElementById('valorTotal').value);
+        const valorMensual = formatCOP(document.getElementById('valorMensual').value);
+        const fuente = escHtml(document.getElementById('fuente').value.trim());
+        const catalogo = escHtml(document.getElementById('catalogo').value.trim());
+        const dependencia = escHtml(document.getElementById('dependencia').value.trim().toUpperCase());
+        const fechaInicio = escHtml(document.getElementById('fechaInicio').value);
+        const fechaFinal = escHtml(document.getElementById('fechaFinal').value);
+        const link = escHtml(document.getElementById('link').value.trim());
+
+        // build anchor
+        const anchor = link ? `<a href="${link}" target="_blank" class="btn">Ver</a>` : '';
+
+        const tr = `<tr>\n      <td>${numero}</td>\n      <td>${codigo}</td>\n      <td>${objeto}</td>\n      <td>${contratista}</td>\n      <td>${tipo}</td>\n      <td>${valorTotal}</td>\n      <td>${valorMensual}</td>\n      <td>${fuente}</td>\n      <td>${catalogo}</td>\n      <td>${dependencia}</td>\n      <td>${fechaInicio}</td>\n      <td>${fechaFinal}</td>\n      <td>${anchor}</td>\n    </tr>`;
+
+        document.getElementById('salida').textContent = tr;
+
+        // preview row
+        const preview = document.getElementById('preview');
+        preview.innerHTML = '';
+        const temp = document.createElement('tbody');
+        temp.innerHTML = tr;
+        // insert the <tr> node into preview
+        if(temp.firstChild) preview.appendChild(temp.firstChild);
+      });
+
+      document.getElementById('copiar').addEventListener('click', async ()=>{
+        const text = document.getElementById('salida').textContent || '';
+        if(!text){ alert('No hay nada para copiar. Genera la fila primero.'); return; }
+        try{
+          await navigator.clipboard.writeText(text);
+          alert('HTML copiado al portapapeles.');
+        }catch(e){
+          // fallback
+          const ta = document.createElement('textarea'); ta.value = text; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove();
+          alert('Copiado (fallback).');
+        }
+      });
+
+      document.getElementById('limpiar').addEventListener('click', ()=>{
+        ['numero','codigo','objeto','contratista','valorTotal','valorMensual','fuente','catalogo','dependencia','fechaInicio','fechaFinal','link'].forEach(id=>document.getElementById(id).value='');
+        document.getElementById('salida').textContent='';
+        document.getElementById('preview').innerHTML='';
+      });
+
+      // ejemplo rápido al cargar
+      
+    </script>
+  </div>
+</body>
+</html>
+

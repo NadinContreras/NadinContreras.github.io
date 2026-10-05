@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>BDD - Educación</title>
+  <link rel="stylesheet" href="../styles.css"> <!-- importante -->
+</head>
+
+<body>
+  <header class="main-header">Dependencia: Educación</header>
+
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <a href="../index.html" class="btn">Inicio</a>
+      <a href="#" class="btn" target="_blank">Mi drive</a>
+      <button class="logout-btn" onclick="window.location.href='../index.html'">Cerrar sesión</button>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+      <h2 class="subtitle">Tabla de contratos de Educación</h2>
+
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Buscar contrato...">
+        <select id="yearFilter">
+          <option value="">Todos los años</option>
+          <option value="2025" selected>2025</option> <!-- predeterminado -->
+          <option value="2024">2024</option>
+        </select>
+      </div>
+
+      <div class="table-container">
+        <table id="contractsTable">
+          <thead>
+            <tr>
+              <th>N°</th>
+              <th>Proceso</th>
+              <th>Objeto</th>
+              <th>Contratista</th>
+              <th>Tipo</th>
+              <th>Valor total</th>
+              <th>Valor mensual</th>
+              <th>Fuente</th>
+              <th>Catalogo</th>
+              <th>Dependencia</th>
+              <th>Fecha inicio</th>
+              <th>Fecha fin</th>
+              <th>Ver más</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- TABLA DE DATOS -->
+
+            <tr>
+              <td>11</td>
+              <td>23670-LP-PS-011-2024</td>
+              <td>PROGRAMA DE ALIMENTACIÓN ESCOLAR PAE 2024</td>
+              <td>FUNDACIÓN NUEVA ILUSIÓN - MÁXIMA EMILIA TALAIGUA</td>
+              <td>LICITACIÓN PÚBLICA</td>
+              <td>$1.159.444.034</td>
+              <td>$</td>
+              <td>Sistema General de Participaciones SGP</td>
+              <td>CATÁLOGO</td>
+              <td>EDUCACIÓN</td>
+              <td>2024-02-27</td>
+              <td></td>
+              <td><a href="https://drive.google.com/drive/folders/1S2ik8Qv7KyYdboE46PjsXohB6hHZV5W2?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>22</td>
+              <td>23670-CD-AG-021-2024</td>
+              <td>APOYO COMO COORDINADOR DE CULTURA DEL MUNICIPIO</td>
+              <td>LUIS JAMIR POLO RUIZ</td>
+              <td>CONTRATACION DIRECTA</td>
+              <td>$9.936.000</td>
+              <td>$2.484.000</td>
+              <td>SISTEMA GENERAL DE PARTICIPACION SGP</td>
+              <td></td>
+              <td>EDUCACION</td>
+              <td>2024-03-15</td>
+              <td>2024-07-15</td>
+              <td><a href="https://drive.google.com/drive/folders/1TPvk1JuVBatse4CNx99mFWhjytEZRI49?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>28</td>
+              <td>23670-CD-PSP-027-2024</td>
+              <td>REPORTE DE INFORMACION EN SIMAT Y OTROS SISTEMAS DE EDUCACION</td>
+              <td>KAREN LUCIA PEREZ ROJAS</td>
+              <td>CONTRATACION DIRECTA</td>
+              <td>$9.936.000</td>
+              <td>$2.484.000</td>
+              <td>SISTEMA GENERAL DE PARTICIPACIONES SGP</td>
+              <td></td>
+              <td>EDUCACION</td>
+              <td>2024-04-01</td>
+              <td>2024-08-01</td>
+              <td><a href="https://drive.google.com/drive/folders/1L18cRh7ayaMjC-HNfqU5jQqdoulNYT8T?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>29</td>
+              <td>23670-CD-AG-028-2024</td>
+              <td>APOYO A ACTIVIDADES LÚDICAS Y RECREATIVAS “RUTA 25” BRUJULA 2024</td>
+              <td>INGRIS PAOLA NARVAEZ PEDROZA</td>
+              <td>CONTRATACION DIRECTA</td>
+              <td>$97.988.854</td>
+              <td>$97.988.854</td>
+              <td>SISTEMA GENERAL DE PARTICIPACIONES SGP</td>
+              <td></td>
+              <td>EDUCACION</td>
+              <td>2024-04-02</td>
+              <td>2024-05-02</td>
+              <td><a href="https://drive.google.com/drive/folders/161Gdo2Qx2bqG31e6Eju1kL-EzwEvvqsR?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>65</td>
+              <td>23670-CD-PSP-065-2024</td>
+              <td>ABOGADO EN EDUCACIÓN</td>
+              <td>MARIA PAULINA CASADO GODIN</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$10.400.000</td>
+              <td>$2.600.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>EDUCACIÓN</td>
+              <td>2024-04-26</td>
+              <td>2024-08-26</td>
+              <td><a href="https://drive.google.com/drive/folders/1BqyuasWG37WdvJwheRoeHg84FglAddJ2?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>67</td>
+              <td>23670-CD-PSP-067-2024</td>
+              <td>APOYO A PROCESOS ARTÍSTICOS Y CULTURALES</td>
+              <td>ANNABELLA FERNANDEZ GOMEZ</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$12.000.000</td>
+              <td>$3.000.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>EDUCACIÓN</td>
+              <td>2024-04-30</td>
+              <td>2024-08-30</td>
+              <td><a href="https://drive.google.com/drive/folders/1D2hZFaxC2Ww1IWsFuU5a6JGspHoZkyWG?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>70</td>
+              <td>23670-CD-PSP-070-2024</td>
+              <td>INGENIERO DE ALIMENTOS PAE</td>
+              <td>CARLOS ALBERTO HERNANDEZ GODIN</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$10.000.000</td>
+              <td>$2.500.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>EDUCACIÓN</td>
+              <td>2024-05-08</td>
+              <td>2024-09-07</td>
+              <td><a href="https://drive.google.com/drive/folders/1381TsH8Xu1RPsf44BbP9VZTm_WnJlNJi?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>72</td>
+              <td>23670-CD-UO-073-2024</td>
+              <td>ADQUISICIÓN DE TEXTOS EDUCATIVOS PARA GRADO 11°</td>
+              <td>JORGE ELIECER OTERO PACHEC</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$210.858.000</td>
+              <td>$210.858.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>EDUCACIÓN</td>
+              <td>2024-05-15</td>
+              <td>2024-05-25</td>
+              <td><a href="https://drive.google.com/drive/folders/1gDTOoLgvE2yg4M_9z_LGLuimuKMvq06u?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>80</td>
+              <td>23670-CD-AG-082-2024</td>
+              <td>APOYO ACTIVIDADES DEL CONVENIO FRIZOS Y FAZINES 1508 DE 2024</td>
+              <td>CORPORACION PARA EL DESARROLLO SOSTENIBLE, CORPOINTEGRAL - REP- RDODRIGO RAFAEL MONTES SIERRA</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$40.000.000</td>
+              <td>$20.000.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>EDUCACIÓN</td>
+              <td>2024-05-30</td>
+              <td>2024-07-30</td>
+              <td><a href="https://drive.google.com/drive/folders/1TswclQw3eJkUDW0lMVRNxqNaejst_pjo?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>84</td>
+              <td>23670-CD-PSP-086-2024</td>
+              <td>COORDINADOR DE DEPORTE</td>
+              <td>EDUARD JULIO GONZALEZ MORENO</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$9.200.000</td>
+              <td>$2.300.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>EDUCACIÓN</td>
+              <td>2024-06-20</td>
+              <td>2024-10-20</td>
+              <td><a href="https://drive.google.com/drive/folders/1x0YfFfjNeK4MC978PWEb56IJ_oFaLydX?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>85</td>
+              <td>23670-CD-AG-087-2024</td>
+              <td>AUXILIAR DE APOYO EN ACTIVIDADES DEPORTIVAS</td>
+              <td>LIBARDO MANUEL GALVAN HOYOS</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$78.382.603</td>
+              <td>$19.595.651</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>EDUCACIÓN</td>
+              <td>2024-06-20</td>
+              <td>2024-10-20</td>
+              <td><a href="https://drive.google.com/drive/folders/1Hra-mCGYlp4RKIjmsbA4ZOHcclgsX6g7?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>105</td>
+              <td>23670-CD-AG-105-2024</td>
+              <td>APOYO LOGÍSTICO PARA EVENTOS CULTURALES Y DEPORTIVOS PARA FIESTAS DE SANTA ANA - 20 JULIO</td>
+              <td>FUNDACIÓN AGROAMBIENTAL DE LA SABANA - JOSE MANUEL MEBARAK ORTEGA</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$68.000.000</td>
+              <td>$3.400.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>EDUCACIÓN</td>
+              <td>2024-07-12</td>
+              <td>2024-08-01</td>
+              <td><a href="https://drive.google.com/drive/folders/1at6LUY9riVdf9lGLkOHJsHyl-7ft6xXo?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>121</td>
+              <td>23670-CD-AG-121-2024</td>
+              <td>APOYO LOGÍSTICO JUEGOS SUPÉRATE 2024</td>
+              <td>CORPOINTEGRAL - RODRIGO RAFAEL MONTES SIERRA</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$70.000.000</td>
+              <td>$3.500.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>EDUCACIÓN</td>
+              <td>2024-08-15</td>
+              <td>2024-09-04</td>
+              <td><a href="https://drive.google.com/drive/folders/1c5IL3HlAIoQB8KD8ASLOTKIv3hDL5u-3?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>137</td>
+              <td>23670-CD-PSP-137-2024</td>
+              <td>ATENCIÓN PSICOSOCIAL A ESTUDIANTES</td>
+              <td>LERCY RAMONA SALGADO GUEVARA</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$8.800.000</td>
+              <td>$2.200.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>EDUCACIÓN</td>
+              <td>2024-08-27</td>
+              <td>2024-12-27</td>
+              <td><a href="https://drive.google.com/drive/folders/1o7-9vqgCpkf7bJgx7xYyBqqggn6i7ehe?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>141</td>
+              <td>23670-CD-AG-141-2024</td>
+              <td>FOMENTO A EVENTOS DEPORTIVOS Y RECREATIVOS</td>
+              <td>FAIBER MARIO CARVAJAL SIERRA</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$8.000.000</td>
+              <td>$2.000.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>EDUCACIÓN</td>
+              <td>2024-08-29</td>
+              <td>2024-12-29</td>
+              <td><a href="https://drive.google.com/drive/folders/151X9aH1alAq_-AKrcmKca0WTd5rjlavC?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>143</td>
+              <td>23670-CD-PSP-143-2024</td>
+              <td>ATENCIÓN PSICOSOCIAL A ESTUDIANTES</td>
+              <td>OMAIDA DEL CARMEN PATERNINA MADERA</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$8.800.000</td>
+              <td>$2.200.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>EDUCACIÓN</td>
+              <td>2024-08-30</td>
+              <td>2024-12-30</td>
+              <td><a href="https://drive.google.com/drive/folders/1Dw1fRRwy1ktyZFyO9MkF7Z9Yk5cv8OXo?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>147</td>
+              <td>23670-CD-PSP-147-2024</td>
+              <td>REPORTE DE INFORMACION EN SIMAT Y OTROS SISTEMAS DE EDUCACION</td>
+              <td>KAREN LUCIA PEREZ ROJAS</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$9.936.000</td>
+              <td>$2.484.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>EDUCACIÓN</td>
+              <td>2024-08-30</td>
+              <td>2024-12-30</td>
+              <td><a href="https://drive.google.com/drive/folders/1IZZNKYOcKECp117kTcM44sdME7eNnMgT?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>159</td>
+              <td>23670-CD-AG-159-2024</td>
+              <td>COORDINADOR DE CULTURA MUNICIPAL</td>
+              <td>LUIS JAMIR POLO RUIZ</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$9.936.000</td>
+              <td>$2.484.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>EDUCACIÓN</td>
+              <td>2024-08-30</td>
+              <td>2024-12-30</td>
+              <td><a href="https://drive.google.com/drive/folders/1BmdMXY0PDr14tevCGmoMaPwpq-OyyIwE?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>176</td>
+              <td>23670-CD-AG-176-2024</td>
+              <td>APOYO EVENTOS RECREATIVOS Y DEPORTIVOS</td>
+              <td>SENÉN JOSÉ VALENCIA PERTUZ</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$5.833.334</td>
+              <td>$1.750.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>EDUCACIÓN</td>
+              <td>2024-09-15</td>
+              <td>2024-12-24</td>
+              <td><a href="https://drive.google.com/drive/folders/18em0BYfxUaoH4zypptRQgP-3SklGgYYh?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>177</td>
+              <td>23670-CD-AG-177-2024</td>
+              <td>APOYO EVENTOS RECREATIVOS Y DEPORTIVOS</td>
+              <td>LEANDRO JOSÉ ESTRADA LUNA</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$5.833.334</td>
+              <td>$1.750.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>EDUCACIÓN</td>
+              <td>2024-09-16</td>
+              <td>2024-12-25</td>
+              <td><a href="https://drive.google.com/drive/folders/1cYvIpDOnqfRi4PRq1Qw7ff1PUm5L6ob_?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>188</td>
+              <td>23670-CD-UO-188-2024</td>
+              <td>ADQUISICIÓN SOFTWARE SISNOTASWEB</td>
+              <td>MARX LENIN LÓPEZ CAMARGO</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$179.999.600</td>
+              <td>$12.000.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>EDUCACIÓN</td>
+              <td>2024-08-08</td>
+              <td>2024-08-23</td>
+              <td><a href="https://drive.google.com/drive/folders/1G50-dGRFAjWbQmW1eURWWNMKqXIsx6wm?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>189</td>
+              <td>23670-MINC-CV-189-2024</td>
+              <td>ADQUISICIÓN DE MOBILIARIO Y OFICINA</td>
+              <td>MIGUEL ÁNGEL PÉREZ PÉREZ</td>
+              <td>MÍNIMA CUANTÍA</td>
+              <td>$30.000.000</td>
+              <td>$6.000.000</td>
+              <td></td>
+              <td></td>
+              <td>EDUCACIÓN</td>
+              <td>2024-10-01</td>
+              <td>2024-10-07</td>
+              <td><a href="https://drive.google.com/drive/folders/1QWNWqspF6nXoHIQbj79n-dl5mzUrWrwE?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>192</td>
+              <td>23670-CD-PSP-192-2024</td>
+              <td>INGENIERO DE ALIMENTOS PROGRAMA ALIMENTACIÓN ESCOLAR PAE</td>
+              <td>CARLOS ALBERTO HERNÁNDEZ GODÍN</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$1.072.263.606</td>
+              <td>$536.131.803</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>EDUCACIÓN</td>
+              <td>2024-10-01</td>
+              <td>2024-12-01</td>
+              <td><a href="https://drive.google.com/drive/folders/1Tk3-gq5l47FF6_Oaj-eCpM8HCb2Z8Q9F?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>198</td>
+              <td>23670-CD-AG-198-2024</td>
+              <td>APOYO A FORMACIÓN ARTÍSTICA Y CULTURAL</td>
+              <td>ENDER ENRIQUE ROMERO QUINTANA</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$4.500.000</td>
+              <td>$1.650.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>EDUCACIÓN</td>
+              <td>2024-10-07</td>
+              <td>2024-12-28</td>
+              <td><a href="https://drive.google.com/drive/folders/1P2ct1OFj6wZ0oN4JbH1LV5XwrZrpFZMC?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>199</td>
+              <td>23670-CD-PSP-199-2024</td>
+              <td>ABOGADA APOYO SECRETARÍA DE EDUCACIÓN</td>
+              <td>MARÍA PAULINA CASADO GODÍN</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$7.106.667</td>
+              <td>$2.400.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>EDUCACIÓN</td>
+              <td>2024-10-09</td>
+              <td>2024-12-30</td>
+              <td><a href="https://drive.google.com/drive/folders/1DaSoGrrizt7QlkSODdarXIglQo2pcmSo?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>202</td>
+              <td>23670-CD-PSP-202-2024</td>
+              <td>FOMENTO EVENTOS ARTÍSTICOS Y CULTURALES</td>
+              <td>ANNABELLA FERNÁNDEZ GÓMEZ</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$8.200.000</td>
+              <td>$2.730.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>EDUCACIÓN</td>
+              <td>2024-10-09</td>
+              <td>2024-12-30</td>
+              <td><a href="https://drive.google.com/drive/folders/1Sp9ggUybhutxjc01dJcww45R0qJGaQPy?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>211</td>
+              <td>23670-SASI-CV-211-2024</td>
+              <td>DOTACIÓN RESTAURANTES ESCOLARES</td>
+              <td>ASOPRODES (MERLY LEONOR OÑATE AGUADO)</td>
+              <td>SUBASTA INVERSA</td>
+              <td>$217.252.749</td>
+              <td>$14.483.516</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>EDUCACIÓN</td>
+              <td>2024-11-01</td>
+              <td>2024-11-16</td>
+              <td><a href="https://drive.google.com/drive/folders/1LgmizSJanaxHKmplPsfoSJa3soSeqXfa?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>214</td>
+              <td>23670-CD-AG-214-2024</td>
+              <td>APOYO BIBLIOTECA Y LUDOTECA MUNICIPAL</td>
+              <td>MARÍA FERNANDA RUIZ RUIZ</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$2.805.000</td>
+              <td>$1.700.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>EDUCACIÓN</td>
+              <td>2024-11-06</td>
+              <td>2024-12-27</td>
+              <td><a href="https://drive.google.com/drive/folders/1AvcKvNJwU35ei8JdOPoIJlUUB8XOZHud?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>215</td>
+              <td>23670-CD-AG-215-2024</td>
+              <td>APOYO BIBLIOTECA Y LUDOTECA MUNICIPAL</td>
+              <td>CRISTIAN EDUARDO CORONADO RUIZ</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$2.805.000</td>
+              <td>$1.700.000</td>
+              <td>Recursos propios</td>
+              <td></td>
+              <td>EDUCACIÓN</td>
+              <td>2024-11-06</td>
+              <td>2024-12-27</td>
+              <td><a href="https://drive.google.com/drive/folders/1xx_jXdCFOQUaZuWciyVkPajAUycLLFao?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>216</td>
+              <td>23670-CD-AG-216-2024</td>
+              <td>AUXILIAR APOYO ACTIVIDADES DEPORTIVAS</td>
+              <td>ÁLVARO ÁLVAREZ PÉREZ</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$2.750.000</td>
+              <td>$1.700.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>EDUCACIÓN</td>
+              <td>2024-11-07</td>
+              <td>2024-12-27</td>
+              <td><a href="https://drive.google.com/drive/folders/1WXVKupw5EEFfZuCPWAv66GYOUrkE4bN9?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>217</td>
+              <td>23670-CD-AG-217-2024</td>
+              <td>APOYO EVENTOS Y ACTIVIDADES DEPORTIVAS</td>
+              <td>GIAN CARLOS CRUZ ALEAN</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$4.760.000</td>
+              <td>$2.380.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>EDUCACIÓN</td>
+              <td>2024-11-07</td>
+              <td>2024-12-28</td>
+              <td><a href="https://drive.google.com/drive/folders/1QtspI8_782rk3dFo3bWWK7OX498eHHOe?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>218</td>
+              <td>23670-CD-AG-218-2024</td>
+              <td>APOYO BIBLIOTECA Y LUDOTECA MUNICIPAL</td>
+              <td>JULIO CÉSAR HERRERA ROMERO</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$2.475.000</td>
+              <td>$1.650.000</td>
+              <td>Recursos propios</td>
+              <td></td>
+              <td>EDUCACIÓN</td>
+              <td>2024-11-12</td>
+              <td>2024-12-27</td>
+              <td><a href="https://drive.google.com/drive/folders/1TsM0HDZgo_cpqa7mKgMxYpaQv8bvG-Vf?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>219</td>
+              <td>23670-CD-PSP-219-2024</td>
+              <td>PROFESIONAL BIBLIOTECA Y LUDOTECA MUNICIPAL</td>
+              <td>HÉCTOR DAVID HERÁNDEZ NAVARRO</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$4.200.000</td>
+              <td>$2.800.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>EDUCACIÓN</td>
+              <td>2024-11-12</td>
+              <td>2024-12-27</td>
+              <td><a href="https://drive.google.com/drive/folders/1YQpW9U1yThGTtt9mxWyGKnEpq6zXgAQC?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>221</td>
+              <td>23670-CD-PSP-221-2024</td>
+              <td>ATENCIÓN PSICOSOCIAL A ESTUDIANTES</td>
+              <td>VIRGINIA ROSA MESA POLO</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$4.166.666</td>
+              <td>$2.500.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>EDUCACIÓN</td>
+              <td>2024-11-12</td>
+              <td>2024-12-31</td>
+              <td><a href="https://drive.google.com/drive/folders/12soLGA7LK_r-YeYddeouHZTJXLL3JdvV?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>222</td>
+              <td>23670-SASI-CV-222-2024</td>
+              <td>DOTACIÓN DE BICICLETAS PARA TRANSPORTE ESCOLAR</td>
+              <td>SAMUEL ESTEBAN RAMOS PADILLA</td>
+              <td>SUBASTA INVERSA</td>
+              <td>$300.000.000</td>
+              <td>$20.000.000</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>EDUCACIÓN</td>
+              <td>2024-11-21</td>
+              <td>2024-12-06</td>
+              <td><a href="https://drive.google.com/drive/folders/1nQlntkAUBr3TGouXtstTdr7afN6aqCxf?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>224</td>
+              <td>23670-CD-PSP-224-2024</td>
+              <td>CAMPAÑA PREVENCIÓN CONSUMO DE ALCOHOL</td>
+              <td>FUNDACIÓN NUEVA ILUSIÓN</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$80.000.000</td>
+              <td>$80.000.000</td>
+              <td>Recursos propios</td>
+              <td></td>
+              <td>EDUCACIÓN</td>
+              <td>2024-11-18</td>
+              <td>2024-12-18</td>
+              <td><a href="https://drive.google.com/drive/folders/16AKjLbkjc-5vl1FpvjwgN1Nmphd4Xb1w?usp=drive_link"
+                  class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>229</td>
+              <td>23670-CD-PSP-229-2024</td>
+              <td>PROFESIONAL BIBLIOTECA Y LUDOTECA MUNICIPAL</td>
+              <td>MARCELA CRISTINA BANDA MEDRANO</td>
+              <td>CONTRATACIÓN DIRECTA</td>
+              <td>$3.266.667</td>
+              <td>$3.266.667</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>EDUCACIÓN</td>
+              <td>2024-11-25</td>
+              <td>2024-12-30</td>
+              <td><a href="https://drive.google.com/drive/folders/1NSKS3W9eTeReVVkNvPZ0Tt7V23jTs9VF?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>247</td>
+              <td>23670-SASI-CV-247-2024</td>
+              <td>DOTACIÓN DE MOBILIARIO PARA INSTITUCIONES EDUCATIVAS</td>
+              <td>ASOPRODESANT - MERLY LEONOR OÑATE AGUADO</td>
+              <td>SUBASTA INVERSA</td>
+              <td>$257.399.974</td>
+              <td>$257.399.974</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>EDUCACIÓN</td>
+              <td>2024-11-01</td>
+              <td>2024-11-06</td>
+              <td><a href="https://drive.google.com/drive/folders/1y-0XgsErnDMHRPFXATJB5Jm0Rq3BJV5y?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>251</td>
+              <td>23670-MINC-CV-251-2024</td>
+              <td>IMPLEMENTOS DEPORTIVOS PARA ESCUELAS DE FORMACIÓN DEPORTIVA</td>
+              <td>WALTER DE JESÚS GÓEZ ARROYO</td>
+              <td>MÍNIMA CUANTÍA</td>
+              <td>$36.288.560</td>
+              <td>$36.288.560</td>
+              <td>Sistema General de participaciones SGP</td>
+              <td></td>
+              <td>EDUCACIÓN</td>
+              <td>2024-12-27</td>
+              <td>2025-01-01</td>
+              <td><a href="https://drive.google.com/drive/folders/17HEkQjRBM8USqD9njomTYV6upFms0fuc?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+
+
+            <!-- -------------------------------------------2025---------------------------------------------------- -->
+
+            <tr>
+              <td>10</td>
+              <td>23670-LP-PSP-010-2025</td>
+              <td>PROGRAMA DE ALIMENTACIÓN ESCOLAR - PAE 2025</td>
+              <td>FUNDACIÓN NUEVA ILUSIÓN - MAXIMA EMILIA TALAIGUA</td>
+              <td>LICITACIÓN</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $1.827.712.708
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de $1.500.755.026, adicionado $326.957.682 con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td></td>
+              <td>3201-SGP Alimentación Escolar - vigencia actual</td>
+              <td>C2201-0700-028-001 - Alimentación escolar</td>
+              <td>EDUCACIÓN</td>
+              <td>2025-01-27</td>
+              <td>2025-11-28</td>
+              <td><a href="https://drive.google.com/drive/folders/1U3M1a2BQ-jJKpaOBz90UIoPHA22HsMtt?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>18</td>
+              <td>23670-MINC-INT-018-2025</td>
+              <td>INTERVENTORÍA MEJORAMIENTO DE INSTITUCIONES</td>
+              <td>ISC SAS (R/L JORGE ELIECER MORALES ALEMÁN)</td>
+              <td>MINIMA</td>
+              <td>$35.343.000</td>
+              <td></td>
+              <td>3101-SGP Educación de calidad - vigencia atual</td>
+              <td>C2201-0700-020-011 - mejoramiento y mantenimiento, conservación y adecuación de la infraestructura
+                educativa
+              </td>
+              <td>OBRAS</td>
+              <td>2025-02-17</td>
+              <td>2025-05-17</td>
+              <td><a href="https://drive.google.com/drive/folders/1tj_Onw2FhDRa8xBtsg1-kVu17Lkx4z1T?usp=drive_link"
+                  class="btn btn-primary btn-sm" target="_blank">Ver</a></td>
+            </tr>
+            <tr>
+              <td>27</td>
+              <td>23670-CD-PSP-027-2025</td>
+              <td>GESTIÓN ADMINISTRATIVA EN SIMAT Y OTROS SISTEMAS OPS</td>
+              <td>KAREN LUCÍA PEREZ</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $12.420.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de cuatro (4) meses por $9.936.000, adicionado un (1) mes por $2.484.000 con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$2.484.000</td>
+              <td>3101 - SGP Educación de calidad</td>
+              <td>C2201-0700-049-028 - Funcionamiento básico de los establecimientos educativos estatales</td>
+              <td>EDUCACIÓN</td>
+              <td>2025-03-03</td>
+              <td>2025-08-03</td>
+              <td><a href="https://drive.google.com/drive/folders/1rSpq67ZhQQ8wKq4DmC8rWJ697HPZpUis?usp=drive_link"
+                  class="btn btn-primary btn-sm" target="_blank">Ver</a></td>
+            </tr>
+            <tr>
+              <td>41</td>
+              <td>23670-CD-AG-041-2025</td>
+              <td>COORDINADOR DE CULTURA OPS</td>
+              <td>LUIS JAMIR POLO RUIZ</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $15.600.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de cuatro (4) meses por $10.400.000, adicionado un (2) meses por $2.600.000 C/u con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$2.600.000</td>
+              <td>4101 - Estampilla Procultura</td>
+              <td>C3301-1603-053-022 - Fomento, apoyo y difusión de eventos y expresiones artísticas</td>
+              <td>EDUCACIÓN</td>
+              <td>2025-03-07</td>
+              <td>2025-09-07</td>
+              <td><a href="https://drive.google.com/drive/folders/1_vVogYGmUUkW8fM-b_vDdmoDZBPyMgFy?usp=drive_link"
+                  class="btn btn-primary btn-sm" target="_blank">Ver</a></td>
+            </tr>
+            <tr>
+              <td>49</td>
+              <td>23670-CD-PSP-049-2025</td>
+              <td>COORDINADOR DE DEPORTE OPS</td>
+              <td>EDUARD JULIO GONZÁLEZ</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $11.500.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de cuatro (4) meses por $9.200.000, adicionado un (1) mes por $2.300.000 con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$2.300.000</td>
+              <td>3603 - SGP Deporte y Recreación</td>
+              <td>C4301-1604-001-019 - Pago de instructores contratados para la práctica del deporte</td>
+              <td>EDUCACIÓN</td>
+              <td>2025-03-13</td>
+              <td>2025-08-13</td>
+              <td><a href="https://drive.google.com/drive/folders/1ig3qLuQjQzI2ei4eLm9qbZanrCU__5Nw?usp=drive_link"
+                  class="btn btn-primary btn-sm" target="_blank">Ver</a></td>
+            </tr>
+            <tr>
+              <td>60</td>
+              <td>23670-CD-PSP-060-2025</td>
+              <td>PRESTACIÓN DE SERVICIOS COMO ASESOR JURÍDICO EN EDUCACIÓN, CULTURA Y DEPORTE OPS</td>
+              <td>MARÍA PAULINA CASADO GODÍN</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $16.800.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de cuatro (4) meses por $11.200.000, adicionado (2) meses por $2.800.000 C/U con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$2.800.000</td>
+              <td>1201-SGP Propósito general</td>
+              <td>C4599-1000-023-003 - fortalecimiento institucional</td>
+              <td>EDUCACIÓN</td>
+              <td>2025-03-31</td>
+              <td>2025-09-31</td>
+              <td><a href="https://drive.google.com/drive/folders/1m4zLLh0sRFQ7iGnFagZPJ-DQPYhX5dUf?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>78</td>
+              <td>23670-CD-PSP-078-2025</td>
+              <td>ACOMPAÑAMIENTO DOCENTE PARA TRAYECTORIAS EDUCATIVAS</td>
+              <td>CORPORACIÓN EDUCATIVA SUPERATE R/L JORGE ELIECER OTERO PACHECO</td>
+              <td>DIRECTA</td>
+              <td>$289.000.000</td>
+              <td></td>
+              <td>3101-SGP Educación de calidad - vigencia actual</td>
+              <td>C2201-0700-049-002 - capacitación a docentes y directivos docentes</td>
+              <td>EDUCACIÓN</td>
+              <td>2025-04-02</td>
+              <td>2025-08-02</td>
+              <td><a href="https://drive.google.com/drive/folders/1_1BBkps8wsI1ArEy6FI27BOD31JSGHJ6?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>85</td>
+              <td>23670-CD-AG-085-2025</td>
+              <td>APOYO A LAS ACTIVIDADES DE DEPORTE OPS</td>
+              <td>SENEN JOSÉ VALENCIA PERTUZ</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $9.000.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de cuatro (4) por $7.200.000, adicionado un (1) mes por $1.800.000 con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$1.800.000</td>
+              <td>1201-SGP Proposito general - Libre destinación vigencia actual</td>
+              <td>C4301-1604-001-078 - pago de instructores contratados</td>
+              <td>EDUCACIÓN</td>
+              <td>2025-04-07</td>
+              <td>2025-09-07</td>
+              <td><a href="https://drive.google.com/drive/folders/1lCh-ywTtXr-fwbY8m45ognkKXs6YENiz?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>98</td>
+              <td>23670-CD-AG-098-2025</td>
+              <td>APOYO A LAS ACTIVIDADES DE DEPORTE DEL MUNICIPIO DE SAN ANDRES DE SOTAVENTO CORDOBA OPS</td>
+              <td>ALVARO ALVAREZ PEREZ</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $8.750.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de (4 meses) por $7.000.000, adicionado un (1) mes por $1.750.000 con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$1.750.000</td>
+              <td>3603-SGP Deporte y Recreación vigencia actual</td>
+              <td>C4301-1604-001-019- pago de instructores contratados</td>
+              <td>EDUCACIÓN</td>
+              <td>2025-04-23</td>
+              <td>2025-09-21</td>
+              <td><a href="https://drive.google.com/drive/folders/1UYYNaA-bNmLYMBd4OHYxFSoWKE-5FhtW?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>101</td>
+              <td>23670-CD-PSP-101-2025</td>
+              <td>TRABAJADORA SOCIAL PARA EL ACOMPANAMIENTO PSICOSOCIAL A ESTUDIANTES OPS</td>
+              <td>VIRGINIA MESA POLO</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $12.000.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de cuatro (4) meses por $9.600.000, adicionado un (1) mes por $2.400.000 con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$2.400.000</td>
+              <td>3101 - SGP Educación de calidad</td>
+              <td>C2201-0700-049-028 - Funcionamiento básico de los establecimientos educativos estatales</td>
+              <td>EDUCACIÓN</td>
+              <td>2025-04-29</td>
+              <td>2025-09-28</td>
+              <td><a href="https://drive.google.com/drive/folders/11ia5x0G-kmNnQDMWRafpwuV1DeYjj2sj?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>102</td>
+              <td>23670-CD-PSP-102-2025</td>
+              <td>TRABAJADORA SOCIAL PARA EL ACOMPANAMIENTO PSICOSOCIAL A ESTUDIANTES OPS</td>
+              <td>OMAIDA PATERNINA</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $12.000.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de cuatro (4) meses por $9.600.000, adicionado un (1) mes por $2.400.000 con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$2.400.000</td>
+              <td>3101 - SGP Educación de calidad</td>
+              <td>C2201-0700-049-028 - Funcionamiento básico de los establecimientos educativos estatales</td>
+              <td>EDUCACIÓN</td>
+              <td>2025-04-29</td>
+              <td>2025-09-28</td>
+              <td><a href="https://drive.google.com/drive/folders/1lROGFgXlm4SrzZGtwbN2D0Irw4Xx6Svt?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>107</td>
+              <td>23670-CD-PSP-107-2025</td>
+              <td>INGENIERO DE ALIMENTOS EN EL APOYO A LA SUPERVISION DE LA GESTION DEL PROGRAMA DE ALIMENTO ESCOLAR PAE
+                OPS</td>
+              <td>CARLOS ALBERTO HERNANDEZ</td>
+              <td>DIRECTA</td>
+              <td>$10.400.000</td>
+              <td>$2.600.000</td>
+              <td>3101 - SGP Educación de calidad</td>
+              <td>C2201-0700-049-028 - Funcionamiento básico de los establecimientos educativos estatales</td>
+              <td>EDUCACIÓN</td>
+              <td>2025-04-30</td>
+              <td>2025-08-29</td>
+              <td><a href="https://drive.google.com/drive/folders/18kEir_Jpgki1P1pRvrmeJNSAV7Yprqfw?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>111</td>
+              <td>23670-CD-PSP-111-2025</td>
+              <td>TRABAJADORA SOCIAL PARA EL ACOMPAÑAMIENTO PSICOSOCIAL A ESTUDIANTES OPS</td>
+              <td>LERCY RAMONA SALGADO</td>
+              <td>DIRECTA</td>
+              <td style="text-align: center; vertical-align: middle;">
+                $12.000.000
+                <button class="btn-info"
+                  onclick="abrirObservacion('Contrato inicial de cuatro (4) meses por $9.600.000, adicionado un (1) mes por $2.400.000 con la misma fuente de financiación. El PDF de la adición se encuentra en la carpeta en línea.')"
+                  title="Ver observación">🛈</button>
+              </td>
+              <td>$2.400.000</td>
+              <td>3101-SGP Educación de calidad - vigencia actual</td>
+              <td>C2201-0700-049-028 - Funcionamiento</td>
+              <td>EDUCACIÓN</td>
+              <td>2025-05-05</td>
+              <td>2025-10-05</td>
+              <td><a href="https://drive.google.com/drive/folders/1NIahc6d7psRzl91zj7xDRtDShSc82Kto?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>126</td>
+              <td>23670-CD-PSP-126-2025</td>
+              <td>ACTUALIZACION DEL PLAN EDUCATIVO MUNICIPAL (PEM) EN EL MUNICIPIO DE SAN ANDRES DE SOTAVENTO</td>
+              <td>FUNDACION PARA EL DESARROLLO ECONOMICO Y SOCIAL DE LA SABANA (FUNDESSAB) R/L VIVIANA VANESSA VILORIA
+                VEGA</td>
+              <td>DIRECTA</td>
+              <td>$60.000.000</td>
+              <td>$15.000.000</td>
+              <td>3101-SGP Educación de calidad - vigencia actual</td>
+              <td>C2201-0700-001-007- documento de planeacion para la educacion inicial</td>
+              <td>EDUCACIÓN</td>
+              <td>2025-06-04</td>
+              <td>2025-08-18</td>
+              <td><a href="https://drive.google.com/drive/folders/1rSEAOJkq2IhJcrUB71yijUBZkJ3F0fJQ?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>136</td>
+              <td>23670-SASI-CV-136-2025</td>
+              <td>ADQUISICION DE TEXTOS EDUCATIVOS PARA LOS ESTUDIANTES DE LAS INSTITUCIONES EDUCATIVAS OFICIALES</td>
+              <td>CORPORACIÓN EDUCATIVA SUPERATE representada legalmente por JORGE ELIECER OTERO PACHECO</td>
+              <td>SASI</td>
+              <td>$206.040.000</td>
+              <td>$206.040.000</td>
+              <td>3101-SGP Educación de calidad - vigencia actual</td>
+              <td>C2201-0700-069-004 - dotación institucional de material y medios pedagógicos para el aprendizaje</td>
+              <td>EDUCACIÓN</td>
+              <td>2025-06-12</td>
+              <td>2025-06-27</td>
+              <td><a href="https://drive.google.com/drive/folders/1BWJhei-0A1y8RCEiNam9CtPQj-SD_7pL?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>138</td>
+              <td>23670-CD-PSP-138-2025</td>
+              <td>ACOMPAÑAR AL FORTALECIMIENTO A LA GESTIÓN CULTURAL Y ARTISTICA COMO ACOMPAÑAMIENTO A LA SECRETARIA DE
+                EDUCACIÓN OPS</td>
+              <td>MARCELA CRISTINA BANDA MEDRANO</td>
+              <td>DIRECTA</td>
+              <td>$8.000.000</td>
+              <td>$2.000.000</td>
+              <td>4101 - Estampilla Procultura</td>
+              <td>C3301-1603-051-021 - pago de instructores y bibliotecologos</td>
+              <td>EDUCACIÓN</td>
+              <td>2025-06-12</td>
+              <td>2025-10-12</td>
+              <td><a href="https://drive.google.com/drive/folders/1y43BMk2_wD3XoZLr9vGd9FejZbPCen9u?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>140</td>
+              <td>23670-CD-AG-140-2025</td>
+              <td>APOYO PARA ACOMPAÑAR AL FORTALECIMIENTO A LA GESTIÓN CULTURAL Y ARTISTICA COMO ACOMPANAMIENTO A LA
+                SECRETARIA DE EDUCACIÓN OPS</td>
+              <td>MARIA FERNANDA RUIZ RUIZ</td>
+              <td>DIRECTA</td>
+              <td>$7.200.000</td>
+              <td>$1.800.000</td>
+              <td>4101 - Estampilla Procultura</td>
+              <td>C3301-1603-051-021 - pago de instructores y bibliotecologos</td>
+              <td>EDUCACIÓN</td>
+              <td>2025-06-20</td>
+              <td>2025-10-20</td>
+              <td><a href="https://drive.google.com/drive/folders/1UFGaGuVDFY8WRHDdY3eQSRQT60ThvWNN?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>145</td>
+              <td>23670-CD-AG-145-2025</td>
+              <td>FIESTAS TRADICIONALES DE LA VIRGEN DEL CARMEN, SANTA ANA Y CONMEMORACION DEL 20 DE JULIO</td>
+              <td>FUNDACION FUNACCODES</td>
+              <td>DIRECTA</td>
+              <td>$82.610.239</td>
+              <td>$</td>
+              <td>3601-SGP Cultura vigencia actual</td>
+              <td>C3301-1603-053-018 - fomento, apoyo y difusión de eventos y expresiones artísticas y culturales</td>
+              <td>EDUCACIÓN</td>
+              <td>2025-07-01</td>
+              <td>2025-07-30</td>
+              <td><a href="https://drive.google.com/drive/folders/1R9x9BGW4Mm-nvNZGudjV7zgn-DRjwaHm?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>149</td>
+              <td>23670-PSP-AG-148-2025</td>
+              <td>REALIZACIÓN DE LOS JUEGOS INTERCOLEGIADOS SUPERATE 2025 EN SU FASE MUNICIPAL</td>
+              <td>FUNAGORSAB / JOSE MANUEL MEBARAK ORTEGA</td>
+              <td>DIRECTA</td>
+              <td>$70.000.000</td>
+              <td>$</td>
+              <td>4113-Sobretssa al deporte</td>
+              <td>C4301-1604-001-025 - fomento, desarrollo y practica del deporte</td>
+              <td>EDUCACIÓN</td>
+              <td>2025-07-18</td>
+              <td>2025-08-30</td>
+              <td><a href="https://drive.google.com/drive/folders/1EUdMYMqo3GqR7CuVZPQNZaLQyX0Xawba?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>159</td>
+              <td>23670-CD-AG-159-2025</td>
+              <td>APOYO A LA SECRETARIA DE EDUCACIÓN EN EL PROCESO DE FORMACIÓN ARTISTICA Y CULTURAL</td>
+              <td>FUNDACION PARA CONTRIBUIR AL DESARROLLO SOCIAL, FUNACCODES</td>
+              <td>DIRECTA</td>
+              <td>$122.178.645</td>
+              <td>$26.234.361</td>
+              <td>4101-Estampilla Procultura - 3602-SGP Cultura vigencias anteriores</td>
+              <td>C3301-1603-053-060 - pago de instructores y bibliotecologos</td>
+              <td>EDUCACIÓN</td>
+              <td>2025-09-01</td>
+              <td>2025-12-31</td>
+              <td><a href="https://drive.google.com/drive/folders/1YInRAzK9cj26i8qLqmraYWKdxbXduugU?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>160</td>
+              <td>23670-CD-PSP-160-2025</td>
+              <td>ACTIVIDADES DE PROMOCIÓN DE ACTIVIDAD FISICA, LA RECREACIÓN Y EL DEPORTE</td>
+              <td>FUNDACION PROGRESO GESTION Y VIDA (PROGESVIDA)</td>
+              <td>DIRECTA</td>
+              <td>$150.213.000</td>
+              <td>$32.867.000</td>
+              <td>3603-SGP Deporte y Recreación vigencia actual - 3604-SGP Deporte y Recreación vigencias anteriores
+              </td>
+              <td>C4301-1604-001-006 - dotación - C4301-1604-4301001-019 - pago instructores - C4301-1604-004-020 -
+                fomento</td>
+              <td>EDUCACIÓN</td>
+              <td>2025-09-01</td>
+              <td>2025-12-31</td>
+              <td><a href="https://drive.google.com/drive/folders/1cxaaxrVhjYpg02q-355lCTMW3LA4GUCw?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>171</td>
+              <td>23670-CD-PSP-171-2025</td>
+              <td>COORDINADOR DE DEPORTE OPS</td>
+              <td>EDUARD JULIO GONZÁLEZ</td>
+              <td>DIRECTA</td>
+              <td>$6.900.000</td>
+              <td>$2.300.000</td>
+              <td>1201-SGP Proposito general - Libre destinación vigencia actual</td>
+              <td>C4301-1604-001-078 - pago de instructores contratados</td>
+              <td>EDUCACIÓN</td>
+              <td>2025-09-15</td>
+              <td>2025-12-15</td>
+              <td><a href="https://drive.google.com/drive/folders/1kfLnOeVwc963k66an2l5DlHIpYjCcEDQ?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+            <tr>
+              <td>175</td>
+              <td>23670-CD-PSP-175-2025</td>
+              <td>GESTIÓN ADMINISTRATIVA EN SIMAT Y OTROS SISTEMAS OPS</td>
+              <td>KAREN LUCÍA PEREZ</td>
+              <td>DIRECTA</td>
+              <td>$7.452.000</td>
+              <td>$2.484.000</td>
+              <td>3101-SGP Educación de calidad - vigencia actual</td>
+              <td>C2201-0700-049-028 - funcionamiento básico de los establecimientos educativos</td>
+              <td>PLANEACIÓN</td>
+              <td>2025-09-16</td>
+              <td>2025-12-16</td>
+              <td><a href="https://drive.google.com/drive/folders/1yHIQxwxwp8yvfghk1i_wqxyJCiBJQU7A?usp=drive_link"
+                  target="_blank" class="btn">Ver</a></td>
+            </tr>
+
+        </table>
+      </div>
+    </main>
+  </div>
+
+  <!-- Modal de Observaciones -->
+  <div id="modal-observacion" class="modal" style="display:none;">
+    <div class="modal-box">
+      <h2>Observaciones</h2>
+      <p id="texto-observacion"></p>
+      <button class="btn-cerrar" onclick="cerrarObservacion()">Cerrar</button>
+    </div>
+  </div>
+
+  <!-- Script de filtrado y modal -->
+  <script>
+    // Filtrado
+    document.addEventListener("DOMContentLoaded", () => {
+      const searchInput = document.getElementById("searchInput");
+      const yearFilter = document.getElementById("yearFilter");
+      const rows = document.querySelectorAll("#contractsTable tbody tr");
+
+      function filterTable() {
+        const searchTerm = searchInput.value.toLowerCase();
+        const selectedYear = yearFilter.value;
+
+        rows.forEach(row => {
+          const rowText = row.textContent.toLowerCase();
+          const codigo = row.cells[1].textContent.trim();
+          const rowYear = codigo.slice(-4); // últimos 4 caracteres = año
+
+          const matchesSearch = rowText.includes(searchTerm);
+          const matchesYear = !selectedYear || rowYear === selectedYear;
+
+          row.style.display = (matchesSearch && matchesYear) ? "" : "none";
+        });
+      }
+
+      searchInput.addEventListener("input", filterTable);
+      yearFilter.addEventListener("change", filterTable);
+
+      filterTable();
+    });
+
+    // Modal funciones
+    function abrirObservacion(texto) {
+      document.getElementById("texto-observacion").textContent = texto;
+      document.getElementById("modal-observacion").style.display = "block";
+    }
+
+    function cerrarObservacion() {
+      document.getElementById("modal-observacion").style.display = "none";
+    }
+  </script>
+</body>
+
+</html>

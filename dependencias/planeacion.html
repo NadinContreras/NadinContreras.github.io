@@ -1,0 +1,2092 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>PAGOS E INFORMES</title>
+  <link rel="stylesheet" href="../styles.css"> <!-- importante -->
+</head>
+
+<body>
+  <header class="main-header">Dependencia: Planeación</header>
+
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <a href="../index.html" class="btn">Inicio</a>
+      <a href="#" 
+           class="btn" target="_blank">Mi drive</a>
+      <button class="logout-btn" onclick="window.location.href='../index.html'">Cerrar sesión</button>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+      <h2 class="subtitle">Usuario: Juan Manuel Urango</h2>
+
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Buscar contrato...">
+        <select id="yearFilter">
+          <option value="">Todos los años</option>
+          <option value="2025" selected>2025</option> <!-- predeterminado -->
+          <option value="2024">2024</option>
+        </select>
+      </div>
+
+      <div class="table-container">
+        <table id="contractsTable">
+          <thead>
+            <tr>
+              <th>N°</th>              
+              <th>Proceso</th>
+              <th>Objeto</th>
+              <th>Contratista</th>
+              <th>Tipo</th>
+              <th>Dependencia</th>
+              <th>Fecha inicio</th>
+              <th>Fecha fin</th>
+              <th>Ver</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- TABLA DE DATOS -->
+
+            <!-- Aquí van las filas de datos -->
+      <tr>
+      <td>17</td>
+      <td>23670-CD-AG-017-2025</td>
+      <td>SERVICIOS INTEGRALES DE BOMBEROS</td>
+      <td>BOMBEROS VOLUNTARIOS DE CIÉNAGA DE ORO</td>
+      <td>DIRECTA</td>
+      <td>GOBIERNO</td>
+      <td>2025-02-05</td>
+      <td>2025-11-05</td>
+      <td><a href="https://drive.google.com/drive/folders/1FE6BzpjoLXcjHM5pkEAfnl_Cuoej_9Pf?usp=sharing"
+          class="btn btn-primary btn-sm" target="_blank">Ver</a></td>
+    </tr>
+      <tr>
+      <td>41</td>
+      <td>23670-CD-AG-041-2025</td>
+      <td>COORDINADOR DE CULTURA OPS</td>
+      <td>LUIS JAMIR POLO RUIZ</td>
+      <td>DIRECTA</td>
+      <td>EDUCACIÓN</td>
+      <td>2025-03-07</td>
+      <td>2025-09-07</td>
+      <td><a href="https://drive.google.com/drive/folders/1m4y5pt_Wzx-Gsj3L0giD8UI9J6YgYsva?usp=sharing"
+          class="btn btn-primary btn-sm" target="_blank">Ver</a></td>
+    </tr>
+      <tr>
+      <td>56</td>
+      <td>23670-CD-PSP-056-2025</td>
+      <td>CONSTRUCCIÓN DEL SISTEMA DE ACUEDUCTO EN BERLÍN Y OPTIMIZACIÓN DEL SISTEMA EN GARDENIAS</td>
+      <td>CONSORCIO FM BERLÍN REPRESENTADO POR FARID GREGORIO MORENO MONTERO</td>
+      <td>DIRECTA</td>
+      <td>OBRAS</td>
+      <td>2025-03-19</td>
+      <td>2025-06-19</td>
+      <td><a href="https://drive.google.com/drive/folders/185MXS6WPav1Q_84oZLkmop7VUkgRG9gW?usp=drive_link"
+          target="_blank" class="btn">Ver</a></td>
+    </tr>
+       <tr>
+      <td>61</td>
+      <td>23670-CD-PSP-061-2025</td>
+      <td>PRESTACIÓN DE SERVICIOS COMO GESTOR OPERATIVO PROGRAMA TRANSFERENCIAS MONETARIAS OPS</td>
+      <td>LYS LEIDY RAMOS MORENO</td>
+      <td>DIRECTA</td>
+      <td>GOBIERNO</td>
+      <td>2025-03-31</td>
+      <td>2025-09-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1t53tVFX89dW-xDIj1SlUo7799heEIqN2?usp=drive_link"
+          target="_blank" class="btn">Ver</a></td>
+    </tr>
+      <tr>
+      <td>449</td>
+      <td>CONVENIO-449-2025</td>
+      <td>CONVENIO EXTENSION DE REDES DE ACUEDUCTO Y ALCANTARILLADO</td>
+      <td>CONVENIO</td>
+      <td>CONVENIO</td>
+      <td>OBRAS</td>
+      <td>2025-03-19</td>
+      <td>2025-06-19</td>
+      <td><a href="https://drive.google.com/drive/folders/128QKSag2811aprWpTydZH9IxWymjSZ0_?usp=sharing"
+          target="_blank" class="btn">Ver</a></td>
+    </tr>
+      <tr>
+      <td>65</td>
+      <td>23670-MINC-SUM-065-2025</td>
+      <td>SUMINISTRO DE COMBUSTIBLE PARA VEHÍCULOS DE LA POLICÍA Y APOYO MUNICIPAL</td>
+      <td>TRANS AGRO S.A R/L JAIME ALBERTO BUSTAMANTE HERNÁNDEZ</td>
+      <td>MINIMA</td>
+      <td>GOBIERNO</td>
+      <td>2025-04-01</td>
+      <td>2025-08-01</td>
+      <td><a href="https://drive.google.com/drive/folders/1vzih-C6GzkdQ_IXbUtxeeGV-EGT__2tI?usp=drive_link"
+          target="_blank" class="btn">Ver</a></td>
+    </tr>
+       <tr>
+      <td>71</td>
+      <td>23670-CD-AG-071-2025</td>
+      <td>GESTOR OPERATIVO DEL PROGRAMA DE TRANSFERENCIAS MONETARIAS OPS</td>
+      <td>LILIBETH URANGO LÓPEZ</td>
+      <td>DIRECTA</td>
+      <td>GOBIERNO</td>
+      <td>2025-04-02</td>
+      <td>2025-10-02</td>
+      <td><a href="https://drive.google.com/drive/folders/1Kr4duBwQQQBj-D2PD78oPUSCPxHtMueq?usp=sharing"
+          target="_blank" class="btn">Ver</a></td>
+    </tr>      
+       <tr>
+      <td>78</td>
+      <td>23670-CD-PSP-078-2025</td>
+      <td>ACOMPAÑAMIENTO DOCENTE PARA TRAYECTORIAS EDUCATIVAS</td>
+      <td>CORPORACIÓN EDUCATIVA SUPERATE R/L JORGE ELIECER OTERO PACHECO</td>
+      <td>DIRECTA</td>
+      <td>EDUCACIÓN</td>
+      <td>2025-04-02</td>
+      <td>2025-08-02</td>
+      <td><a href="https://drive.google.com/drive/folders/1XwFwjL15p_bclc36z-_2r4lXZge3GFb9?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>      
+      <tr>
+      <td>84</td>
+      <td>23670-CD-AG-084-2025</td>
+      <td>APOYO EN EL PROGRAMA DE DISCAPACIDAD EN GOBIERNO OPS</td>
+      <td>RAFAEL ESCOBAR BRAVO</td>
+      <td>DIRECTA</td>
+      <td>GOBIERNO</td>
+      <td>2025-04-03</td>
+      <td>2025-10-03</td>
+      <td><a href="https://drive.google.com/drive/folders/10G6S6Y99bMo3n_dw9vPIu7aRISdpASIl?usp=sharing"
+          target="_blank" class="btn">Ver</a></td>
+    </tr>
+       <tr>
+      <td>92</td>
+      <td>23670-CD-AG-092-2025</td>
+      <td>APOYO A LA SECRETARÍA DE PLANEACIÓN EN EL PROGRAMA DE SISBEN OPS</td>
+      <td>OSMANY GONZALEZ</td>
+      <td>DIRECTA</td>
+      <td>PLANEACIÓN</td>
+      <td>2025-04-09</td>
+      <td>2025-09-09</td>
+      <td><a href="https://drive.google.com/drive/folders/1Tp5zfkNoDQ4ul7ctV-a0FYLKN6E-CC4f?usp=sharing" target="_blank"
+          class="btn">Ver</a></td>
+    </tr>
+       <tr>
+      <td>95</td>
+      <td>23670-CD-AG-095-2025</td>
+      <td>APOYO PARA ACOMPAÑAMIENTO ATENCION INTEGRAL A LA POBLACION VICTIMA OPS</td>
+      <td>YARLEY CAROLINA MENDEZ FLOREZ</td>
+      <td>DIRECTA</td>
+      <td>GOBIERNO</td>
+      <td>2025-03-07</td>
+      <td>2025-09-07</td>
+      <td><a href="https://drive.google.com/drive/folders/1bOErBJjQ7JmMJ35MedhV-zUNIxmuVXaD?usp=sharing"
+          class="btn btn-primary btn-sm" target="_blank">Ver</a></td>
+    </tr>
+      <tr>
+      <td>98</td>
+      <td>23670-CD-AG-098-2025</td>
+      <td>APOYO A LAS ACTIVIDADES DE DEPORTE DEL MUNICIPIO DE SAN ANDRES DE SOTAVENTO CORDOBA OPS</td>
+      <td>ALVARO ALVAREZ PEREZ</td>
+      <td>DIRECTA</td>
+      <td>EDUCACIÓN</td>
+      <td>2025-04-23</td>
+      <td>2025-09-21</td>
+      <td><a href="https://drive.google.com/drive/folders/1NQpIq3gTgLWniznt9T8YbjMpheu3m2tX?usp=sharing"
+          target="_blank" class="btn">Ver</a></td>
+    </tr>      
+       </tr>
+      <tr>
+      <td>99</td>
+      <td>23670-LP-PS-099-2025</td>
+      <td>ASISTENCIA Y ATENCIÓN DEL ADULTO MAYOR</td>
+      <td>FUNDACIÓN NUEVA ILUSIÓN R/L MAXIMA EMILIA TALAIGUA</td>
+      <td>LICITACIÓN</td>
+      <td>GOBIERNO</td>
+      <td>2025-04-24</td>
+      <td>2025-12-20</td>
+      <td><a href="https://drive.google.com/drive/folders/1RVfX8NprxB9D0SM0Pn1z1JfsjAaneAEP?usp=sharing"
+          target="_blank" class="btn">Ver</a></td>
+    </tr>      
+      <tr>
+      <td>101</td>
+      <td>23670-CD-PSP-101-2025</td>
+      <td>TRABAJADORA SOCIAL PARA EL ACOMPANAMIENTO PSICOSOCIAL A ESTUDIANTES OPS</td>
+      <td>VIRGINIA MESA POLO</td>
+      <td>DIRECTA</td>
+      <td>EDUCACIÓN</td>
+      <td>2025-04-29</td>
+      <td>2025-09-28</td>
+      <td><a href="https://drive.google.com/drive/folders/1SvRakEDJWYzXw7y4Jy3sLSP6TzIYv7ZZ?usp=sharing"
+          target="_blank" class="btn">Ver</a></td>
+    </tr>
+            <tr>
+      <td>102</td>
+      <td>23670-CD-PSP-102-2025</td>
+      <td>TRABAJADORA SOCIAL PARA EL ACOMPANAMIENTO PSICOSOCIAL A ESTUDIANTES OPS</td>
+      <td>OMAIDA PATERNINA</td>
+      <td>DIRECTA</td>
+      <td>EDUCACIÓN</td>
+      <td>2025-04-29</td>
+      <td>2025-09-28</td>
+      <td><a href="https://drive.google.com/drive/folders/1RDUeZGWaCgxRqKLvILSZ39TaDNUJ2CJv?usp=drive_link"
+          target="_blank" class="btn">Ver</a></td>
+    </tr>
+       <tr>
+      <td>104</td>
+      <td>23670-CD-PSP-104-2025</td>
+      <td>APOYO EN LAS ACTIVIDADES DE SALUD PUBLICA Y VIGILANCIA EPIDEMIÓLOGICA EN LA SECRETARÍA DE SALUD OPS</td>
+      <td>MIGUEL EMIRO AVILEZ ORTEGA</td>
+      <td>DIRECTA</td>
+      <td>SALUD</td>
+      <td>2025-04-29</td>
+      <td>2025-09-28</td>
+      <td><a href="https://drive.google.com/drive/folders/1yLJ2sndpN28iC6rKi9_bWNCb99Bt6WG0?usp=sharing"
+          target="_blank" class="btn">Ver</a></td>
+    </tr>      
+      <tr>
+      <td>105</td>
+      <td>23670-CD-PSP-105-2025</td>
+      <td>CONTADOR PARA ACOMPAÑAR A LA SECRETARIA DE HACIENDA OPS</td>
+      <td>KARINA MARIA ORTEGA ALEAN</td>
+      <td>DIRECTA</td>
+      <td>HACIENDA</td>
+      <td>2025-04-29</td>
+      <td>2025-09-28</td>
+      <td><a href="https://drive.google.com/drive/folders/1pt2H273Qo-ll_JP4kvJddDOWp6I6tQrj?usp=sharing"
+          target="_blank" class="btn">Ver</a></td>
+    </tr>      
+      <tr>
+      <td>108</td>
+      <td>23670-LP-OP-108-2025</td>
+      <td>CONSTRUCCION DE SETENTA Y UNO (71) UNIDADES BASICAS SANITARIAS</td>
+      <td>ING CONSTRUGENESIS SAS R/L CINDY PAOLA OCHOA</td>
+      <td>LICITACIÓN</td>
+      <td>OBRAS</td>
+      <td>2025-05-05</td>
+      <td>2025-08-29</td>
+      <td><a href="https://drive.google.com/drive/folders/11v-og-WqzomO4mai9hMjc5fQRHvwcTun?usp=sharing"
+          target="_blank" class="btn">Ver</a></td>
+    </tr>
+      <tr>
+      <td>107</td>
+      <td>23670-CD-PSP-107-2025</td>
+      <td>INGENIERO DE ALIMENTOS EN EL APOYO A LA SUPERVISION DE LA GESTION DEL PROGRAMA DE ALIMENTO ESCOLAR PAE OPS</td>
+      <td>CARLOS ALBERTO HERNANDEZ</td>
+      <td>DIRECTA</td>
+      <td>EDUCACIÓN</td>
+      <td>2025-04-30</td>
+      <td>2025-08-29</td>
+      <td><a href="https://drive.google.com/drive/folders/1IPHyUXk4T7yVZIgOO_W9GmC5zr3qvf1q?usp=sharing"
+          target="_blank" class="btn">Ver</a></td>
+    </tr>
+      <tr>
+      <td>110</td>
+      <td>23670-CD-PSP-110-2025</td>
+      <td>RÉGIMEN SUBSIDIADO METODOLOGÍA GAUDI</td>
+      <td>FUNDESCODESA</td>
+      <td>DIRECTA</td>
+      <td>SALUD</td>
+      <td>2025-05-05</td>
+      <td>2025-09-02</td>
+      <td><a href="https://drive.google.com/drive/folders/1BSfAGwMZug_rn2B1fTbpv_FI6pVQ7Cc2?usp=sharing"
+          target="_blank" class="btn">Ver</a></td>
+    </tr>
+      <tr>
+      <td>111</td>
+      <td>23670-CD-PSP-111-2025</td>
+      <td>TRABAJADORA SOCIAL PARA EL ACOMPAÑAMIENTO PSICOSOCIAL A ESTUDIANTES OPS</td>
+      <td>LERCY RAMONA SALGADO</td>
+      <td>DIRECTA</td>
+      <td>EDUCACIÓN</td>
+      <td>2025-05-05</td>
+      <td>2025-10-05</td>
+      <td><a href="https://drive.google.com/drive/folders/1Dhy1v2AayLIwQVmatHnjVV2HLqwiGv1p?usp=sharing"
+          target="_blank" class="btn">Ver</a></td>
+    </tr>
+       <tr>
+      <td>116</td>
+      <td>23670-CD-PSP-116-2025</td>
+      <td>MANEJO DEL BANCO DE PROYECTOS OPS</td>
+      <td>JUAN MANUEL URANGO</td>
+      <td>DIRECTA</td>
+      <td>GOBIERNO</td>
+      <td>2025-05-13</td>
+      <td>2025-09-13</td>
+      <td><a href="https://drive.google.com/drive/folders/1m7fjr59VA8VnK7AQdTpp0dbuUD-WtOKs?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+       <tr>
+      <td>117</td>
+      <td>23670-CD-PSP-117-2025</td>
+      <td>REVISION Y ACTUALIZACION DEL PLAN DE GESTION
+        INTEGRAL DE RESIDUOS SOLIDOS-PGIRS</td>
+      <td>COORPORACION CORDECOR R/L DENIS ARLETH MESTRA FALON</td>
+      <td>DIRECTA</td>
+      <td>PLANEACIÓN</td>
+      <td>2025-05-21</td>
+      <td>2025-09-21</td>
+      <td><a href="https://drive.google.com/drive/folders/10h0sNvPRbBrNn6J87zwRTylwQINZx8zj?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+      <tr>
+      <td>120</td>
+      <td>23670-CD-AG-120-2025</td>
+      <td>APOYO CONTABLE PARA ACOMPAÑAR A LA SECRETARIA DE HACIENDA OPS</td>
+      <td>WILLIAM CASTILLO</td>
+      <td>DIRECTA</td>
+      <td>HACIENDA</td>
+      <td>2025-05-25</td>
+      <td>2025-09-25</td>
+      <td><a href="https://drive.google.com/drive/folders/19FD-ZP6BZ3WoBvclwG7zj_XI3zb_cCt6?usp=drive_link" target="_blank" class="btn">Ver</a></td>
+    </tr>
+      <tr>
+      <td>124</td>
+      <td>23670-MINC-PS-124-2025</td>
+      <td>MANTENIMIENTO DEL PARQUE AUTOMOTOR DE LA POLICIA NACIONAL</td>
+      <td>ANIBAL AVILES / TALLER AANES</td>
+      <td>MINIMA</td>
+      <td>GOBIERNO</td>
+      <td>2025-MES-DIA</td>
+      <td>2025-MES-DIA</td>
+      <td><a href="https://drive.google.com/drive/folders/1yjddS11wwu9McH47Cnahw9z8ghtsCnft?usp=drive_link" target="_blank" class="btn">Ver</a></td>
+    </tr>
+      <tr>
+      <td>127</td>
+      <td>23670-CD-PSP-127-2025</td>
+      <td>REALIZACION DE LAS ACTIVIDADES EN SALUD PUBLICA Y VIGILANCIA EPIDEMIOLOGICAS EN LA SECRETARIA DE SALUD OPS</td>
+      <td>LENIN CORDERO SUAREZ</td>
+      <td>DIRECTA</td>
+      <td>SALUD</td>
+      <td>2025-06-04</td>
+      <td>2025-10-04</td>
+      <td><a href="https://drive.google.com/drive/folders/12DMg02MDsik3mujb-RGICSYqH5Y1n_Wb?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>      
+       <tr>
+      <td>129</td>
+      <td>23670-CD-PSP-129-2025</td>
+      <td>MANEJO DEL SISTEMA SECOP OPS</td>
+      <td>LUIS ANTONIO PINEDA	</td>
+      <td>DIRECTA</td>
+      <td>GOBIERNO</td>
+      <td>2025-06-04</td>
+      <td>2025-10-04</td>
+      <td><a href="https://drive.google.com/drive/folders/1D_QbqyE0vDgVg3KbWT79J-22nitAxZhF?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>             
+      <td>130</td>
+      <td>23670-CD-PSP-117-2025</td>
+      <td>REPORTE DE INFORMACIÓN A ENTIDADES Y SGR OPS</td>
+      <td>ALBERTO BELLO</td>
+      <td>DIRECTA</td>
+      <td>PLANEACIÓN</td>
+      <td>2025-06-04</td>
+      <td>2025-10-04</td>
+      <td><a href="https://drive.google.com/drive/folders/15fMiqXV-mQ-Q09qITiHUrbdworw1vz0q?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+     <tr>
+      <td>131</td>
+      <td>23670-CD-AG-131-2025</td>
+      <td>APOYO ADMINISTRATIVO EN RÉGIMEN SUBSIDIADO OPS</td>
+      <td>ABITH PERTUZ GODIN</td>
+      <td>DIRECTA</td>
+      
+      <td>SALUD</td>
+      <td>2025-06-04</td>
+      <td>2025-10-04</td>
+      <td><a href="https://drive.google.com/drive/folders/1JbMqCpt8hPBGELu9qdcPtbCaU5gT6-yh?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>132</td>
+      <td>23670-CD-PSP-132-2025</td>
+      <td>ACCIONES DE PROMOCION PREVENCION Y CONTROL DE DENGUE MALARIA, LEIHMANIASIS Y CHANGA</td>
+      <td>FUNDACION BERACA  MILAGRO ESTELA ARRIETA BENEDETTI</td>
+      <td>DIRECTA</td>
+      
+      <td>SALUD</td>
+      <td>2025-06-10</td>
+      <td>2025-09-10</td>
+      <td><a href="https://drive.google.com/drive/folders/19octZSsZjnhwR3NGlNwYNnqMgjLv5DS3?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>133</td>
+      <td>23670-CD-PSP-133-2025</td>
+      <td>APOYO AL BANCO DE PROGRAMAS Y PROYECTOS OPS</td>
+      <td>KELLY GOMEZ CALDERON</td>
+      <td>DIRECTA</td>
+      
+      <td>PLANEACIÓN</td>
+      <td>2025-06-10</td>
+      <td>2025-10-10</td>
+      <td><a href="https://drive.google.com/drive/folders/1eTQ3azOTbgp2ugUxFO08kum8uGrUh3pG?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>134</td>
+      <td>23670-CD-PSP-134-2025</td>
+      <td>GESTOR OPERATIVO DEL PROGRAMA TRANSFERENCIAS MONETARIAS DEL MUNICIPIO</td>
+      <td>LUNA FLOR MORENO MERCADO</td>
+      <td>DIRECTA</td>
+      
+      <td>GOBIERNO</td>
+      <td>2025-06-12</td>
+      <td>2025-10-12</td>
+      <td><a href="https://drive.google.com/drive/folders/1LJCJ-t3f1eY_ymONFz3YLKY9F3JAJPVC?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>135</td>
+      <td>23670-MINC-CV-135-2025</td>
+      <td>ADQUISICIÓN DE INSUMOS AGROPECUARIOS PARA FORTALECER AL PEQUEÑO PRODUCTOR RURAL</td>
+      <td>ROBERTO VERGARA ITICS</td>
+      <td>DIRECTA</td>
+      
+      <td>UMATA</td>
+      <td>2025-06-12</td>
+      <td>2025-06-30</td>
+      <td><a href="https://drive.google.com/drive/folders/1FrFc52o0UrHzkeR-FpWXRqE-N5ENSVyK?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>136</td>
+      <td>23670-SASI-CV-136-2025</td>
+      <td>ADQUISICION DE TEXTOS EDUCATIVOS PARA LOS ESTUDIANTES  DE LAS INSTITUCIONES EDUCATIVAS OFICIALES</td>
+      <td>CORPORACIÓN EDUCATIVA SUPERATE  representada legalmente por JORGE ELIECER OTERO PACHECO</td>
+      <td>SASI</td>
+      
+      <td>EDUCACIÓN</td>
+      <td>2025-06-12</td>
+      <td>2025-06-27</td>
+      <td><a href="https://drive.google.com/drive/folders/12Xjh5boErw21ylPRy6-dCM9YGAwRxIQo?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>137</td>
+      <td>23670-CMA-INT-137-2025</td>
+      <td>INTERVENTORIA CONSTRUCCION DE 71 UNIDADES BASICAS SANITARIAS</td>
+      <td>CONSORCIO INTER SANITARIO</td>
+      <td>INTERV</td>
+      
+      <td>OBRAS</td>
+      <td>2025-06-12</td>
+      <td>2025-10-11</td>
+      <td><a href="https://drive.google.com/drive/folders/16ZVXSm1wRp-2kiX2MMK4K1Q30-V6-TD0?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>138</td>
+      <td>23670-CD-PSP-138-2025</td>
+      <td>ACOMPAÑAR AL FORTALECIMIENTO A LA GESTIÓN CULTURAL Y ARTISTICA COMO ACOMPAÑAMIENTO A LA SECRETARIA DE EDUCACIÓN OPS</td>
+      <td>MARCELA CRISTINA BANDA MEDRANO</td>
+      <td>DIRECTA</td>
+      
+      <td>EDUCACIÓN</td>
+      <td>2025-06-12</td>
+      <td>2025-10-12</td>
+      <td><a href="https://drive.google.com/drive/folders/1bfiXZ0LJwVU8_kwR1sBYknBqfTsEWdRk?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>139</td>
+      <td>23670-CD-AG-139-2025</td>
+      <td>APOYO A LA GESTION PARA ACOMPAÑAR A LA SECRETARIA DE GOBIERNO EN EL PROGRAMA DE DISCAPACIDAD OPS</td>
+      <td>GILMA LORENA ATEHORTUA VALENCIA</td>
+      <td>DIRECTA</td>
+      
+      <td>GOBIERNO</td>
+      <td>2025-06-12</td>
+      <td>2025-10-12</td>
+      <td><a href="https://drive.google.com/drive/folders/1OaZXrLA8FknsG7fer15P92P4p5bGL51K?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>140</td>
+      <td>23670-CD-AG-140-2025</td>
+      <td>APOYO PARA ACOMPAÑAR AL FORTALECIMIENTO A LA GESTIÓN CULTURAL Y ARTISTICA COMO ACOMPANAMIENTO A LA SECRETARIA DE EDUCACIÓN OPS</td>
+      <td>MARIA FERNANDA RUIZ RUIZ</td>
+      <td>DIRECTA</td>
+      
+      <td>EDUCACIÓN</td>
+      <td>2025-06-20</td>
+      <td>2025-10-20</td>
+      <td><a href="https://drive.google.com/drive/folders/1kXZI0FHk_MAc0S7IxZ-EqyQLVro_eJJg?usp=sharing" target="_blank" class="btn">Ver</a></td>
+   </tr>
+    <tr>
+      <td>141</td>
+      <td>23670-CD-PSP-141-2025</td>
+      <td>PROFESIONALES COMO ADMINISTRADOR DE EMPRESAS PARA ACOMPAÑAR A LA SECRETARIA DE HACIENDA OPS</td>
+      <td>JUAN ENRIQUE JIMENEZ GERONIMO</td>
+      <td>DIRECTA</td>
+      
+      <td>HACIENDA</td>
+      <td>2025-06-20</td>
+      <td>2025-10-20</td>
+      <td><a href="https://drive.google.com/drive/folders/1kKVH4HN5hi3ezG9NVK_MR5mig3Vydrpj?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>142</td>
+      <td>23670-CD-PSP-142-2025</td>
+      <td>INGENIERO CIVIL PARA APOYO A SUPERVISIÓN OPS</td>
+      <td>ZARETH REYES LUGO</td>
+      <td>DIRECTA</td>
+      
+      <td>OBRAS</td>
+      <td>2025-06-20</td>
+      <td>2025-10-20</td>
+      <td><a href="https://drive.google.com/drive/folders/12YJBp5KqCVoutqb-ZeKYEYVArMIIzKYx?usp=sharing" target="_blank" class="btn">Ver</a></td>
+   </tr>
+    <tr>
+      <td>143</td>
+      <td>23670-CD-CI-143-2025</td>
+      <td>FINANCIACION DE LOS GASTOS DE OPERACIÓN DE LA EMPRESA SOCIAL DEL ESTADO SAN ANDRES APOSTOL</td>
+      <td>EMPRESA SOCIAL DEL ESTADO HOSPITAL SAN ANDRES APOSTOL</td>
+      <td>DIRECTA</td>
+     
+      <td>SALUD</td>
+      <td>2025-06-20</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/13ygLwUAVPtuMuTaVoPRZcOMKpa3Xrcw4?usp=drive_link" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>144</td>
+      <td>23670-CD-PSP-144-2025</td>
+      <td>CAMPAÑA DE EDUCACIÓN Y SEGURIDAD VIAL "SAN ANDRÉS SE MUEVE SEGURO"</td>
+      <td>FUNDACION PROGRESO GESTION Y VIDA (PROGESVIDA)</td>
+      <td>DIRECTA</td>
+      
+      <td>GOBIERNO</td>
+      <td>2025-06-26</td>
+      <td>2025-08-10</td>
+      <td><a href="https://drive.google.com/drive/folders/1WE4xFFPJ0rUzGfHOdvgSw6IDn-1zcuVi?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>145</td>
+      <td>23670-CD-AG-145-2025</td>
+      <td>FIESTAS TRADICIONALES DE LA VIRGEN DEL CARMEN, SANTA ANA Y CONMEMORACION DEL 20 DE JULIO</td>
+      <td>FUNDACION FUNACCODES</td>
+      <td>DIRECTA</td>
+      
+      <td>EDUCACIÓN</td>
+      <td>2025-07-01</td>
+      <td>2025-07-30</td>
+      <td><a href="https://drive.google.com/drive/folders/1pCiZ9ELKTAIVK9CHHLI6Rl7SdZjd6IFz?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>146</td>
+      <td>23670-MINC-CV-146-2025</td>
+      <td>ADQUISICIÓN DE MATERIALES DE CONSTRUCCION Y OTROS ELEMENTOS</td>
+      <td>Will Segundo Ospina Narváez / Ferretería San Andrés</td>
+      <td>MINIMA</td>
+      
+      <td>GOBIERNO</td>
+      <td>2025-07-07</td>
+      <td>2025-07-12</td>
+      <td><a href="https://drive.google.com/drive/folders/1V_U6GXaZwIsbgYMPUWpvlsFfCd0cD_CX?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>147</td>
+      <td>23670-MINC-PS-147-2025</td>
+      <td>HOSPEDAJE A LOS MIEMBROS DE LA POLICIA NACIONAL</td>
+      <td>LA TORRE RL:Pierina Pallares Portillo</td>
+      <td>MINIMA</td>
+      
+      <td>GOBIERNO</td>
+      <td>2025-07-08</td>
+      <td>2025-10-30</td>
+      <td><a href="https://drive.google.com/drive/folders/1rhfTPYKNJQNUake-FAxpQQ8KHHpzndw_?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>148</td>
+      <td>23670-MINC-SUM-148-2025</td>
+      <td>SUMINISTRO DE ALIMENTOS A LOS MIEMBROS DE LA POLICIA NACIONAL</td>
+      <td>Luis Acuña / Los Ranchos</td>
+      <td>MINIMA</td>
+      
+      <td>GOBIERNO</td>
+      <td>2025-07-09</td>
+      <td>2025-10-30</td>
+      <td><a href="https://drive.google.com/drive/folders/1QESZ-GFU9lXvoYTSIrdbS0gTN35iTOJz?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>149</td>
+      <td>23670-PSP-AG-148-2025</td>
+      <td>REALIZACIÓN DE LOS JUEGOS INTERCOLEGIADOS SUPERATE 2025 EN SU FASE MUNICIPAL</td>
+      <td>FUNAGORSAB / JOSE MANUEL MEBARAK ORTEGA</td>
+      <td>DIRECTA</td>
+     
+      <td>EDUCACIÓN</td>
+      <td>2025-07-18</td>
+      <td>2025-08-30</td>
+      <td><a href="https://drive.google.com/drive/folders/1DTXyn674roCaoKc5cKy95PZeSALeDSY9?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>             
+      <td>150</td>
+      <td>23670-MINC-CV-150-2025</td>
+      <td>MECANIZACION DE TIERRAS PARA MEJORAR LA PRODUCTIVIDAD Y EFICIENCIA AGRICOLA</td>
+      <td>ASOCIACION INDIGENA AGROINDUSTRIAL DE SAN ANTONIO DE PALMITO, ASOINAGROPAL</td>
+      <td>DIRECTA</td>
+      <td>UMATA</td>
+      <td>2025-07-22</td>
+      <td>2025-09-21</td>
+      <td><a href="https://drive.google.com/drive/folders/1hKVDPGPL5Zalnc4l-dzh3qsbyANICVmL?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>151</td>
+      <td>151</td>
+      <td>NO ADJUDICADO</td>
+      <td></td>
+      <td></td>
+      <td>$</td>
+      <td>$</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><a href="" target="_blank" class="btn">X</a></td>
+    </tr>
+    <tr>
+     <td>152</td>
+      <td>23670-PSP-AG-152-2025</td>
+      <td>MONITOREO RAPIDO DE VACUNACION DE TRAZADORES</td>
+      <td>FUNDACION GRAN OBRA:LUIS ANGEL VIEIRA MANCHEGO</td>
+      <td>DIRECTA</td>
+      
+      <td>SALUD</td>
+      <td>2025-08-01</td>
+      <td>2025-09-01</td>
+      <td><a href="https://drive.google.com/drive/folders/1QfaODyoN8SBo3rdB7BGJXQcQGtjvF7bf?usp=drive_link" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+     <td>153</td>
+      <td>23670-SAMC-ABM-153-2025</td>
+      <td>ALQUILER VEHICULOS COMISARIA Y ALCALDIA</td>
+      <td>(SOTRANSMAR S.A.S) SERGIO LUIS JIMENEZ ARTEAGA</td>
+      <td>ALQUILER</td>
+      
+      <td>GOBIERNO</td>
+      <td>2025-08-05</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1qvkJxA-a9l0_jaARuwqZmvG1-6LcKTuy?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+     <tr>
+     <td>154</td>
+      <td>23670-SASI-CV-154-2025</td>
+      <td>ADQUISICION DE MOTOCICLETAS CON DESTINO A LA POLICIA NACIONAL</td>
+      <td>COMERCIALIZADORA Y DISTRIBUIDORA LD (YOJANA ALMANZA)</td>
+      <td>SASI</td>
+      
+      <td>GOBIERNO</td>
+      <td>2025-08-12</td>
+      <td>2025-10-12</td>
+      <td><a href="https://drive.google.com/drive/folders/1hkg4ua-ZuFkhiQ6cIGO4zD9F9hUH1CDM?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+     <td>155</td>
+      <td>23670-AG-CD-155-2025</td>
+      <td>APOYO EN DIFERENTES ACTIVIDADES DE LA SECRETARIA DE HACIENDA OPS</td>
+      <td>YAJAIRA DIAZ PEREZ</td>
+      <td>DIRECTA</td>
+      
+      <td>HACIENDA</td>
+      <td>2025-08-08</td>
+      <td>2025-11-08</td>
+      <td><a href="https://drive.google.com/drive/folders/106ys7SRCr4E4SBRToCH_DD83lNXA0KN4?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+     <td>156</td>
+      <td>23670-LP-OP-156-2025</td>
+      <td>MANTENIMIENTO Y MEJORAMIENTO DE LAS VIAS TERCIARIAS</td>
+      <td>INGENIERIA E INVERSIONES DE LA COSATA SAS RL: ANGEL MAURICIO POLO</td>
+      <td>LICITACIÓN</td>
+      
+      <td>OBRAS</td>
+      <td>Cargando...</td>
+      <td>Falta</td>
+      <td><a href="https://drive.google.com/drive/folders/1UC3KhQr_2ajiKis0EMwGVUhGXjwMEQXC?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+     <td>157</td>
+      <td>23670-MINC-CV-157-2025</td>
+      <td>ADQUISICION DE VESTIDO Y CALZADO DE LABOR, DOTACION SERVIDORES PUBLICOS</td>
+      <td>INGENIERIA E INVERSIONES DE LA COSATA SAS RL: ANGEL MAURICIO POLO</td>
+      <td>MINIMA</td>
+      
+      <td>R. HUMANOS</td>
+      <td>2025-09-16</td>
+      <td>2025-09-21</td>
+      <td><a href="https://drive.google.com/drive/folders/1YYHVQ-rCPMj7UZS_mN-JS-kHo80F6YvO?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+     <tr>
+     <td>158</td>
+      <td>23670-CD-PSP-158-2025</td>
+      <td>ACTUALIZACION DEL PLAN MUNICIPAL DE GESTION DE RIESGOS DE DESASTRE "EMRE"</td>
+      <td>CORPORACIÓN PARA EL DESARROLLO INTEGRAL Y SOSTENIBLE DEL DEPARTAMENTO DE CÓRDOBA Y SU ENTORNO (CORDECOR)</td>
+      <td>DIRECTA</td>
+    
+      <td>PLANEACIÓN</td>
+      <td>2025-09-08</td>
+      <td>2025-12-08</td>
+      <td><a href="https://drive.google.com/drive/folders/13aeD6ynNLB3eeg2hXlHErRZlcywrYZC5?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+     <td>159</td>
+      <td>23670-CD-AG-159-2025</td>
+      <td>APOYO A LA SECRETARIA DE EDUCACIÓN EN EL PROCESO DE FORMACIÓN ARTISTICA Y CULTURAL</td>
+      <td>FUNDACION PARA CONTRIBUIR AL DESARROLLO SOCIAL, FUNACCODES</td>
+      <td>DIRECTA</td>
+      
+      <td>EDUCACIÓN</td>
+      <td>2025-09-01</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1nY8NRsk749QxsutEr7GwxiWI4oGr0whR?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+     <td>160</td>
+      <td>23670-CD-PSP-160-2025</td>
+      <td>ACTIVIDADES DE PROMOCIÓN DE ACTIVIDAD FISICA, LA RECREACIÓN Y EL DEPORTE</td>
+      <td>FUNDACION PROGRESO GESTION Y VIDA (PROGESVIDA)</td>
+      <td>DIRECTA</td>
+      <td>EDUCACIÓN</td>
+      <td>2025-09-01</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1dBES-UKKdLtsxNfCRQ3TajBh2Idu-8nq?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+     <td>161</td>
+      <td>23670-CMA-INT-161-2025</td>
+      <td>INTERVENTORÍA MANTENIMIENTO Y MEJORAMIENTO DE VIAS TERCIARIAS</td>
+      <td>INGENIERIA, SOLUCIONES Y CONTRUCCIONES ISC S.A.S</td>
+      <td>INTERV</td>
+     
+      <td>OBRAS</td>
+      <td>FALTA...</td>
+      <td>FALTA...</td>
+      <td><a href="#" target="_blank" class="btn">X</a></td>
+    </tr>
+    <tr>
+     <td>162</td>
+      <td>23670-CD-CI-162-2025</td>
+      <td>AMBULANCIA TIPO TAB (TRANSPORTE ASISTENCIAL BASICO)</td>
+      <td>HOSPITAL SAN ANDRÉS APOSTOL R/L MARGARITA GUERRERO RODRIGUEZ</td>
+      <td>CONVENIO</td>
+      
+      <td>SALUD</td>
+      <td>2025-09-10</td>
+      <td>2025-11-10</td>
+      <td><a href="https://drive.google.com/drive/folders/13yushrn8g-pjFuaA-bikHdMu66P7gnNx?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+   <tr>
+     <td>163</td>
+      <td>23670-CD-PSP-163-2025</td>
+      <td>ASESORÍA JURÍDICA EN PROCESOS CONTRACTUALES OPS</td>
+      <td>DAVID ENRIQUE VARGAS</td>
+      <td>DIRECTA</td>
+      
+      <td>SALUD</td>
+      <td>2025-09-08</td>
+      <td>2025-12-08</td>
+      <td><a href="https://drive.google.com/drive/folders/1x15fH6h2Mp-yan8MtQnbqskO3-RqK241?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+     <td>164</td>
+      <td>23670-CD-PSP-164-2025</td>
+      <td>ARQUITECTO PARA APOYO A INFRAESTRUCTURA OPS</td>
+      <td>FREDY PATERNINA FERNANDEZ</td>
+      <td>DIRECTA</td>
+      
+      <td>OBRAS</td>
+      <td>2025-09-08</td>
+      <td>2025-12-08</td>
+      <td><a href="https://drive.google.com/drive/folders/1KCFf-fFcsTxlyHg88Gnnw08nepFCtzVn?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+     <td>165</td>
+      <td>23670-CD-PSP-165-2025</td>
+      <td>ARQUITECTO PARA APOYO A INFRAESTRUCTURA OPS</td>
+      <td>JULIAN JOSÉ PERTUZ GODIN</td>
+      <td>DIRECTA</td>
+     
+      <td>SALUD</td>
+      <td>2025-09-08</td>
+      <td>2025-12-08</td>
+      <td><a href="https://drive.google.com/drive/folders/1YtwIuYJ_MGmJTGi5for8AbXiBaUgJ1cy?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+     <td>166</td>
+      <td>23670-CD-AG-166-2025</td>
+      <td>APOYO A GESTIÓN EN SALUD AMBIENTAL OPS</td>
+      <td>JOSE RICARDO PEREZ</td>
+      <td>DIRECTA</td>
+     
+      <td>SALUD</td>
+      <td>2025-09-15</td>
+      <td>2025-12-15</td>
+      <td><a href="https://drive.google.com/drive/folders/12m3imCu1rp4V-H-jM7AphjIonWEmmbg_?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+     <td>167</td>
+      <td>23670-CD-PSP-167-2025</td>
+      <td>TRABAJADORA SOCIAL EN ACOMPAÑAMIENTO EN SALUD OPS</td>
+      <td>DIANA DEL CRISTO VELASQUEZ</td>
+      <td>DIRECTA</td>
+      
+      <td>SALUD</td>
+      <td>2025-09-15</td>
+      <td>2025-12-25</td>
+      <td><a href="https://drive.google.com/drive/folders/1xY3I8vZslNBLS52CmHUSoqgFhaZgsx9H?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+     <td>168</td>
+      <td>23670-CD-PSP-168-2025</td>
+      <td>PSICÓLOGA EN SALUD MENTAL OPS</td>
+      <td>MARIA ANGEL ARROYO HOYOS</td>
+      <td>DIRECTA</td>
+      
+      <td>SALUD</td>
+      <td>2025-09-15</td>
+      <td>2025-12-25</td>
+      <td><a href="https://drive.google.com/drive/folders/1uDtUhMBQRKGhCNNqQbS1AkB_yw7Op3SZ?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+     <td>169</td>
+      <td>23670-CD-PSP-169-2025</td>
+      <td>ASESOR FINANCIERO SECRETARÍA DE HACIENDA OPS</td>
+      <td>FABIAN JOSÉ BUSTAMANTE SIERRA</td>
+      <td>DIRECTA</td>
+      
+      <td>HACIENDA</td>
+      <td>2025-09-15</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1wK9A6zPJ7ignlEQQpkgsmmC0UASY8Pv5?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+     <td>170</td>
+      <td>23670-CD-PSP-170-2025</td>
+      <td>COORDINADOR SISBEN OPS</td>
+      <td>DOMINGO MEZA</td>
+      <td>DIRECTA</td>
+      
+      <td>PLANEACIÓN</td>
+      <td>2025-09-15</td>
+      <td>2025-12-25</td>
+      <td><a href="https://drive.google.com/drive/folders/1ELKQP96lVgieerkvN3lmccSY-SiyaGLk?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+     <td>171</td>
+      <td>23670-CD-PSP-171-2025</td>
+      <td>COORDINADOR DE DEPORTE OPS</td>
+      <td>EDUARD JULIO GONZÁLEZ</td>
+      <td>DIRECTA</td>
+      
+      <td>EDUCACIÓN</td>
+      <td>2025-09-15</td>
+      <td>2025-12-15</td>
+      <td><a href="https://drive.google.com/drive/folders/1rkfJ09hT3E9enmVa8S3wMqOyuqNHCBXG?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+     <tr>
+     <td>172</td>
+      <td>23670-CD-PSP-172-2025</td>
+      <td>ADMINISTRADOR PÚBLICO EN PLANIFICACIÓN INSTITUCIONAL OPS</td>
+      <td>MARLA SUJEY JARRAMILLO MARTÍNEZ</td>
+      <td>DIRECTA</td>
+      
+      <td>PLANEACIÓN</td>
+      <td>2025-09-15</td>
+      <td>2025-12-15</td>
+      <td><a href="https://drive.google.com/drive/folders/1_BDVJUuEY8irXnzJCvZVW4VoWEUgvjc4?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+     <td>173</td>
+      <td>23670-CD-PSP-173-2025</td>
+      <td>ASESORA EN TITULACIÓN DE PREDIOS BALDIOS Y FISCALES OPS	</td>
+      <td>LINA EDITH CHÁVEZ PERALTA	</td>
+      <td>DIRECTA</td>
+      
+      <td>PLANEACIÓN</td>
+      <td>2025-09-15</td>
+      <td>2025-12-25</td>
+      <td><a href="https://drive.google.com/drive/folders/1EUyM_h1KXfBizc3UnkkGdHolcFF8pN73?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+     <td>174</td>
+      <td>23670-CD-PSP-174-2025</td>
+      <td>GESTIÓN DE PLANIFICACIÓN EN POLÍTICAS AMBIENTALES Y SANEAMIENTO OPS</td>
+      <td>IVANA INÉS SPIR BETTÍN</td>
+      <td>DIRECTA</td>
+      
+      <td>PLANEACIÓN</td>
+      <td>2025-09-16</td>
+      <td>2025-12-26</td>
+      <td><a href="https://drive.google.com/drive/folders/1GnUBiHtLtmnCW2aP5WNuzZyJUng8DC1t?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+     <tr>
+     <td>175</td>
+      <td>23670-CD-PSP-175-2025</td>
+      <td>GESTIÓN ADMINISTRATIVA EN SIMAT Y OTROS SISTEMAS OPS</td>
+      <td>KAREN LUCÍA PEREZ</td>
+      <td>DIRECTA</td>
+      <td>PLANEACIÓN</td>
+      <td>2025-09-16</td>
+      <td>2025-12-16</td>
+      <td><a href="https://drive.google.com/drive/folders/1zNsEXAczRabrnJH2JrHp3mIYR4xdbUMW?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+     <td>176</td>
+      <td>23670-CD-PSP-176-2025</td>
+      <td>INGENIERO CIVIL PARA APOYO A INFRAESTRUCTURA OPS</td>
+      <td>JHONNY GABRIEL SUAREZ MALOOF OPS</td>
+      <td>DIRECTA</td>
+      <td>PLANEACIÓN</td>
+      <td>2025-09-16</td>
+      <td>2025-12-26</td>
+      <td><a href="https://drive.google.com/drive/folders/1kDhQ9W_G2_MIaVGgZKnkxYlebcWS78vQ?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+     <td>177</td>
+      <td>23670-CD-PSP-177-2025</td>
+      <td>ECONOMISTA PARA LA SECRETARÍA DE HACIENDA OPS</td>
+      <td>PATRICIA EUGENIA MONTIEL ARROYO</td>
+      <td>DIRECTA</td>
+      <td>HACIENDA</td>
+      <td>2025-09-16</td>
+      <td>2025-12-16</td>
+      <td><a href="https://drive.google.com/drive/folders/1NfTeZbwmyFSs7b-9HlfZPfpPZ0ngSgYW?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+     <td>178</td>
+      <td>23670-CD-PSP-178-2025</td>
+      <td>ARQUITECTO DE PLANEACIÓN OPS</td>
+      <td>JESUS BAUTISTA</td>
+      <td>DIRECTA</td>
+      <td>PLANEACIÓN</td>
+      <td>2025-09-16</td>
+      <td>2025-12-16</td>
+      <td><a href="https://drive.google.com/drive/folders/1mh1iYn6xnlfRKLiA8B0SUK4yfhkhwj-c?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+     <td>179</td>
+      <td>23670-CD-PSP-179-2025</td>
+      <td>APOYO AL SISBEN EN PLANEACIÓN OPS</td>
+      <td>MIRIAM DEL CARMEN PEÑA</td>
+      <td>DIRECTA</td>
+      <td>PLANEACIÓN</td>
+      <td>2025-09-16</td>
+      <td>2025-12-16</td>
+      <td><a href="https://drive.google.com/drive/folders/1f8-JrXieJdsI6RXFxyGtkOpHEdMp0TcP?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+     <td>180</td>
+      <td>180</td>
+      <td>NO SUSCRITO</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><a href="#" target="_blank" class="btn">X</a></td>
+    </tr>
+    <tr>
+     <td>181</td>
+      <td>23670-CD-PSP-181-2025</td>
+      <td>LÍDER PROGRAMA COLOMBIA MAYOR OPS</td>
+      <td>SARAY ROMERO</td>
+      <td>DIRECTA</td>
+      <td>PLANEACIÓN</td>
+      <td>2025-09-16</td>
+      <td>2025-12-16</td>
+      <td><a href="https://drive.google.com/drive/folders/1UFI2B0UGlLAgedQiW4zEuOeeDN4xMsQT?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>182</td>
+      <td>23670-CD-PSP-182-2025</td>
+      <td>COORDINADOR DE JUVENTUD OPS</td>
+      <td>LUIS FERNANDO ALEAN</td>
+      <td>DIRECTA</td>
+      <td>GOBIERNO</td>
+      <td>2025-09-22</td>
+      <td>2025-12-22</td>
+      <td><a href="https://drive.google.com/drive/folders/19p6PZ7K8Bx0If3WPJgzl5AQ7Oz5F4Ejf?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>183</td>
+      <td>23670-CD-PSP-183-2025</td>
+      <td>ASESORÍA EN FORTALECIMIENTO INSTITUCIONAL Y APOYO AL PAF DE LA FISCALÍA OPS</td>
+      <td>LINA MARCELA ROQUEME</td>
+      <td>DIRECTA</td>
+      <td>GOBIERNO</td>
+      <td>2025-09-22</td>
+      <td>2025-12-22</td>
+      <td><a href="https://drive.google.com/drive/folders/14DGdMvWOM-_EyX0AvbBpqdL60vN-03C8?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>184</td>
+      <td>23670-CD-PSP-184-2025</td>
+      <td>GESTOR RENTA CIUDADANA POBLACIÓN INDÍGENA OPS</td>
+      <td>ANA CLAUDIA TORIBIO</td>
+      <td>DIRECTA</td>
+      <td>GOBIERNO</td>
+      <td>2025-09-22</td>
+      <td>2025-12-22</td>
+      <td><a href="https://drive.google.com/drive/folders/15Y7fyJuALn0Ta5d5J07_xdY8o-SiqpN7?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>185</td>
+      <td>23670-CD-PSP-185-2025</td>
+      <td>COORDINADOR MUNICIPAL PROGRAMAS DE TRANSFERENCIA OPS</td>
+      <td>JESUS ALBERTO SOTO</td>
+      <td>DIRECTA</td>
+      <td>GOBIERNO</td>
+      <td>2025-09-23</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1Vuua8RRRLIa0fAam5XQUjjtdN42y5XGg?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>186</td>
+      <td>23670-CD-PSP-186-2025</td>
+      <td>ABOGADO PARA ACOMPAÑAR VICTIMAS DE VIOLENCIA EN SAN ANDRÉS DE SOTAVENTO OPS</td>
+      <td>RODRIGO RODRIGUEZ MORELO</td>
+      <td>DIRECTA</td>
+      <td>GOBIERNO</td>
+      <td>2025-09-23</td>
+      <td>2025-12-23</td>
+      <td><a href="https://drive.google.com/drive/folders/1hQ3yGMRLys2BOitKe-e2o4NeuRI75-cn?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>187</td>
+      <td>23670-CD-AG-187-2025</td>
+      <td>GESTOR OPERATIVO DE TRANSFERENCIAS MONETARIAS OPS</td>
+      <td>AMPARO DE JESÚS CARMONA</td>
+      <td>DIRECTA</td>
+      
+      <td>GOBIERNO</td>
+      <td>2025-09-23</td>
+      <td>2025-12-23</td>
+      <td><a href="https://drive.google.com/drive/folders/1cbU8PBA6jV2nrcnVMRJvRb5-mTci2-YI?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>188</td>
+      <td>23670-CD-AG-188-2025</td>
+      <td>APOYO ADMINISTRATIVO AL DESPACHO DEL ALCALDE OPS</td>
+      <td>SUHEY MILENA COVO GOMEZ</td>
+      <td>DIRECTA</td>
+     
+      <td>GOBIERNO</td>
+      <td>2025-09-23</td>
+      <td>2025-12-23</td>
+      <td><a href="https://drive.google.com/drive/folders/1iBBybnTnFDO243WT6KHI6T78cvuwmYnY?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>189</td>
+      <td>23670-CD-AG-189-2025</td>
+      <td>COORDINADOR DE CULTURA OPS</td>
+      <td>LUIS JAMIR POLO RUIZ</td>
+      <td>DIRECTA</td>
+      
+      <td>EDUCACIÓN</td>
+      <td>2025-09-24</td>
+      <td>2025-12-24</td>
+      <td><a href="https://drive.google.com/drive/folders/1UKpIbj6v7IwJxJIZNV9Jte_pyW9Rhm7R?usp=drive_link" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>190</td>
+      <td>23670-CD-CT-190-2025</td>
+      <td>CONVENIO PARA SUBSIDIOS PÚBLICOS DE AGUA POTABLE Y SANEAMIENTO BÁSICO</td>
+      <td>EMPRESA AQUALIA LATINOAMERICA S.A. E.S.P</td>
+      <td>CONVENIO</td>
+      
+      <td>PLANEACIÓN</td>
+      <td>2025-09-26</td>
+      <td>2025-12-26</td>
+      <td><a href="https://drive.google.com/drive/folders/1TbXl5BMCzDBA7qy1giXpG7GCNdWZxkAz?usp=drive_link" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>191</td>
+      <td>23670-CD-CT-191-2025</td>
+      <td>CONVENIO PARA SUBSIDIOS PÚBLICOS DE AGUA POTABLE Y SANEAMIENTO BÁSICO</td>
+      <td>SEACOR</td>
+      <td>CONVENIO</td>
+     
+      <td>PLANEACIÓN</td>
+      <td>2025-09-27</td>
+      <td>2025-12-26</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>192</td>
+      <td>23670-MINC-CV-192-2025</td>
+      <td>ADQUISICION DE EQUIPOS TECNOLOGICOS DE OFICINA Y OTROS ELEMENTOS CON DESTINO A LA COMISARIA DE FAMILIA</td>
+      <td>MIGUEL ANGEL PEREZ</td>
+      <td>MINIMA</td>
+      
+      <td>GOBIERNO</td>
+      <td>2025-09-29</td>
+      <td>2025-12-26</td>
+      <td><a href="https://drive.google.com/drive/folders/19pjmNb0BKjoaHKtCmP6eqJkiZaA5u4f1?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>193</td>
+      <td>23670-MINC-CV-193-2025</td>
+      <td>ADQUISICION DE POLIZA DE VIDA GRUPO PARA EL ALCALDE, PERSONERO Y CONCEJALES</td>
+      <td>LA PREVISORA S.A. COMPAÑÍA DE SEGUROS</td>
+      <td>MINIMA</td>
+     
+      <td>GOBIERNO</td>
+      <td>2025-09-29</td>
+      <td>2025-12-26</td>
+      <td><a href="https://drive.google.com/drive/folders/1m877LqfQR2RTYkhrDCFjO0VQgVOj7E5N?usp=drive_link" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>194</td>
+      <td>23670-CD-PSP-194-2025</td>
+      <td>ASESORÍA JURÍDICA EN PROCESOS CONTRACTUALES OPS</td>
+      <td>LEYLA JUDITH OROZCO MEDINA</td>
+      <td>DIRECTA</td>
+      
+      <td>GOBIERNO</td>
+      <td>2025-10-01</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1VeAyEHn6Y58X0MH_GkP7QP_MAEUAIBeQ?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>195</td>
+      <td>23670-CD-PSP-195-2025</td>
+      <td>REPRESENTACIÓN JURÍDICA EN PROCESOS JUDICIALES Y ADMINISTRATIVOS OPS</td>
+      <td>ALBERT ANTONIO BETTIN PERTUZ</td>
+      <td>DIRECTA</td>
+     
+      <td>GOBIERNO</td>
+      <td>2025-10-01</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1xkmNTo1PUkH2iJfV1FKG_dzuucYOaPd0?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>196</td>
+      <td>23670-CD-PSP-196-2025</td>
+      <td>COORDINADOR PROTECCIÓN INTEGRAL NIÑEZ OPS</td>
+      <td>SANDRA OROZCO</td>
+      <td>DIRECTA</td>
+      <td>GOBIERNO</td>
+      <td>2025-10-01</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1bwlIytc_kIL2RyVnYPubLQ2ZAteHWcY-?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>197</td>
+      <td>23670-CD-PSP-196-2025</td>
+      <td>ASESOR JURÍDICO ESPECIALIZADO EN LA SECRETARÍA DE SALUD OPS</td>
+      <td>JOSE RAUL CABRALES ROMERO</td>
+      <td>DIRECTA</td>
+      
+      <td>SALUD</td>
+      <td>2025-10-01</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1Zoba71sIRMmVCCJ2dvfueZea4I352ba3?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>198</td>
+      <td>23670-CD-PSP-198-2025</td>
+      <td>PROFESIONAL PARA ACOMPAÑAR A LA SECRETARIA DE GOBIERNO EN EL PROGRAMA DE MUJER Y GENERO OPS</td>
+      <td>BERNARDA DEL SOCORRO GUERRA</td>
+      <td>DIRECTA</td>
+      
+      <td>GOBIERNO</td>
+      <td>2025-10-01</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1cGGpw-iDhMTBwY7dKS_UavCAuBy5ShKh?usp=sharing"
+          target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>199</td>
+      <td>23670-CD-PSP-199-2025</td>
+      <td>COORDINADOR ENLACE VICTIMAS OPS</td>
+      <td>WILMER ROMERO</td>
+      <td>DIRECTA</td>
+      
+      <td>GOBIERNO</td>
+      <td>2025-10-01</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1B8jdGb8MS6akCdCCcOrLVrZflFJQ6H1i?usp=drive_link" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>200</td>
+      <td>23670-CD-PSP-200-2025</td>
+      <td>ASESOR JURÍDICO DE PROGRAMAS SOCIALES ABOGADO OPS</td>
+      <td>MARIA EUGENIA MORENO</td>
+      <td>DIRECTA</td>
+      
+      <td>GOBIERNO</td>
+      <td>2025-10-01</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1W-9n70jYd73lUT_ZYAe0tT_Es22tf78u?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>201</td>
+      <td>23670-CD-PSP-201-2025</td>
+      <td>COORDINADOR PROGRAMA DISCAPACIDAD OPS</td>
+      <td>JOHANA RIVERO</td>
+      <td>DIRECTA</td>
+      
+      <td>GOBIERNO</td>
+      <td>2025-10-01</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/16somdMYbO2PA-PH8DOUEV99_S5oIJSxa?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>202</td>
+      <td>23670-CD-PSP-202-2025</td>
+      <td>ASESOR JURÍDICO EN HACIENDA OPS</td>
+      <td>JUAN JAVIER BANDA MARTÍNEZ</td>
+      <td>DIRECTA</td>
+      
+      <td>HACIENDA</td>
+      <td>2025-10-01</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1RQs3TfMzSrSCYUhJuyOUcf8xWhYc6OAA?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>203</td>
+      <td>23670-CD-AG-203-2025</td>
+      <td>APOYO A ARCHIVO MUNICIPAL OPS</td>
+      <td>LUZ NISPERUZA</td>
+      <td>DIRECTA</td>
+      
+      <td>GOBIERNO</td>
+      <td>2025-10-01</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1cnOjaA7NvkCSVto4IYkWGHROAhV05tbk?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>204</td>
+      <td>23670-CD-AG-204-2025</td>
+      <td>APOYO AL SISBÉN DESDE PLANEACIÓN OPS</td>
+      <td>LINEY DEL CARMEN QUIÑONEZ BAQUERO</td>
+      <td>DIRECTA</td>
+     
+      <td>PLANEACIÓN</td>
+      <td>2025-10-06</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1OJzCIXtR0FVfh1FrdmnEvl-v4vlgSQSM?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>205</td>
+      <td>205</td>
+      <td>NO SUSCRITO</td>
+      <td></td>
+      <td></td>
+      
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><a href="#" target="_blank" class="btn">X</a></td>
+    </tr>
+    <tr>
+      <td>206</td>
+      <td>23670-CD-PSP-206-2025</td>
+      <td>ACOMPAÑAMIENTO A LA SECRETARÍA DE PLANEACIÓN EN EL MANEJO DEL SISBÉN OPS</td>
+      <td>CAMILO ANDRÉS COVO DE HOYOS</td>
+      <td>DIRECTA</td>
+      
+      <td>PLANEACIÓN</td>
+      <td>2025-10-01</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1-vbu_lnvfjOuLlH4-dR5ovgH81fYjcMJ?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>207</td>
+      <td>23670-CD-PSP-207-2025</td>
+      <td>PROMOTOR SOCIAL Y COMUNITARIO OPS</td>
+      <td>GABRIELA ISABEL PÉREZ URANGO</td>
+      <td>DIRECTA</td>
+     
+      <td>GOBIERNO</td>
+      <td>2025-10-01</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1z8BPaHpxVRqaogsID_MMtF_7WW_gLaHW?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>208</td>
+      <td>23670-CD-PSP-208-2025</td>
+      <td>GESTOR OPERATIVO DEL PROGRAMA TRANSFERENCIAS MONETARIAS OPS</td>
+      <td>CLARA YEPEZ AYALA</td>
+      <td>DIRECTA</td>
+      <td>GOBIERNO</td>
+      <td>2025-10-01</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1S5II1eeQCpjZTSWZdYk1Eujjt2v1FPlu?usp=sharing" class="btn">Ver</a></td>
+    </tr>
+     <tr>
+      <td>209</td>
+      <td>23670-CD-AG-209-2025</td>
+      <td>GESTOR OPERATIVO DEL PROGRAMA DE TRANSFERENCIAS MONETARIAS OPS</td>
+      <td>MARCO ANTONIO MEJÍA</td>
+      <td>DIRECTA</td>
+     
+      <td>GOBIERNO</td>
+      <td>2025-10-01</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1zsUCK32iclgBppM911zyXwIDVLDEZgng?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+     <tr>
+      <td>210</td>
+      <td>23670-LP-OP-210-2025</td>
+      <td>CONSTRUCCION DE ACUEDUCTO SANTA FE Y ARROYO DEL MEDIO</td>
+      <td>CONSORCIO ACUEDUCTO RURAL RL: DIEGO ANDRES COVO FERNANDEZ</td>
+      <td>LICITACIÓN</td>
+     
+      <td>OBRAS</td>
+      <td>2025-10-01</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1YSW2WhLvKfOz5g2cR0XGdFjCpmHG_hdT?usp=drive_link" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>211</td>
+      <td>23670-SAMC-OP-211-2025</td>
+      <td>MANTENIMIENTO CENTROS EDUCATIVOS E INSTITUCIONES EDUCATIVAS RURALES</td>
+      <td>CONSTRUCTORA Y CONSULTORA KANEY S.A.S R/L SAIDY MINA MENDOZA</td>
+      <td>SAMNC</td>
+     
+      <td>OBRAS</td>
+      <td>2025-10-01</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1a5bXIA-QK4tL9LHHGNrkTc_uUdSTUbDs?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>212</td>
+      <td>23670-CD-PSP-212-2025</td>
+      <td>ECONOMISTA PARA ACOMPAÑAR A LA SECRETARÍA DE HACIENDA OPS</td>
+      <td>EDGAR TAISITH SANTODOMINGO</td>
+      <td>DIRECTA</td>
+      
+      <td>HACIENDA</td>
+      <td>2025-10-03</td>
+      <td>2025-12-31</td>
+      <td><a href="#" target="_blank" class="btn">X</a></td>
+    </tr>
+    <tr>
+      <td>213</td>
+      <td>213</td>
+      <td>NO ADJUDICADO</td>
+      <td></td>
+      <td>DIRECTA</td>
+      
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>214</td>
+      <td>23670-CD-PSP-214-2025</td>
+      <td>TRABAJADORA SOCIAL PARA EL ACOMPAÑAMIENTO PSICOSOCIAL A ESTUDIANTES OPS</td>
+      <td>LERCY RAMONA SALGADO</td>
+      <td>DIRECTA</td>
+     
+      <td>EDUCACIÓN</td>
+      <td>2025-10-06</td>
+      <td>2025-12-31</td>
+      <td><a href="#" target="_blank" class="btn">X</a></td>
+    </tr>
+    <tr>
+      <td>215</td>
+      <td>23670-CD-AG-215-2025</td>
+      <td>IMPLEMENTACION DEL MERCADO CAMPESINO</td>
+      <td>FUNDACION CONSTRUIR FUTURO R/L JORGE ELIAS FIGUEROA PACHECO</td>
+      <td>DIRECTA</td>
+      
+      <td>UMATA</td>
+      <td>2025-10-06</td>
+      <td>2025-11-06</td>
+      <td><a href="https://drive.google.com/drive/folders/1zJTGVBW4WQ8RzlMuLeC1cPd39dPBiIHK?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>216</td>
+      <td>23670-LP-PS-216-2025</td>
+      <td>RESTAURACIÓN DE COBERTURA VEGETAL, LIMPIEZA DE CUERPOS DE AGUA E IDENTIFICACIÓN DE SERVICIOS ECOSISTÉMICOS EN EL LAGO DEL VIVERO</td>
+      <td>FUNDACIÓN PARA EL DESARROLLO DE LAS COMUNIDADES INDIGENAS ZENÚ FUNDECOINZENÚ</td>
+      <td>LICITACION</td>
+      
+      <td>UMATA</td>
+      <td>2025-10-06</td>
+      <td>2025-11-30</td>
+      <td><a href="#" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>217</td>
+      <td>23670-CD-PSP-217-2025</td>
+      <td>MANEJO DEL BANCO DE PROYECTOS OPS</td>
+      <td>JUAN MANUEL URANGO</td>
+      <td>DIRECTA</td>
+     
+      <td>PLANEACIÓN</td>
+      <td>2025-10-06</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/16jyqhIQDn-8xbPviv6tqfKpS0bFXI8Xp?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>218</td>
+      <td>23670-CD-PSP-218-2025</td>
+      <td>GESTOR OPERATIVO DEL PROGRAMA TRANFERENCIAS MONETARIAS OPS</td>
+      <td>PAULINA PAOLA PEREZ PATERNINA</td>
+      <td>DIRECTA</td>
+      <td>GOBIERNO</td>
+      <td>2025-10-06</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/10hJnu2fRDbwrGBUH7z2n-AN5khTSZM_k?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>219</td>
+      <td>23670-CD-PSP-219-2025</td>
+      <td>COORDINADOR PARA ACOMPAÑAMIENTO A LA POBLACIÓN AFRODESCENDIENTE OPS</td>
+      <td>SANDY PAOLA URANGO</td>
+      <td>DIRECTA</td>
+      
+      <td>GOBIERNO</td>
+      <td>2025-10-06</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1vHYTeai3yh1NYXEa42xWToHaJW7afrIl?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>220</td>
+      <td>23670-CD-PSP-220-2025</td>
+      <td>TRABAJADORA SOCIAL PARA EL ACOMPANAMIENTO PSICOSOCIAL A ESTUDIANTES OPS</td>
+      <td>VIRGINIA MESA POLO</td>
+      <td>DIRECTA</td>
+      
+      <td>EDUCACIÓN</td>
+      <td>2025-10-06</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1wrpRBQWLKFC1WOpG8tNmXHA5xqUqKuFw?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>221</td>
+      <td>23670-CD-AG-221-2025</td>
+      <td>APOYO AL PROGRAMA DE FORTALECIMIENTO DE LA PROTECCIÓN INTEGRAL DE LA NIÑEZ Y ADOLESCENCIA OPS</td>
+      <td>YARLEDIS DIAZ</td>
+      <td>DIRECTA</td>
+      
+      <td>GOBIERNO</td>
+      <td>2025-10-06</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1LcmDZ3UKd7RQYn4qCxWz8-FPqbisxLpC?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>222</td>
+      <td>23670-CD-PSP-222-2025</td>
+      <td>TRABAJADORA SOCIAL EN LA REALIZACION DE ACTIVIDADES DE PROMOCION SOCIAL LA SECRETARIA DE SALUD OPS</td>
+      <td>MARIA DE LOS ANGELES MEZA</td>
+      <td>DIRECTA</td>
+      
+      <td>SALUD</td>
+      <td>2025-10-06</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1hP13l6FtWImJsFWRQBy0cb-1dUeV8Rwp?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>223</td>
+      <td>23670-CD-PSP-223-2025</td>
+      <td>PRESTACIÓN DE SERVICIOS COMO GESTOR OPERATIVO PROGRAMA TRANSFERENCIAS MONETARIAS OPS</td>
+      <td>LYS LEIDY RAMOS MORENO</td>
+      <td>DIRECTA</td>
+      
+      <td>GOBIERNO</td>
+      <td>2025-10-06</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/11Rk9UR1NT91n4Wn2DZFPtcZP7CGaMazD?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>224</td>
+      <td>23670-CD-AG-224-2025</td>
+      <td>APOYO A LAS ACTIVIDADES DE DEPORTE OPS</td>
+      <td>SENEN JOSÉ VALENCIA PERTUZ</td>
+      <td>DIRECTA</td>
+      
+      <td>EDUCACIÓN</td>
+      <td>2025-10-06</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1L4LD3SX2r27zSYUJVALSk6IDHMdtaEbr?usp=drive_link" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>225</td>
+      <td>23670-CD-PSP-225-2025</td>
+      <td>TRABAJADORA SOCIAL PARA EL ACOMPANAMIENTO PSICOSOCIAL A ESTUDIANTES OPS</td>
+      <td>OMAIDA PATERNINA</td>
+      <td>DIRECTA</td>
+      
+      <td>EDUCACIÓN</td>
+      <td>2025-10-06</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1mOSWTyTkxsd-z_3GprZp9JbGJ1Wrr18v?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>226</td>
+      <td></td>
+      <td>NO ADJUDICADO</td>
+      <td></td>
+      <td></td>
+      
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>227</td>
+      <td>23670-CD-PSP-227-2025</td>
+      <td>PRESTACIÓN DE SERVICIOS COMO COORDINADORA PROGRAMA MUJER Y EQUIDAD DE GÉNERO OPS</td>
+      <td>ERIKA PAOLA JURIS NEGRETE</td>
+      <td>DIRECTA</td>
+      
+      <td>GOBIERNO</td>
+      <td>2025-10-10</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1_mKtY1GSFH4knqfLiLRayPkEjaEpKqIh?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>228</td>
+      <td>23670-CD-PSP-228-2025</td>
+      <td>APOYO AL ACOMPAÑAMIENTO A LA IMPLEMENTACION DEL PROGRAMA JUVENTUD OPS</td>
+      <td>YERALDIN RUIZ OSORIO</td>
+      <td>DIRECTA</td>
+      
+      <td>GOBIERNO</td>
+      <td>2025-10-10</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/17FLCtoULB_5mKHRKUWSeXffrSlEaiM3p?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>229</td>
+      <td>23670-CD-PSP-229-2025</td>
+      <td>GESTION DE TECNOLOGIAS DE LA INFORMACION Y COMUNICACIÓNES OPS</td>
+      <td>NADIN CONTRERAS</td>
+      <td>DIRECTA</td>
+     
+      <td>GOBIERNO</td>
+      <td>2025-10-10</td>
+      <td>2025-12-19</td>
+      <td><a href="https://drive.google.com/drive/folders/1NG5g2LecWrJfzf91QiBWCx2JY_J-TuJj?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>230</td>
+      <td>23670-CD-CI-230-2025</td>
+      <td>MANTENIMIENTO DE LOS PUESTOS DE SALUD UBICADOS EN PUEBLECITO SUR, EL HOYAL, EL BANCO Y LAS CASITAS SUR ZONA RURAL</td>
+      <td>HOSPITAL SAN ANDRÉS APOSTOL R/L MARGARITA GUERRERO RODRIGUEZ</td>
+      <td>CONVENIO</td>
+     
+      <td>GOBIERNO</td>
+      <td>2025-10-15</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1gHgWv8JE0G93mCFozA-8hE3lcBL13t2a?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>231</td>
+      <td>23670-SAMC-OP-231-2025</td>
+      <td>CONSTRUCCIONES AULAS</td>
+      <td>INGENIERIA E INVERSIONES DE LA COSATA SAS.  ANGEL  POLO JALLER</td>
+      <td>SAMC</td>
+      
+      <td>OBRAS</td>
+      <td>2025-10-15</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1FdTeS8k4wfj-iGtFqJw7YHvRrlHQvtU3?usp=sharing" target="_blank" class="btn">X</a></td>
+    </tr>
+    <tr>
+      <td>232</td>
+      <td>23670-MINC-PST-232-2025</td>
+      <td>TRANSPORTE PARA ACOMPAÑAR EL PROCESO DE LAS ELECCIONES DEL CONSEJO MUNICIPAL DE JUVENTUDES CMJ</td>
+      <td>SOCIEDAD TRASNPORTADORA MARIN SAS</td>
+      <td>MINIMA</td>
+      
+      <td>GOBIERNO</td>
+      <td>2025-10-16</td>
+      <td>2025-10-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1NO3_uIQpvnBrTROaP7Jnk9HVeA1pG6IY?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>233</td>
+      <td>23670-MINC-AL-233-2025</td>
+      <td>APOYO LOGISTICO PARA EL PROCESO DE LAS ELECCIONES DEL CONSEJO MUNICIPAL DE JUVENTUDES CMJ</td>
+      <td>FUNDACIÓN PARA EL DESARROLLO SOCIAL Y COMUNITARIO. RL IVAN DAVID ROJAS PEREZ</td>
+      <td>MINIMA</td>
+     
+      <td>GOBIERNO</td>
+      <td>2025-10-16</td>
+      <td>2025-10-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1rLizYKuqmt9M4Zh16AfBjgg0Vefzkg2c?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>234</td>
+      <td>23670-CD-PSP-234-2025</td>
+      <td>ACOMPAÑAR AL FORTALECIMIENTO A LA GESTIÓN CULTURAL Y ARTISTICA COMO ACOMPAÑAMIENTO A LA SECRETARIA DE EDUCACIÓN OPS</td>
+      <td>MARCELA CRISTINA BANDA MEDRANO</td>
+      <td>DIRECTA</td>
+      
+      <td>GOBIERNO</td>
+      <td>2025-10-17</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1M57vBqtubVIucfa3i_Z5G6Kj30-uu2Bn?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>235</td>
+      <td>23670-CD-PSP-235-2025</td>
+      <td>APOYO AL ACOMPAÑAMIENTO A LA IMPLEMENTACIÓN DEL PROGRAMA DE JUVENTUD OPS</td>
+      <td>ANA MILENA YEPEZ SIBAJA</td>
+      <td>DIRECTA</td>
+      <td>GOBIERNO</td>
+      <td>2025-10-17</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1ow7g_CqQWIj3bxB7aN2R2fvGaQsOvsV6?usp=sharing" target="_blank" class="btn">X</a></td>
+    </tr>
+    <tr>
+      <td>236</td>
+      <td>23670-CD-AG-236-2025</td>
+      <td>APOYO A LA SECRETARIA DE PLANEACION EN EL PROGRAMA DE SISBEN OPS</td>
+      <td>VALENTINA VICTORIA VERGARA NORIEGA</td>
+      <td>DIRECTA</td>
+      <td>PLANEACIÓN</td>
+      <td>2025-10-17</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1pg4BxdWD7O8GRt64aUBzNQP4PmawTKWZ?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>237</td>
+      <td>23670-CD-AG-237-2025</td>
+      <td>APOYO EN EL PROGRAMA DE DISCAPACIDAD EN GOBIERNO OPS</td>
+      <td>RAFAEL ESCOBAR BRAVO</td>
+      <td>DIRECTA</td>
+      
+      <td>GOBIERNO</td>
+      <td>2025-10-17</td>
+      <td>2025-12-31</td>
+      <td><a href="#" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>238</td>
+      <td>23670-CD-PSP-238-2025</td>
+      <td>ASESOR JURÍDICO EN LA SECRETARIA DE GOBIERNO OPS</td>
+      <td>MILVA YALUD ALDANA FERIS</td>
+      <td>DIRECTA</td>
+      <td>GOBIERNO</td>
+      <td>2025-10-17</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1s99uQVt3RCN8CcrqcH2u2u3hNMllf2tf?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>239</td>
+      <td>23670-CD-PSP-239-2025</td>
+      <td>GESTION DE SALUD Y SEGURIDAD EN EL TRABAJO OPS</td>
+      <td>WILL SEGUNDO OSPINO</td>
+      <td>DIRECTA</td>
+      <td>GOBIERNO</td>
+      <td>2025-10-17</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/11gBTWeSCL-tg03yNmuZEy_l7PubAVh0Q?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>240</td>
+      <td>23670-CD-AG-240-2025</td>
+      <td>APOYO A LA SECRETARÍA DE GOBIERNO EN EL PROGRAMA DE MUJER Y GÉNERO OPS</td>
+      <td>JOHANA PAOLA SIERRA RODRÍGUEZ</td>
+      <td>DIRECTA</td>
+      <td>GOBIERNO</td>
+      <td>2025-10-17</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1idxrcQAIX-01wiLMymkgDvDkE7kBjBXK?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>241</td>
+      <td>23670-CD-PSP-241-2025</td>
+      <td>ACOMPAÑAMIENTO JURÍDICO A LA SECRETARÍA DE GOBIERNO PARA APOYO AL PAF OPS</td>
+      <td>ELDA DE JESÚS SANTODOMINGO AVILEZ</td>
+      <td>DIRECTA</td>
+      <td>GOBIERNO</td>
+      <td>2025-10-17</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1lOxBGEVJqLN-nt-0sws3b3id4aghdOQF?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>242</td>
+      <td>23670-CD-PSP-242-2025</td>
+      <td>REALIZACION DE LAS ACTIVIDADES EN SALUD PUBLICA Y VIGILANCIA EPIDEMIOLOGICAS EN LA SECRETARIA DE SALUD OPS</td>
+      <td>LENIN CORDERO SUAREZ</td>
+      <td>DIRECTA</td>
+      <td>SALUD</td>
+      <td>2025-10-17</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1LlkB8bOEW8US5KUeo3fc_2cISVVeHqZf?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>243</td>
+      <td>23670-CD-PSP-243-2025</td>
+      <td>ABOGADO EN LA SECRETARÍA DE INFRAESTRUCTURA OPS</td>
+      <td>SHIRLEY VERÓNICA ARROYO</td>
+      <td>DIRECTA</td>
+      <td>OBRAS</td>
+      <td>2025-10-20</td>
+      <td>2025-12-20</td>
+      <td><a href="https://drive.google.com/drive/folders/1qxC68CvEqTMSkhelxmyEm1IcDy1ZTbH6?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>244</td>
+      <td>23670-CD-AG-244-2025</td>
+      <td>APOYO ADMINISTRATIVO EN RÉGIMEN SUBSIDIADO OPS</td>
+      <td>ABITH PERTUZ GODIN</td>
+      <td>DIRECTA</td>
+      <td>SALUD</td>
+      <td>2025-10-20</td>
+      <td>2025-12-20</td>
+      <td><a href="#" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>245</td>
+      <td>23670-CD-AG-245-2025</td>
+      <td>APOYO EN LAS ACTIVIDADES DE SALUD PUBLICA Y VIGILANCIA EPIDEMIÓLOGICA EN LA SECRETARÍA DE SALUD OPS</td>
+      <td>MIGUEL EMIRO AVILEZ ORTEGA</td>
+      <td>DIRECTA</td>
+      <td>SALUD</td>
+      <td>2025-10-20</td>
+      <td>2025-12-20</td>
+      <td><a href="#" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>246</td>
+      <td>23670-CD-AG-246-2025</td>
+      <td>APOYO A LA SECRETARÍA DE PLANEACIÓN EN EL PROGRAMA DE SISBEN OPS</td>
+      <td>OSMANY GONZALEZ</td>
+      <td>DIRECTA</td>
+      <td>PLANEACIÓN</td>
+      <td>2025-10-20</td>
+      <td>2025-12-20</td>
+      <td><a href="https://drive.google.com/drive/folders/1EsYJpUFrHIfFsU5Wo99GqxP2yYB6dLez?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>247</td>
+      <td>23670-CD-AG-247-2025</td>
+      <td>APOYO EN EL PROGRAMA DE FORTALECIMIENTO DE LA PROTECCIÓN INTEGRAL DE LA NIÑEZ Y ADOLESCENCIA OPS</td>
+      <td>ANGUELINA PERDOMO ESTRADA</td>
+      <td>DIRECTA</td>
+      <td>GOBIERNO</td>
+      <td>2025-10-20</td>
+      <td>2025-12-20</td>
+      <td><a href="https://drive.google.com/drive/folders/1j6plv6HPFBx8c1OR9YfVsiVGL_jmQHkm?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+    <tr>
+      <td>248</td>
+      <td>23670-CD-PSP-248-2025</td>
+      <td>INGENIERO DE ALIMENTOS EN EL APOYO A LA SUPERVISION DE LA GESTION DEL PROGRAMA DE ALIMENTO ESCOLAR PAE OPS</td>
+      <td>CARLOS ALBERTO HERNANDEZ</td>
+      <td>DIRECTA</td>
+      <td>EDUCACIÓN</td>
+      <td>2025-10-20</td>
+      <td>2025-12-20</td>
+      <td><a href="#" target="_blank" class="btn">Ver</a></td>
+    </tr>
+      <tr>
+      <td>249</td>
+      <td>23670-CD-PSP-249-2025</td>
+      <td>ASESORIA JURIDICA EN LOS PROCESOS CONTRACTUALES OPS</td>
+      <td>JORGE ALFREDO GARCIA</td>
+      <td>DIRECTA</td>
+      <td>GOBIERNO</td>
+      <td>2025-10-22</td>
+      <td>2025-12-19</td>
+      <td><a href="https://drive.google.com/drive/folders/1jjQQlE0C19BYj12ikUd0ly2L-gogX7bQ?usp=drive_link" target="_blank" class="btn">Ver</a></td>
+    </tr>
+      <tr>
+      <td>251</td>
+      <td>23670-CD-PSP-251-2025</td>
+      <td>MANEJO DEL SISTEMA SECOP OPS</td>
+      <td>LUIS ANTONIO PINEDA</td>
+      <td>DIRECTA</td>
+      <td>GOBIERNO</td>
+      <td>2025-10-23</td>
+      <td>2025-12-23</td>
+      <td><a href="https://drive.google.com/drive/folders/10KFWvnX_yftYgyfjpvHbkpJijKfHoZmW?usp=drive_link" target="_blank" class="btn">Ver</a></td>
+      </tr>
+      <tr>
+      <td>254</td>
+      <td>23670-CD-AG-254-2025</td>
+      <td>APOYO EN EL PROGRAMA DE DISCAPACIDAD EN GOBIERNO OPS</td>
+      <td>RAFAEL ESCOBAR BRAVO</td>
+      <td>DIRECTA</td>
+      <td>GOBIERNO</td>
+      <td>2025-10-24</td>
+      <td>2025-12-24</td>
+      <td><a href="https://drive.google.com/drive/folders/1jE79SHNACPrwiH0E_3_-H3LyZz69eMUf?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+      <tr>
+      <td>255</td>
+      <td>23670-CD-PSP-255-2025</td>
+      <td>GESTOR OPERATIVO DEL PROGRAMA TRANSFERENCIAS MONETARIAS DEL MUNICIPIO OPS</td>
+      <td>LUNA FLOR MORENO MERCADO</td>
+      <td>DIRECTA</td>
+      <td>GOBIERNO</td>
+      <td>2025-10-24</td>
+      <td>2025-12-24</td>
+      <td><a href="https://drive.google.com/drive/folders/160TGwnASFOvYv-NH5Q5AelhyQoxTyFuy?usp=drive_link" target="_blank" class="btn">Ver</a></td>
+    </tr>
+      <tr>
+      <td>256</td>
+      <td>23670-CD-PSP-256-2025</td>
+      <td>GESTOR OPERATIVO DEL PROGRAMA DE TRANSFERENCIAS MONETARIAS OPS</td>
+      <td>LILIBETH URANGO LÓPEZ</td>
+      <td>DIRECTA</td>
+      <td>GOBIERNO</td>
+      <td>2025-10-24</td>
+      <td>2025-12-24</td>
+      <td><a href="https://drive.google.com/drive/folders/1MNs9ZuJhMimr0Pqgzthmkg4K8FevWg60?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+           <tr>
+      <td>259</td>
+      <td>23670-CD-AG-259-2025</td>
+      <td>APOYO A LAS ACTIVIDADES DE DEPORTE DEL MUNICIPIO DE SAN ANDRES DE SOTAVENTO CORDOBA OPS</td>
+      <td>ALVARO ALVAREZ PEREZ</td>
+      <td>DIRECTA</td>
+      <td>EDUCACIÓN</td>
+      <td>2025-10-24</td>
+      <td>2025-12-24</td>
+      <td><a href="https://drive.google.com/drive/folders/18KdebcvQe4j2Ado2u3qvWo-uELTfYs42?usp=drive_link" target="_blank" class="btn">Ver</a></td>
+    </tr>
+          <tr>
+      <td>264</td>
+      <td>23670-CD-PSP-264-2025</td>
+      <td>PRESTACIÓN DE SERVICIOS COMO GESTOR OPERATIVO PROGRAMA TRANSFERENCIAS MONETARIAS OPS</td>
+      <td>ROBERTO CARLOS BERROCAL</td>
+      <td>DIRECTA</td>
+      <td>GOBIERNO</td>
+      <td>2025-10-28</td>
+      <td>2025-12-28</td>
+      <td><a href="https://drive.google.com/drive/folders/1M3mKa71P-d66KM_ZwgfHnwkVGZk2WPXF?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+      <tr>
+      <td>265</td>
+      <td>23670-CD-PSP-265-2025</td>
+      <td>FORTALECIMIENTO A LA AUTORIDAD SANITARIA PARA LA PROMOCION DE LA GESTIÓN DE LA SALUD Y DE LAS DIMENSIONES DE SALUD PUBLICA PRIORIZADAS EN EL COAI</td>
+      <td>FUNDACION GRAN OBRA</td>
+      <td>DIRECTA</td>
+      <td>GOBIERNO</td>
+      <td>2025-10-28</td>
+      <td>2025-12-28</td>
+      <td><a href="https://drive.google.com/drive/folders/1yFCG5JIji7gSon7nq3pTzlmHaeSHixkM?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+          <tr>
+      <td>266</td>
+      <td>23670-CD-AG-266-2025</td>
+      <td>APOYO AL SISTEMA DE GESTION DE LA SEGURIDAD Y LA SALUD EN EL TRABAJO OPS</td>
+      <td>ALVARO SIMON PERTUZ</td>
+      <td>DIRECTA</td>
+      <td>GOBIERNO</td>
+      <td>2025-10-29</td>
+      <td>2025-12-29</td>
+      <td><a href="https://drive.google.com/drive/folders/1M_gN6gri77_qcQToRSOBQbgEljMHlsTi?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+      <tr>
+      <td>269</td>
+      <td>23670-CD-AG-269-2025</td>
+      <td>APOYO AL SISBEN EN PLANEACIÓN OPS</td>
+      <td>SANDRA ARROYO GIL</td>
+      <td>DIRECTA</td>
+      <td>PLANEACIÓN</td>
+      <td>2025-10-29</td>
+      <td>2025-12-28</td>
+      <td><a href="https://drive.google.com/drive/folders/1tjEgxtwJC4P2SHCRYjhD_XNEKisYBSBR?usp=drive_link" target="_blank" class="btn">Ver</a></td>
+    </tr>
+      <tr>
+      <td>271</td>
+      <td>23670-SAMC-OP-271-2025</td>
+      <td>MANTENIMIENTO DE LA INFRAESTRUCTURA DE LA IGLESIA SAN ANDRES APOSTOL Y DEL EDIFICIO JUAN B CASADO</td>
+      <td>INGENIERIA E INVERSIONES DE LA COSATA SAS.</td>
+      <td>SAMC</td>
+      <td>OBRAS</td>
+      <td>2025-11-11</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1T-6uGRXPVY8kelFcN0O5wLUwU4YaYWMB?usp=drive_link" target="_blank" class="btn">Ver</a></td>
+    </tr>
+          <tr>
+      <td>272</td>
+      <td>23670-CD-AG-272-2025</td>
+      <td>APOYO PARA ACOMPAÑAR AL FORTALECIMIENTO A LA GESTIÓN CULTURAL Y ARTISTICA OPS</td>
+      <td>MARIA FERNANDA RUIZ RUIZ</td>
+      <td>DIRECTA</td>
+      <td>EDUCACIÓN</td>
+      <td>2025-11-11</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/1eQ0Ko0mXgxhJ1rM6eyB9MeMZ6gv6xpgF?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+      <tr>
+      <td>278</td>
+      <td>23670-CD-PSP-278-2025</td>
+      <td>ANALISIS DE SITUACION DE SALUD ASIS</td>
+      <td>FUNDACION BERACA</td>
+      <td>DIRECTA</td>
+      <td>SALUD</td>
+      <td>2025-11-24</td>
+      <td>2025-12-24</td>
+      <td><a href="https://drive.google.com/drive/folders/1jiGctf_HejrAnuJekJCBUyJXjlt-AGf3?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+       <tr>
+      <td>279</td>
+      <td>23670-CD-CV-279-2025</td>
+      <td>ADQUISICION DE VESTIDOS TRADICIONALES CON DESTINO A SIETE (07) INSTITUCIONES EDUCATIVAS</td>
+      <td>FUNDACION PROGRESO GESTION Y VIDA (PROGESVIDA)</td>
+      <td>MINIMA</td>
+      <td>EDUCACIÓN</td>
+      <td>2025-11-21</td>
+      <td>2025-12-26</td>
+      <td><a href="https://drive.google.com/drive/folders/1ao5QFe9gThj5BWRGRhKpZmsxskJf4SiW?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+           <tr>
+      <td>284</td>
+      <td>23670-MINC-PS-284-2025</td>
+      <td>ALQUILER DE SONIDO Y TARIMA PARA EL DESARROLLO DE LAS ACTIVIDADES TRADICIONALES, CULTURALES Y RECREATIVAS CON OCASIÓN DEL ANIVERSARIO 425</td>
+      <td>SONIDO ALVAREZ E.U</td>
+      <td>MINIMA</td>
+      <td>EDUCACIÓN</td>
+      <td>2025-11-24</td>
+      <td>2025-11-30</td>
+      <td><a href="https://drive.google.com/drive/folders/1G0TOiGXJIqwmQR2IgK9HKVBK3t3MbYLc?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+      <tr>
+      <td>285</td>
+      <td>23670-MINC-PS-285-2025</td>
+      <td>APOYO LOGISTICO ANIVERSARIO 425</td>
+      <td>(FUNALIVCA) IVAN DAVID ROJAS PEREZ</td>
+      <td>MINIMNA</td>
+      <td>EDUCACIÓN</td>
+      <td>2025-11-27</td>
+      <td>2025-11-30</td>
+      <td><a href="https://drive.google.com/drive/folders/1MfJlLRGev4CsAxnTfjsoMqsBawn5lk2E?usp=sharing" target="_blank" class="btn">Ver</a></td>
+    </tr>
+          <tr>
+      <td>286</td>
+      <td>23670-CD-PSP-286-2025</td>
+      <td>JORNADA DE SENCIBILIZACION USO Y MANIPULACION DE LA POLVORA</td>
+      <td>ASOCIACION DE PROFESIONALES CON GESTION DE CALIDAD</td>
+      <td>DIRECTA</td>
+      <td>SALUD</td>
+      <td>2025-11-28</td>
+      <td>2025-12-31</td>
+      <td><a href="https://drive.google.com/drive/folders/12RI4wmduymofh7AYpNHkIxt4V-9MUGtS?usp=drive_link" target="_blank" class="btn">Ver</a></td>
+    </tr>
+
+
+
+            <!-- TABLA DE DATOS -->
+            </table>
+      </div>
+    </main>
+  </div>
+
+  <!-- Modal de Observaciones -->
+  <div id="modal-observacion" class="modal" style="display:none;">
+    <div class="modal-box">
+      <h2>Observaciones</h2>
+      <p id="texto-observacion"></p>
+      <button class="btn-cerrar" onclick="cerrarObservacion()">Cerrar</button>
+    </div>
+  </div>
+
+  <!-- Script de filtrado y modal -->
+  <script>
+    // Filtrado
+    document.addEventListener("DOMContentLoaded", () => {
+      const searchInput = document.getElementById("searchInput");
+      const yearFilter = document.getElementById("yearFilter");
+      const rows = document.querySelectorAll("#contractsTable tbody tr");
+
+      function filterTable() {
+        const searchTerm = searchInput.value.toLowerCase();
+        const selectedYear = yearFilter.value;
+
+        rows.forEach(row => {
+          const rowText = row.textContent.toLowerCase();
+          const codigo = row.cells[1].textContent.trim();
+          const rowYear = codigo.slice(-4); // últimos 4 caracteres = año
+
+          const matchesSearch = rowText.includes(searchTerm);
+          const matchesYear = !selectedYear || rowYear === selectedYear;
+
+          row.style.display = (matchesSearch && matchesYear) ? "" : "none";
+        });
+      }
+
+      searchInput.addEventListener("input", filterTable);
+      yearFilter.addEventListener("change", filterTable);
+
+      filterTable();
+    });
+
+    // Modal funciones
+    function abrirObservacion(texto) {
+      document.getElementById("texto-observacion").textContent = texto;
+      document.getElementById("modal-observacion").style.display = "block";
+    }
+
+    function cerrarObservacion() {
+      document.getElementById("modal-observacion").style.display = "none";
+    }
+  </script>
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BDD ASAS — Contratos</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+  <script src="scripts.js" defer></script>
+  <script src="funciones.js" defer></script>
+</head>
+<body>
+
+  <!-- ══════════════ LOGIN ══════════════ -->
+  <div id="login-section" class="login-overlay">
+    <div class="login-card">
+      <div class="login-brand">
+        <div class="login-logo-wrap">
+          <img src="img/Logo_recortado.png" alt="Logo de la Alcaldía" class="login-logo">
+        </div>
+        <h1 class="login-title">Alcaldía de San Andrés<br>de Sotavento</h1>
+        <p class="login-sub">Sistema de Gestión de Contratos</p>
+      </div>
+
+      <form id="login-form" class="login-form" onsubmit="handleLogin(event)">
+        <div class="field-group">
+          <label for="username"><i class="fa-solid fa-user"></i> Usuario</label>
+          <input type="text" id="username" name="username" placeholder="Ingrese su usuario" required autocomplete="username">
+        </div>
+
+        <div class="field-group">
+          <label for="password"><i class="fa-solid fa-lock"></i> Contraseña</label>
+          <div class="password-field">
+            <input type="password" id="password" name="password" placeholder="Ingrese su contraseña" required autocomplete="current-password">
+            <button type="button" class="toggle-pwd" onclick="togglePasswordVisibility(this)" tabindex="-1">
+              <i class="fa-solid fa-eye"></i>
+            </button>
+          </div>
+        </div>
+
+        <p id="login-error" class="login-error">
+          <i class="fa-solid fa-circle-exclamation"></i> Usuario o contraseña incorrectos.
+        </p>
+
+        <button type="submit" class="btn-login">
+          <i class="fa-solid fa-right-to-bracket"></i> Ingresar
+        </button>
+      </form>
+
+      <p class="login-footer">Sistema interno — Acceso restringido</p>
+    </div>
+  </div>
+
+  <!-- ══════════════ CONTENIDO PRINCIPAL ══════════════ -->
+  <div id="content-section" style="display:none;" class="app-shell">
+
+    <!-- Header -->
+    <header class="app-header">
+      <div class="header-left">
+        <img src="img/Logo_recortado.png" alt="Logo" class="header-logo">
+        <div class="header-titles">
+          <span class="header-name">Alcaldía de San Andrés de Sotavento</span>
+          <span class="header-sub">Base de Datos de Contratos</span>
+        </div>
+      </div>
+      <div class="header-right">
+        <span class="header-badge">
+          <i class="fa-solid fa-shield-halved"></i> Sistema Institucional
+        </span>
+      </div>
+    </header>
+
+    <!-- Body: sidebar + main -->
+    <div class="app-body">
+
+      <!-- ── Sidebar ── -->
+      <nav class="sidebar">
+        <div class="sidebar-section">
+          <p class="sidebar-label">Acciones</p>
+          <button class="nav-btn" onclick="restablecerBusqueda()">
+            <i class="fa-solid fa-rotate-left"></i>
+            <span>Restablecer</span>
+          </button>
+          <button class="nav-btn" id="btn-dark-mode" onclick="toggleDarkMode()">
+            <i class="fa-solid fa-moon"></i>
+            <span>Modo Oscuro</span>
+          </button>
+          <a href="generador.html" target="_blank" class="nav-btn nav-btn--accent">
+            <i class="fa-solid fa-plus"></i>
+            <span>Agregar Contrato</span>
+          </a>
+          <button class="nav-btn" onclick="exportarExcel()">
+            <i class="fa-solid fa-file-excel"></i>
+            <span>Exportar Excel</span>
+          </button>
+        </div>
+
+        <div class="sidebar-section">
+          <p class="sidebar-label">Documentos</p>
+          <a href="https://drive.google.com/drive/folders/1i2QYKaiJzt5-8vJbL4ZYqAQr7S7jd6YQ?usp=drive_link" class="nav-btn nav-btn--doc" target="_blank">
+            <i class="fa-solid fa-handshake"></i>
+            <span>Convenios</span>
+          </a>
+          <a href="https://drive.google.com/drive/folders/1NvdDacjMtjWlel_mW8zTUTvKa-Nw2-5G?usp=drive_link" class="nav-btn nav-btn--doc" target="_blank">
+            <i class="fa-solid fa-gavel"></i>
+            <span>Decretos</span>
+          </a>
+          <a href="https://drive.google.com/drive/folders/1t_IOOnq3DcvguGCUMpUz__j_7R6Ph0ts?usp=drive_link" class="nav-btn nav-btn--doc" target="_blank">
+            <i class="fa-solid fa-scroll"></i>
+            <span>Resoluciones</span>
+          </a>
+          <a href="https://drive.google.com/drive/folders/18FTjKCzeQKXHI1n_RnQgTw2zpFPIWOV2?usp=drive_link" class="nav-btn nav-btn--doc" target="_blank">
+            <i class="fa-solid fa-landmark"></i>
+            <span>Acuerdos</span>
+          </a>
+          <a href="https://drive.google.com/drive/folders/1cNFRF-eL6wpkR9kXfLsHbpeEHvrmsBD7?usp=drive_link" class="nav-btn nav-btn--doc" target="_blank">
+            <i class="fa-solid fa-handshake"></i>
+            <span>Empréstito</span>
+          </a>
+          <a href="https://drive.google.com/drive/folders/18aemjNOHQn-zpEBM9H4MvXRE6nbDodg7?usp=drive_link" class="nav-btn nav-btn--doc" target="_blank">
+            <i class="fa-solid fa-landmark"></i>
+            <span>Nómina</span>
+          </a>
+        </div>
+
+        <div class="sidebar-bottom">
+          <button class="nav-btn nav-btn--danger" onclick="logout()">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span>Cerrar sesión</span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- ── Main ── -->
+      <main class="main-content">
+
+        <!-- Barra de control -->
+        <div class="control-bar">
+          <div class="search-group">
+            <div class="search-input-wrap">
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
+              <input type="text" id="buscador" oninput="aplicarFiltros()" placeholder="Buscar por contratista, objeto, número…">
+            </div>
+            <select id="anio-select" onchange="cambiarAnio()" class="select-pill">
+              <option value="2026" selected>2026</option>
+              <option value="2025">2025</option>
+              <option value="2024">2024</option>
+            </select>
+            <select id="filtroDependencia" onchange="aplicarFiltros()" class="select-pill">
+              <option value="">Todas las dependencias</option>
+              <option value="Gobierno">Gobierno</option>
+              <option value="Planeación">Planeación</option>
+              <option value="Obras">Obras</option>
+              <option value="Educación">Educación</option>
+              <option value="Salud">Salud</option>
+              <option value="Umata">Umata</option>
+              <option value="Hacienda">Hacienda</option>
+            </select>
+            <button class="btn-chart" onclick="mostrarGrafico()">
+              <i class="fa-solid fa-chart-pie"></i> Inversión
+            </button>
+          </div>
+        </div>
+
+        <!-- Barra de estado -->
+        <div class="status-bar">
+          <div class="status-left">
+            <button class="btn-sm" id="botonTabla" onclick="toggleTabla()">
+              <i class="fa-solid fa-eye-slash"></i> Ocultar lista
+            </button>
+            <button class="btn-sm" id="botonOrden" onclick="ordenarPorNumero()">
+              <i class="fa-solid fa-arrow-up-1-9"></i> Cambiar orden
+            </button>
+          </div>
+          <div class="status-right">
+            <span class="year-tag">
+              <i class="fa-solid fa-calendar-days"></i>
+              <span class="subtitle" id="anio-display">2026</span>
+            </span>
+            <div class="counter-pill" id="contador">— contratos</div>
+          </div>
+        </div>
+
+        <!-- Tabla: este div es el que scrollea -->
+        <div id="contenedor-tabla" class="table-wrap">
+          <div class="table-loading">
+            <i class="fa-solid fa-spinner fa-spin"></i> Cargando contratos…
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+
+  <!-- ══════════════ MODALES ══════════════ -->
+  <div id="modal-observacion" class="modal-overlay" style="display:none;">
+    <div class="modal-card">
+      <div class="modal-header">
+        <i class="fa-solid fa-comment-dots modal-icon"></i>
+        <h2>Observaciones</h2>
+      </div>
+      <p id="texto-observacion" class="modal-body"></p>
+      <button class="btn-modal-close" onclick="cerrarObservacion()">
+        <i class="fa-solid fa-xmark"></i> Cerrar
+      </button>
+    </div>
+  </div>
+
+  <div id="modal-grafico" class="modal-overlay" style="display:none;">
+    <div class="modal-card modal-card--wide">
+      <div class="modal-header">
+        <i class="fa-solid fa-chart-pie modal-icon"></i>
+        <h2>Inversión por dependencia</h2>
+      </div>
+      <canvas id="graficoDependencias" width="460" height="280"></canvas>
+      <button class="btn-modal-close" onclick="cerrarGrafico()">
+        <i class="fa-solid fa-xmark"></i> Cerrar
+      </button>
+    </div>
+  </div>
+
+</body>
+</html>

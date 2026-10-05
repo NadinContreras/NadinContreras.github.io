@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>BDD - Hacienda</title>
+  <link rel="stylesheet" href="../styles.css"> <!-- importante -->
+</head>
+
+<body>
+  <header class="main-header">Dependencia: Hacienda</header>
+
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <a href="../index.html" class="btn">Inicio</a>
+      <a href="#" 
+           class="btn" target="_blank">Mi drive</a>
+      <button class="logout-btn" onclick="window.location.href='../index.html'">Cerrar sesión</button>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+      <h2 class="subtitle">Tabla de contratos de Hacienda</h2>
+
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Buscar contrato...">
+        <select id="yearFilter">
+          <option value="">Todos los años</option>
+          <option value="2025" selected>2025</option> <!-- predeterminado -->
+          <option value="2024">2024</option>
+        </select>
+      </div>
+
+      <div class="table-container">
+        <table id="contractsTable">
+          <thead>
+            <tr>
+              <th>N°</th>
+              <th>Proceso</th>
+              <th>Objeto</th>
+              <th>Contratista</th>
+              <th>Tipo</th>
+              <th>Valor total</th>
+              <th>Valor mensual</th>
+              <th>Fuente</th>
+              <th>Catalogo</th>
+              <th>Dependencia</th>
+              <th>Fecha inicio</th>
+              <th>Fecha fin</th>
+              <th>Ver más</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- TABLA DE DATOS -->
+
+            <!-- TABLA DE DATOS -->
+            </table>
+      </div>
+    </main>
+  </div>
+
+  <!-- Modal de Observaciones -->
+  <div id="modal-observacion" class="modal" style="display:none;">
+    <div class="modal-box">
+      <h2>Observaciones</h2>
+      <p id="texto-observacion"></p>
+      <button class="btn-cerrar" onclick="cerrarObservacion()">Cerrar</button>
+    </div>
+  </div>
+
+  <!-- Script de filtrado y modal -->
+  <script>
+    // Filtrado
+    document.addEventListener("DOMContentLoaded", () => {
+      const searchInput = document.getElementById("searchInput");
+      const yearFilter = document.getElementById("yearFilter");
+      const rows = document.querySelectorAll("#contractsTable tbody tr");
+
+      function filterTable() {
+        const searchTerm = searchInput.value.toLowerCase();
+        const selectedYear = yearFilter.value;
+
+        rows.forEach(row => {
+          const rowText = row.textContent.toLowerCase();
+          const codigo = row.cells[1].textContent.trim();
+          const rowYear = codigo.slice(-4); // últimos 4 caracteres = año
+
+          const matchesSearch = rowText.includes(searchTerm);
+          const matchesYear = !selectedYear || rowYear === selectedYear;
+
+          row.style.display = (matchesSearch && matchesYear) ? "" : "none";
+        });
+      }
+
+      searchInput.addEventListener("input", filterTable);
+      yearFilter.addEventListener("change", filterTable);
+
+      filterTable();
+    });
+
+    // Modal funciones
+    function abrirObservacion(texto) {
+      document.getElementById("texto-observacion").textContent = texto;
+      document.getElementById("modal-observacion").style.display = "block";
+    }
+
+    function cerrarObservacion() {
+      document.getElementById("modal-observacion").style.display = "none";
+    }
+  </script>
+</body>
+
+</html>
